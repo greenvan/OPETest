@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "663103854377",
+    "firebase_url": "https://opetest-greenvan.firebaseio.com",
+    "project_id": "opetest-greenvan",
+    "storage_bucket": "opetest-greenvan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663103854377:android:fd0bcebdaf8b2005",
+        "android_client_info": {
+          "package_name": "tk.greenvan.opetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663103854377-tue7i7uf00tqqgqmaf53o7s1t2bq04s0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tk.greenvan.opetest",
+            "certificate_hash": "99ff4cf6824da51a74e15de30190c90775e9a16e"
+          }
+        },
+        {
+          "client_id": "663103854377-383ekvakah6cs9esuo8bjf89ilf5593i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoLfWDse5DG7Mbeq6DrnDqVrutu2aU93k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663103854377-383ekvakah6cs9esuo8bjf89ilf5593i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
