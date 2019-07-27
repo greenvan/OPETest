@@ -15,13 +15,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import tk.greenvan.opetest.R;
+import tk.greenvan.opetest.model.Test;
 
 public class TestGridAdapter extends RecyclerView.Adapter<TestGridAdapter.MyViewHolder>  {
 
     Context context;
-    List<String> testList;
+    List<Test> testList;
 
-    public TestGridAdapter(Context context, List<String> testList) {
+    public TestGridAdapter(Context context, List<Test> testList) {
         this.context = context;
         this.testList = testList;
     }

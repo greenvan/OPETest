@@ -1,6 +1,8 @@
 package tk.greenvan.opetest;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mMessagesDatabaseReference;
+
     private ChildEventListener mChildEventListener;
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -39,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mUsername = ANONYMOUS;
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
+
+
         rv_test_grid = (RecyclerView) findViewById(R.id.rv_test_list_grid);
 
         rv_test_grid.setHasFixedSize(true);
@@ -50,10 +57,20 @@ public class MainActivity extends AppCompatActivity {
         //int height = displayMetrics.heightPixels /8; //Max size of item in Quiz
 
 
-        TestGridAdapter adapter = new TestGridAdapter(MainActivity.this, DBHelper.getInstance(this,null).getTestList());
+        TestGridAdapter adapter = new TestGridAdapter(MainActivity.this, DBHelper.getInstance(this,mFirebaseDatabase).getTestList());
         int spaceInPixel = 4;
         rv_test_grid.addItemDecoration(new SpaceDecoration(spaceInPixel));
         rv_test_grid.setAdapter(adapter);
+
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
     }
 
 }

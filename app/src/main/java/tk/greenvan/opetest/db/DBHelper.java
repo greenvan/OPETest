@@ -8,21 +8,23 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
+import tk.greenvan.opetest.model.Test;
+
 public class DBHelper {
 
-    FirebaseDatabase firebaseDatabase;
+    FirebaseDatabase mFirebaseDatabase;
     Context context;
 
 
     private static DBHelper instance;
 
-    DatabaseReference reference;
+    DatabaseReference mTestReference;
 
 
     public DBHelper( Context context, FirebaseDatabase firebaseDatabase) {
-        this.firebaseDatabase = firebaseDatabase;
+        this.mFirebaseDatabase = firebaseDatabase;
         this.context = context;
-//        reference = this.firebaseDatabase.getReference("tests");
+        mTestReference = this.mFirebaseDatabase.getReference().child("tests");
     }
 
     public static synchronized DBHelper getInstance(Context context, FirebaseDatabase firebaseDatabase){
@@ -32,12 +34,12 @@ public class DBHelper {
 
     }
 
-    public List<String> getTestList(){
-        List<String> list = new ArrayList<String>();
-        list.add("one - Test de preguntas generales");
-        list.add("two - TEI Sistemas, preguntas específicas");
-        list.add("3");
-        list.add("four!");
+    public List<Test> getTestList(){
+        List<Test> list = new ArrayList<Test>();
+        list.add(new Test("one"," - Test de preguntas generales"));
+        list.add(new Test("two","two - TEI Sistemas, preguntas específicas"));
+        list.add(new Test("3"));
+        list.add(new Test("four!"));
         return list;
     }
 }
