@@ -6,6 +6,8 @@ public class Question {
     private String optionA, optionB, optionC, optionD;
     private String correctAnswer;
 
+    public Question(){}
+
     public Question(int id, String text, String optionA, String optionB, String optionC, String optionD, String correctAnswer) {
         this.id = id;
         this.text = text;

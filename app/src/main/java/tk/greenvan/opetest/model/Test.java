@@ -2,10 +2,15 @@ package tk.greenvan.opetest.model;
 
 import androidx.annotation.NonNull;
 
+import java.util.List;
+
 public class Test {
     private String id;
     private String name;
     private String photoUrl;
+    private List<Question> questions;
+
+    public Test(){}
 
     public Test(String name) {
         this.id = name;
@@ -45,6 +50,14 @@ public class Test {
 
     public void setPhotoUrl(String photoUrl) {
         this.photoUrl = photoUrl;
+    }
+
+    public List<Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(List<Question> questions) {
+        this.questions = questions;
     }
 
     @NonNull

@@ -36,6 +36,11 @@ dependencies {
     // Displaying images
     implementation 'com.github.bumptech.glide:glide:4.9.0'
 
+
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+
+
     implementation 'com.google.firebase:firebase-database:18.0.1'
     implementation 'com.google.firebase:firebase-auth:18.1.0'
 
