@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">OPETest</string>
     <string name="sign_out">Cerrar sesión</string>
+    <string name="show_questions">Mostrar preguntas seleccionadas</string>
+    <string name="do_random_test">Test rápido aleatorio</string>
+    <string name="do_test">Hacer test</string>
 </resources>

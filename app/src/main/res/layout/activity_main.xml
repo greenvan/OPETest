@@ -7,8 +7,6 @@
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <!-- TODO: Crear un grid -->
-    <!-- TODO: Crear un menu sign out, mis calificaciones -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_test_list_grid"
         android:layout_margin="8dp"

@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import tk.greenvan.opetest.R;
+import tk.greenvan.opetest.TestOverviewActivity;
+import tk.greenvan.opetest.db.Common;
 import tk.greenvan.opetest.model.Test;
 
 public class TestGridAdapter extends RecyclerView.Adapter<TestGridAdapter.MyViewHolder>  {
@@ -56,10 +58,10 @@ public class TestGridAdapter extends RecyclerView.Adapter<TestGridAdapter.MyView
             card_test.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(context,"Click at test "+testList.get(getAdapterPosition()).toString(), Toast.LENGTH_SHORT).show();
-                    /*Common.selectedCategory = categories.get(getAdapterPosition());  //Assign current category
-                    Intent intent = new Intent(context, QuestionActivity.class);
-                    context.startActivity(intent);*/
+                    /*Toast.makeText(context,"Click at test "+testList.get(getAdapterPosition()).toString(), Toast.LENGTH_SHORT).show();*/
+                    Common.selectedTest = testList.get(getAdapterPosition());  //Assign current test
+                    Intent intent = new Intent(context, TestOverviewActivity.class);
+                    context.startActivity(intent);
 
                 }
             });

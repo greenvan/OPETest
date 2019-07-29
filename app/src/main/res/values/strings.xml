@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">OPETest</string>
     <string name="sign_out">Sign out</string>
+    <string name="show_questions">Show selected questions</string>
+    <string name="do_test">Do Test</string>
+    <string name="do_random_test">Do random quick Test</string>
 </resources>

@@ -3,7 +3,6 @@ package tk.greenvan.opetest;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -18,7 +17,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.firebase.ui.auth.AuthUI;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -36,7 +34,6 @@ import tk.greenvan.opetest.util.SpaceDecoration;
 
 public class MainActivity extends AppCompatActivity {
 
-    //TODO: Linkar con Firebase
     public static final String ANONYMOUS = "anonymous";
     private static final int RC_SIGN_IN = 1;
 
@@ -50,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
-    //TODO: Dos nuevas actividades: QuestionActivity, ScoreActivity (Mostrar mis calificaciones)
-    //TODO: Una clase Test, Question, UserTests, etc.
 
     private RecyclerView rv_test_grid;
 

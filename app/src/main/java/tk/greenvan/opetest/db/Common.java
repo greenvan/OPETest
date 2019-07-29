@@ -9,4 +9,5 @@ public class Common {
 
     public static List<Test> testList = new ArrayList<>();
 
+    public static Test selectedTest = new Test();
 }
