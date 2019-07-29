@@ -1,21 +1,22 @@
 package tk.greenvan.opetest.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Question {
-    private int id;
-    private String text;
-    private String optionA, optionB, optionC, optionD;
-    private String correctAnswer;
+    private int id = 0;
+    private String text = "";
+    private String clue = "";
+    private List<Option> options = new ArrayList<>();
 
-    public Question(){}
+    public Question() {
+    }
 
-    public Question(int id, String text, String optionA, String optionB, String optionC, String optionD, String correctAnswer) {
+    public Question(int id, String text, String clue, List<Option> options) {
         this.id = id;
         this.text = text;
-        this.optionA = optionA;
-        this.optionB = optionB;
-        this.optionC = optionC;
-        this.optionD = optionD;
-        this.correctAnswer = correctAnswer;
+        this.clue = clue;
+        this.options = options;
     }
 
     public int getId() {
@@ -34,43 +35,19 @@ public class Question {
         this.text = text;
     }
 
-    public String getOptionA() {
-        return optionA;
+    public String getClue() {
+        return clue;
     }
 
-    public void setOptionA(String optionA) {
-        this.optionA = optionA;
+    public void setClue(String clue) {
+        this.clue = clue;
     }
 
-    public String getOptionB() {
-        return optionB;
+    public List<Option> getOptionList() {
+        return options;
     }
 
-    public void setOptionB(String optionB) {
-        this.optionB = optionB;
-    }
-
-    public String getOptionC() {
-        return optionC;
-    }
-
-    public void setOptionC(String optionC) {
-        this.optionC = optionC;
-    }
-
-    public String getOptionD() {
-        return optionD;
-    }
-
-    public void setOptionD(String optionD) {
-        this.optionD = optionD;
-    }
-
-    public String getCorrectAnswer() {
-        return correctAnswer;
-    }
-
-    public void setCorrectAnswer(String correctAnswer) {
-        this.correctAnswer = correctAnswer;
+    public void setOptionList(List<Option> options) {
+        this.options = options;
     }
 }

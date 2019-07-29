@@ -113,12 +113,15 @@
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_result"
+        android:id="@+id/rv_question_list_grid"
         android:layout_margin="8dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
-
+        android:layout_height="wrap_content" />
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"

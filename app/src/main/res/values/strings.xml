@@ -4,4 +4,5 @@
     <string name="show_questions">Show selected questions</string>
     <string name="do_test">Do Test</string>
     <string name="do_random_test">Do random quick Test</string>
+    <string name="question">Question</string>
 </resources>
