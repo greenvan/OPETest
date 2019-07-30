@@ -39,22 +39,23 @@ public class QuestionGridAdapter extends RecyclerView.Adapter<QuestionGridAdapte
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        //TODO find this error
-        holder.btn_question.setText(new StringBuilder(context.getString(R.string.question)).append(answerList.get(position).getQuestionId()));
+        String questionLabel = context.getString(R.string.question) + " " + answerList.get(position).getQuestionId();
+        holder.btn_question.setText(questionLabel);
 
         //Change color base and image on result
         Drawable img;
         if(answerList.get(position).getState() == Common.ANSWER_STATE.RIGHT_ANSWER){
-            holder.btn_question.setBackgroundColor(Color.parseColor("#99cc00"));
             img = context.getDrawable(R.drawable.ic_check_white_24dp);
             holder.btn_question.setCompoundDrawablesWithIntrinsicBounds(null, null, null, img);
+            holder.btn_question.setBackgroundColor(Color.parseColor("#99cc00"));
         } else  if(answerList.get(position).getState() ==Common.ANSWER_STATE.WRONG_ANSWER){
-            holder.btn_question.setBackgroundColor(Color.parseColor("#cc0000"));
             img = context.getDrawable(R.drawable.ic_clear_white_24dp);
             holder.btn_question.setCompoundDrawablesWithIntrinsicBounds(null, null, null, img);
+            holder.btn_question.setBackgroundColor(Color.parseColor("#cc0000"));
         } else { //No answer
             img = context.getDrawable(R.drawable.ic_error_outline_white_24dp);
             holder.btn_question.setCompoundDrawablesWithIntrinsicBounds(null, null, null, img);
+            holder.btn_question.setBackgroundColor(Color.parseColor("#00ddff"));
         }
     }
 

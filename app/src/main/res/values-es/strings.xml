@@ -5,4 +5,10 @@
     <string name="show_questions">Mostrar preguntas seleccionadas</string>
     <string name="do_random_test">Test rápido aleatorio</string>
     <string name="do_test">Hacer test</string>
+    <string name="question">Pregunta</string>
+    <string name="excellent">Excelente</string>
+    <string name="good">Bien</string>
+    <string name="poor">Insuficiente</string>
+    <string name="fair">Suficiente</string>
+    <string name="bad">Muy deficiente</string>
 </resources>

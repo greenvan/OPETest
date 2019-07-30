@@ -76,6 +76,46 @@
     </LinearLayout>
 
     <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_show_questions"
+            android:text="@string/show_questions"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableTop="@drawable/ic_remove_red_eye_black_24dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+
+        <Button
+            android:id="@+id/btn_do_test"
+            android:text="@string/do_test"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableTop="@drawable/ic_assignment_black_24dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+
+        <Button
+            android:id="@+id/btn_random_test"
+            android:text="@string/do_random_test"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableTop="@drawable/ic_access_alarm_black_24dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
@@ -122,40 +162,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     </ScrollView>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btn_show_questions"
-            android:text="@string/show_questions"
-            android:drawableTop="@drawable/ic_remove_red_eye_black_24dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="0dp" />
-
-        <Button
-            android:id="@+id/btn_do_test"
-            android:text="@string/do_test"
-            android:drawableTop="@drawable/ic_assignment_black_24dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="0dp" />
-
-        <Button
-            android:id="@+id/btn_random_test"
-            android:text="@string/do_random_test"
-            android:drawableTop="@drawable/ic_access_alarm_black_24dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:layout_width="0dp" />
-
-
-
-
-
-    </LinearLayout>
 
 </LinearLayout>

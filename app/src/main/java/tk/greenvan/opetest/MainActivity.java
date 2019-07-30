@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
     TestGridAdapter testGridAdapter;
 
     private FirebaseDatabase mFirebaseDatabase;
-    private DatabaseReference mTestReference;
 
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -59,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mFirebaseAuth = FirebaseAuth.getInstance();
 
-        mTestReference = this.mFirebaseDatabase.getReference().child("tests");
-        //loadTestList();
+        Common.mTestReference = this.mFirebaseDatabase.getReference().child("tests");
+        //Los datos se cargan tras autentificar: loadTestList();
 
         /* TEST GRID */
         rv_test_grid = (RecyclerView) findViewById(R.id.rv_test_list_grid);
@@ -173,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         if(!dialog.isShowing())
             dialog.show();
 
-        mTestReference.addListenerForSingleValueEvent(new ValueEventListener() {
+        Common.mTestReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Common.testList.clear();

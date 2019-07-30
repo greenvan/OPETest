@@ -5,4 +5,9 @@
     <string name="do_test">Do Test</string>
     <string name="do_random_test">Do random quick Test</string>
     <string name="question">Question</string>
+    <string name="excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="fair">Fair</string>
+    <string name="poor">Poor</string>
+    <string name="bad">Bad</string>
 </resources>

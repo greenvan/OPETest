@@ -3,15 +3,15 @@ package tk.greenvan.opetest.model;
 public class Option {
     private String id = "";
     private String text = "";
-    private boolean correcto = false;
+    private boolean correct = false;
 
     public Option() {
     }
 
-    public Option(String id, String text, boolean correcto) {
+    public Option(String id, String text, boolean correct) {
         this.id = id;
         this.text = text;
-        this.correcto = correcto;
+        this.correct = correct;
     }
 
     public String getId() {
@@ -30,11 +30,11 @@ public class Option {
         this.text = text;
     }
 
-    public boolean isCorrecto() {
-        return correcto;
+    public boolean isCorrect() {
+        return correct;
     }
 
-    public void setCorrecto(boolean correcto) {
-        this.correcto = correcto;
+    public void setCorrect(boolean correct) {
+        this.correct = correct;
     }
 }
