@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -18,10 +19,14 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import dmax.dialog.SpotsDialog;
 import tk.greenvan.opetest.adapter.QuestionGridAdapter;
 import tk.greenvan.opetest.db.Common;
 import tk.greenvan.opetest.model.Answer;
+import tk.greenvan.opetest.model.Option;
 import tk.greenvan.opetest.model.Question;
 import tk.greenvan.opetest.model.UserTest;
 import tk.greenvan.opetest.util.SpaceDecoration;
@@ -82,14 +87,15 @@ public class TestOverviewActivity extends AppCompatActivity {
         if (Common.answerList.isEmpty()) {
             //TODO remove this line, after implementing it on next activity
             // loadQuestionList();
-            loadEmptyAnswerList(); //Cargar lista de preguntas en estado NO_ANSWER
+            loadEmptyAnswerList(); //Cargar lista de preguntas y las respuestas en estado NO_ANSWER
         } else {
+            // Si no está vacía, solo cargamos la lista de preguntas
             Common.right_answer_count = Common.selectedUserTest.getRightAnswerCount();
-
-            int percent = Common.right_answer_count * 100 / Common.answerList.size() ;
-            tv_progress.setText(percent + "%");
-            tv_result.setText(getResult(percent));
-            tv_right_answer_and_total.setText(Common.right_answer_count+"/"+Common.answerList.size());
+            loadQuestionList();
+            //int percent = Common.right_answer_count * 100 / Common.answerList.size() ;
+            //tv_progress.setText(percent + "%");
+            //tv_result.setText(getResult(percent));
+            //tv_right_answer_and_total.setText(Common.right_answer_count+"/"+Common.answerList.size());
         }
 
 
@@ -186,10 +192,21 @@ public class TestOverviewActivity extends AppCompatActivity {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        Common.questionList.clear();
                         for (DataSnapshot questionDataSnapshot:dataSnapshot.getChildren()) {
                             Question question = questionDataSnapshot.getValue(Question.class);
                             Answer answer = new Answer(question.getId(), Common.ANSWER_STATE.NO_ANSWER);
                             Common.answerList.add(answer);
+
+                            List<Option> optionList= new ArrayList<>();
+                            for (DataSnapshot optionsDataSnapshot:questionDataSnapshot.child("answer").getChildren()) {
+                                Option option = optionsDataSnapshot.getValue(Option.class);
+                                optionList.add(option);
+                            }
+
+                            question.setOptionList(optionList);
+                            Common.questionList.add(question);
+
                         }
                         if (dialog.isShowing())
                             dialog.dismiss();
@@ -232,9 +249,15 @@ public class TestOverviewActivity extends AppCompatActivity {
                 Common.questionList.clear();
                 for (DataSnapshot questionDataSnapshot:dataSnapshot.getChildren()) {
                     Question question = questionDataSnapshot.getValue(Question.class);
+
+                    List<Option> optionList= new ArrayList<>();
+                    for (DataSnapshot optionsDataSnapshot:questionDataSnapshot.child("answer").getChildren()) {
+                        Option option = optionsDataSnapshot.getValue(Option.class);
+                        optionList.add(option);
+                    }
+
+                    question.setOptionList(optionList);
                     Common.questionList.add(question);
-                    Answer answer = new Answer(question.getId(), Common.ANSWER_STATE.NO_ANSWER);
-                    Common.answerList.add(answer);
                 }
                 if (dialog.isShowing())
                     dialog.dismiss();
