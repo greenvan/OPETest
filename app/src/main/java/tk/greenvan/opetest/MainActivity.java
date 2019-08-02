@@ -23,13 +23,17 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import dmax.dialog.SpotsDialog;
 import tk.greenvan.opetest.adapter.TestGridAdapter;
 import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.model.Answer;
+import tk.greenvan.opetest.model.Question;
 import tk.greenvan.opetest.model.Test;
+import tk.greenvan.opetest.model.UserTest;
 import tk.greenvan.opetest.util.SpaceDecoration;
 
 public class MainActivity extends AppCompatActivity {
@@ -61,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         Common.mTestReference = this.mFirebaseDatabase.getReference().child("tests");
         //Los datos se cargan tras autentificar: loadTestList();
 
+
+
         /* TEST GRID */
         rv_test_grid = (RecyclerView) findViewById(R.id.rv_test_list_grid);
         rv_test_grid.setHasFixedSize(true);
@@ -83,7 +89,9 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     //user is signed in
-                    onSignedInItitialize(user.getDisplayName());
+                    //onSignedInItitialize(user.getDisplayName());
+                    onSignedInItitialize(user.getUid());
+
                 } else {
                     //user is signed out
                     onSignedOutCleanup();
@@ -120,13 +128,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void onSignedInItitialize(String displayName) {
         mUsername = displayName;
+        Common.username = displayName;
         loadTestList();
+        loadUserTestList();
         testGridAdapter.notifyDataSetChanged();
     }
 
 
     private void onSignedOutCleanup() {
         mUsername = ANONYMOUS;
+        Common.username = ANONYMOUS;
         Common.testList.clear();
         testGridAdapter.notifyDataSetChanged();
     }
@@ -191,6 +202,52 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,""+ databaseError.getMessage(),Toast.LENGTH_SHORT).show();
             }
         });
+
+    }
+
+    public void loadUserTestList(){
+
+        /*final AlertDialog dialog = new SpotsDialog.Builder()
+                .setContext(MainActivity.this)
+                .setCancelable(false)
+                .build();
+
+        if(!dialog.isShowing())
+            dialog.show();*/
+
+        Common.mUserTestReference = this.mFirebaseDatabase.getReference().child("userTests").child(mUsername);
+        Common.mUserTestReference.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        Common.userTestList.clear();
+                        for (DataSnapshot userTestDataSnapshot:dataSnapshot.getChildren()) {
+
+                            UserTest userTest = new UserTest();
+                            userTest.setUsername(mUsername);
+                            userTest.setTestID(userTestDataSnapshot.getKey());
+
+
+                            List<Answer> answerList = new ArrayList();
+
+                            for (DataSnapshot answerDataSnapshot: userTestDataSnapshot.getChildren()) {
+                                Answer answer = answerDataSnapshot.getValue(Answer.class);
+                                answerList.add(answer);
+                            }
+
+                            userTest.setAnswerList(answerList);
+
+                            Common.userTestList.add(userTest);
+
+                        }
+                       /* if (dialog.isShowing())
+                            dialog.dismiss();*/
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                        Toast.makeText(MainActivity.this,""+ databaseError.getMessage(),Toast.LENGTH_SHORT).show();
+                    }
+                });
 
     }
 

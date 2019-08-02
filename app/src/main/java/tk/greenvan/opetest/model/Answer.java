@@ -11,7 +11,8 @@ import tk.greenvan.opetest.db.Common;
 public class Answer {
     private int questionId = 0;
     private Common.ANSWER_STATE state = Common.ANSWER_STATE.NO_ANSWER;
-    private Date lastAcess = new Date(System.currentTimeMillis());
+    //private Date lastAcess = new Date(System.currentTimeMillis());
+    private long lastAcess = System.currentTimeMillis();
 
     public Answer() {
     }
@@ -37,11 +38,11 @@ public class Answer {
         this.state = state;
     }
 
-    public Date getLastAcess() {
+    public long getLastAcess() {
         return lastAcess;
     }
 
-    public void setLastAcess(Date lastAcess) {
+    public void setLastAcess(long lastAcess) {
         this.lastAcess = lastAcess;
     }
 }

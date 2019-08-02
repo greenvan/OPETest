@@ -23,7 +23,7 @@ import tk.greenvan.opetest.adapter.QuestionGridAdapter;
 import tk.greenvan.opetest.db.Common;
 import tk.greenvan.opetest.model.Answer;
 import tk.greenvan.opetest.model.Question;
-import tk.greenvan.opetest.model.Test;
+import tk.greenvan.opetest.model.UserTest;
 import tk.greenvan.opetest.util.SpaceDecoration;
 
 public class TestOverviewActivity extends AppCompatActivity {
@@ -66,7 +66,32 @@ public class TestOverviewActivity extends AppCompatActivity {
         rv_question_list_grid.setLayoutManager(new GridLayoutManager(this,5));
 
 
-        loadQuestionList();
+
+        //Buscamos el test en la lista de test del usuario. mejor si estuvieran ordenados
+        Common.selectedUserTest=new UserTest();
+        for(int i=0;i<Common.userTestList.size();i++){
+            UserTest u = Common.userTestList.get(i);
+            if (Common.selectedTest.getId().equals(u.getTestID())) {
+                Common.selectedUserTest = u;
+
+            }
+        }
+
+        Common.answerList = Common.selectedUserTest.getAnswerList();
+
+        if (Common.answerList.isEmpty()) {
+            //TODO remove this line, after implementing it on next activity
+            // loadQuestionList();
+            loadEmptyAnswerList(); //Cargar lista de preguntas en estado NO_ANSWER
+        } else {
+            Common.right_answer_count = Common.selectedUserTest.getRightAnswerCount();
+
+            int percent = Common.right_answer_count * 100 / Common.answerList.size() ;
+            tv_progress.setText(percent + "%");
+            tv_result.setText(getResult(percent));
+            tv_right_answer_and_total.setText(Common.right_answer_count+"/"+Common.answerList.size());
+        }
+
 
         //Set Adapter
         questionGridAdapter = new QuestionGridAdapter(this, Common.answerList);
@@ -74,12 +99,13 @@ public class TestOverviewActivity extends AppCompatActivity {
         rv_question_list_grid.setAdapter(questionGridAdapter);
 
 
+
+
         //Event filter
         btn_filter_total.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Common.filteredAnswerList.clear();
-                Common.filteredQuestionList.clear();
                 if(questionGridAdapter==null)
                     questionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.answerList);
 
@@ -91,11 +117,9 @@ public class TestOverviewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Common.filteredAnswerList.clear();
-                Common.filteredQuestionList.clear();
                 for(int i=0;i<Common.answerList.size();i++){
                     if(Common.answerList.get(i).getState()==Common.ANSWER_STATE.NO_ANSWER) {
                         Common.filteredAnswerList.add(Common.answerList.get(i));
-                        Common.filteredQuestionList.add(Common.questionList.get(i));
                     }
                 }
                 fiteredQuestionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.filteredAnswerList);
@@ -107,11 +131,9 @@ public class TestOverviewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Common.filteredAnswerList.clear();
-                Common.filteredQuestionList.clear();
                 for(int i=0;i<Common.answerList.size();i++){
                     if(Common.answerList.get(i).getState()==Common.ANSWER_STATE.RIGHT_ANSWER) {
                         Common.filteredAnswerList.add(Common.answerList.get(i));
-                        Common.filteredQuestionList.add(Common.questionList.get(i));
                     }
                 }
                 fiteredQuestionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.filteredAnswerList);
@@ -124,11 +146,9 @@ public class TestOverviewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Common.filteredAnswerList.clear();
-                Common.filteredQuestionList.clear();
                 for(int i=0;i<Common.answerList.size();i++){
                     if(Common.answerList.get(i).getState()==Common.ANSWER_STATE.WRONG_ANSWER) {
                         Common.filteredAnswerList.add(Common.answerList.get(i));
-                        Common.filteredQuestionList.add(Common.questionList.get(i));
                     }
                 }
                 fiteredQuestionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.filteredAnswerList);
@@ -150,6 +170,48 @@ public class TestOverviewActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void loadEmptyAnswerList(){
+
+        final AlertDialog dialog = new SpotsDialog.Builder()
+                .setContext(TestOverviewActivity.this)
+                .setCancelable(false)
+                .build();
+
+        if(!dialog.isShowing())
+            dialog.show();
+
+        Common.mTestReference
+                .child(Common.selectedTest.getId())
+                .child("question")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        for (DataSnapshot questionDataSnapshot:dataSnapshot.getChildren()) {
+                            Question question = questionDataSnapshot.getValue(Question.class);
+                            Answer answer = new Answer(question.getId(), Common.ANSWER_STATE.NO_ANSWER);
+                            Common.answerList.add(answer);
+                        }
+                        if (dialog.isShowing())
+                            dialog.dismiss();
+
+                        questionGridAdapter.notifyDataSetChanged();
+
+                        //Todas las preguntas están sin contestar
+                        Common.right_answer_count =0;
+
+                        int percent = Common.right_answer_count * 100 / Common.answerList.size() ;
+                        tv_progress.setText(percent + "%");
+                        tv_result.setText(getResult(percent));
+                        tv_right_answer_and_total.setText(Common.right_answer_count+"/"+Common.answerList.size());
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                        Toast.makeText(TestOverviewActivity.this,""+ databaseError.getMessage(),Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+    }
 
     public void loadQuestionList(){
 
@@ -168,25 +230,18 @@ public class TestOverviewActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Common.questionList.clear();
-                Common.answerList.clear();
                 for (DataSnapshot questionDataSnapshot:dataSnapshot.getChildren()) {
                     Question question = questionDataSnapshot.getValue(Question.class);
                     Common.questionList.add(question);
-
-                    //TODO get real answer List and not this dummy data
-                    Common.ANSWER_STATE state = Common.ANSWER_STATE.NO_ANSWER;
-                    if (question.getId() > 100)
-                        state = Common.ANSWER_STATE.WRONG_ANSWER;
-                    else if (question.getId() > 50)
-                        state = Common.ANSWER_STATE.RIGHT_ANSWER;
-
-                    Common.answerList.add(new Answer(question.getId(), state));
+                    Answer answer = new Answer(question.getId(), Common.ANSWER_STATE.NO_ANSWER);
+                    Common.answerList.add(answer);
                 }
                 if (dialog.isShowing())
                     dialog.dismiss();
 
                 questionGridAdapter.notifyDataSetChanged();
 
+                //TODO esto se hará fuera con answerListSize en lugar de questionList
                 int percent = Common.right_answer_count * 100 / Common.questionList.size() ;
                 tv_progress.setText(percent + "%");
                 tv_result.setText(getResult(percent));
@@ -213,68 +268,5 @@ public class TestOverviewActivity extends AppCompatActivity {
 
         return this.getString(R.string.bad);
     }
-    public void loadDummyData(){
-        Common.answerList.add(new Answer(10001, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(10002, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(10003, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(10004, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(100015, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(100016, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(100017, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(100018, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(100021, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(100031, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(100041, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(100051, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(10001, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(10002, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(3, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(4, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(15, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(16, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(17, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(18, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(21, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(31, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(41, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(51, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(1, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(2, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(3, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(4, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(15, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(16, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(17, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(18, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(21, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(31, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(41, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(51, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(1, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(2, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(3, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(4, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(15, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(16, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(17, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(18, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(21, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(31, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(41, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(51, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(1, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(2, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(3, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(4, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(15, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(16, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(17, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(18, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(21, Common.ANSWER_STATE.WRONG_ANSWER));
-        Common.answerList.add(new Answer(31, Common.ANSWER_STATE.NO_ANSWER));
-        Common.answerList.add(new Answer(41, Common.ANSWER_STATE.RIGHT_ANSWER));
-        Common.answerList.add(new Answer(51, Common.ANSWER_STATE.RIGHT_ANSWER));
 
-
-    }
 }
