@@ -15,7 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import tk.greenvan.opetest.QuestionActivity;
 import tk.greenvan.opetest.R;
+import tk.greenvan.opetest.TestOverviewActivity;
 import tk.greenvan.opetest.db.Common;
 import tk.greenvan.opetest.model.Answer;
 
@@ -75,8 +77,12 @@ public class QuestionGridAdapter extends RecyclerView.Adapter<QuestionGridAdapte
             btn_question.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //when user click to Question button, we will  show Question
+                    //when user click to QuestionActivity button, we will  show QuestionActivity
                     Toast.makeText(context,"Pressed on question " + answerList.get(getAdapterPosition()).getQuestionId(),Toast.LENGTH_SHORT).show();
+
+                    Common.selectedQuestion = Common.questionList.get(getAdapterPosition());  //Assign current question
+                    Intent intent = new Intent(context, QuestionActivity.class);
+                    context.startActivity(intent);
                 }
             });
         }

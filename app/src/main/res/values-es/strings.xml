@@ -11,4 +11,5 @@
     <string name="poor">Insuficiente</string>
     <string name="fair">Suficiente</string>
     <string name="bad">Muy deficiente</string>
+    <string name="title_activity_question">Pregunta</string>
 </resources>

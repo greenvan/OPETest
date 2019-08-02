@@ -9,6 +9,7 @@ import tk.greenvan.opetest.model.Answer;
 import tk.greenvan.opetest.model.Question;
 import tk.greenvan.opetest.model.Test;
 import tk.greenvan.opetest.model.UserTest;
+import tk.greenvan.opetest.ui.main.QuestionFragment;
 
 public class Common {
 
@@ -33,6 +34,9 @@ public class Common {
     public static int right_answer_count = 150;
     public static int wrong_answer_count = 0;
     public static int no_answer_count = 0;
+
+
+    public static List<QuestionFragment> fragmentList = new ArrayList<QuestionFragment>();
 
 
     public enum ANSWER_STATE {
