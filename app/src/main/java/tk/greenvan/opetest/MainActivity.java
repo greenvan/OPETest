@@ -23,15 +23,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.TreeMap;
 
 import dmax.dialog.SpotsDialog;
 import tk.greenvan.opetest.adapter.TestGridAdapter;
 import tk.greenvan.opetest.db.Common;
 import tk.greenvan.opetest.model.Answer;
-import tk.greenvan.opetest.model.Question;
 import tk.greenvan.opetest.model.Test;
 import tk.greenvan.opetest.model.UserTest;
 import tk.greenvan.opetest.util.SpaceDecoration;
@@ -139,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
         mUsername = ANONYMOUS;
         Common.username = ANONYMOUS;
         Common.testList.clear();
+        Common.userTestList.clear();
         testGridAdapter.notifyDataSetChanged();
     }
     @Override
@@ -216,6 +216,7 @@ public class MainActivity extends AppCompatActivity {
             dialog.show();*/
 
         Common.mUserTestReference = this.mFirebaseDatabase.getReference().child("userTests").child(mUsername);
+
         Common.mUserTestReference.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -227,11 +228,11 @@ public class MainActivity extends AppCompatActivity {
                             userTest.setTestID(userTestDataSnapshot.getKey());
 
 
-                            List<Answer> answerList = new ArrayList();
+                            TreeMap<Integer,Answer> answerList = new TreeMap<Integer,Answer>();
 
                             for (DataSnapshot answerDataSnapshot: userTestDataSnapshot.getChildren()) {
                                 Answer answer = answerDataSnapshot.getValue(Answer.class);
-                                answerList.add(answer);
+                                answerList.put(answer.getQuestionId(),answer);
                             }
 
                             userTest.setAnswerList(answerList);

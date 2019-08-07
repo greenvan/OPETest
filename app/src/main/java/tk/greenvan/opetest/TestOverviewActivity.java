@@ -7,20 +7,22 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.ui.auth.data.model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
+import java.util.TreeMap;
 
 import dmax.dialog.SpotsDialog;
 import tk.greenvan.opetest.adapter.QuestionGridAdapter;
@@ -39,7 +41,7 @@ public class TestOverviewActivity extends AppCompatActivity {
 
     RecyclerView rv_question_list_grid;
     QuestionGridAdapter questionGridAdapter;
-    QuestionGridAdapter fiteredQuestionGridAdapter;
+    QuestionGridAdapter filteredQuestionGridAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,7 @@ public class TestOverviewActivity extends AppCompatActivity {
 
         if(actionBar!=null){
             actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle(Common.selectedTest.getName());
         }
 
 
@@ -68,7 +71,7 @@ public class TestOverviewActivity extends AppCompatActivity {
 
         rv_question_list_grid = (RecyclerView)findViewById(R.id.rv_question_list_grid);
         rv_question_list_grid.setHasFixedSize(true);
-        rv_question_list_grid.setLayoutManager(new GridLayoutManager(this,5));
+        rv_question_list_grid.setLayoutManager(new GridLayoutManager(this,4));
 
 
 
@@ -85,17 +88,11 @@ public class TestOverviewActivity extends AppCompatActivity {
         Common.answerList = Common.selectedUserTest.getAnswerList();
 
         if (Common.answerList.isEmpty()) {
-            //TODO remove this line, after implementing it on next activity
-            // loadQuestionList();
             loadEmptyAnswerList(); //Cargar lista de preguntas y las respuestas en estado NO_ANSWER
         } else {
             // Si no está vacía, solo cargamos la lista de preguntas
             Common.right_answer_count = Common.selectedUserTest.getRightAnswerCount();
             loadQuestionList();
-            //int percent = Common.right_answer_count * 100 / Common.answerList.size() ;
-            //tv_progress.setText(percent + "%");
-            //tv_result.setText(getResult(percent));
-            //tv_right_answer_and_total.setText(Common.right_answer_count+"/"+Common.answerList.size());
         }
 
 
@@ -106,15 +103,16 @@ public class TestOverviewActivity extends AppCompatActivity {
 
 
 
+        //Inicialmente el filtro no está activado
+        Common.filteredAnswerList = Common.answerList;
 
         //Event filter
         btn_filter_total.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Common.filteredAnswerList.clear();
+                Common.filteredAnswerList = Common.answerList;
                 if(questionGridAdapter==null)
                     questionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.answerList);
-
                 rv_question_list_grid.setAdapter(questionGridAdapter);
             }
         });
@@ -122,28 +120,18 @@ public class TestOverviewActivity extends AppCompatActivity {
         btn_filter_no_answer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Common.filteredAnswerList.clear();
-                for(int i=0;i<Common.answerList.size();i++){
-                    if(Common.answerList.get(i).getState()==Common.ANSWER_STATE.NO_ANSWER) {
-                        Common.filteredAnswerList.add(Common.answerList.get(i));
-                    }
-                }
-                fiteredQuestionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.filteredAnswerList);
-                rv_question_list_grid.setAdapter(fiteredQuestionGridAdapter);
+                Common.filteredAnswerList=getFilteredAnswerList(Common.ANSWER_STATE.NO_ANSWER,Common.answerList);
+                filteredQuestionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.filteredAnswerList);
+                rv_question_list_grid.setAdapter(filteredQuestionGridAdapter);
             }
         });
 
         btn_filter_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Common.filteredAnswerList.clear();
-                for(int i=0;i<Common.answerList.size();i++){
-                    if(Common.answerList.get(i).getState()==Common.ANSWER_STATE.RIGHT_ANSWER) {
-                        Common.filteredAnswerList.add(Common.answerList.get(i));
-                    }
-                }
-                fiteredQuestionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.filteredAnswerList);
-                rv_question_list_grid.setAdapter(fiteredQuestionGridAdapter);
+                Common.filteredAnswerList=getFilteredAnswerList(Common.ANSWER_STATE.RIGHT_ANSWER,Common.answerList);
+                filteredQuestionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.filteredAnswerList);
+                rv_question_list_grid.setAdapter(filteredQuestionGridAdapter);
 
             }
         });
@@ -151,19 +139,54 @@ public class TestOverviewActivity extends AppCompatActivity {
         btn_filter_wrong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Common.filteredAnswerList.clear();
-                for(int i=0;i<Common.answerList.size();i++){
-                    if(Common.answerList.get(i).getState()==Common.ANSWER_STATE.WRONG_ANSWER) {
-                        Common.filteredAnswerList.add(Common.answerList.get(i));
-                    }
-                }
-                fiteredQuestionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.filteredAnswerList);
-                rv_question_list_grid.setAdapter(fiteredQuestionGridAdapter);
+                Common.filteredAnswerList=getFilteredAnswerList(Common.ANSWER_STATE.WRONG_ANSWER,Common.answerList);
+                filteredQuestionGridAdapter = new QuestionGridAdapter(TestOverviewActivity.this, Common.filteredAnswerList);
+                rv_question_list_grid.setAdapter(filteredQuestionGridAdapter);
 
             }
         });
 
 
+        //Show filtered questions
+        btn_show_questions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int position=0;
+                if (Common.filteredAnswerList.size()>0) {
+                    Answer answer = (new ArrayList<Answer>(Common.filteredAnswerList.values())).get(position);
+                    Common.selectedQuestion = Common.questionList.get(answer.getQuestionId());  //Assign current questionCommon.selectedIndex = position;
+                    Common.viewMode = Common.VIEW_MODE.VIEW;
+                    Intent intent = new Intent(v.getContext(), QuestionActivity.class);
+                    v.getContext().startActivity(intent);
+                } else {
+                    Toast.makeText(v.getContext(),R.string.no_questions_selected,Toast.LENGTH_SHORT).show();
+                }
+
+
+            }
+        });
+
+
+        //Do Test with selected questions
+        btn_do_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int position=0;
+                if (Common.filteredAnswerList.size()>0) {
+                    Answer answer = (new ArrayList<Answer>(Common.filteredAnswerList.values())).get(position);
+                    Common.selectedQuestion = Common.questionList.get(answer.getQuestionId());  //Assign current questionCommon.selectedIndex = position;
+                    Common.viewMode = Common.VIEW_MODE.TEST;
+                    Intent intent = new Intent(v.getContext(), QuestionActivity.class);
+                    v.getContext().startActivity(intent);
+                } else {
+                    Toast.makeText(v.getContext(),R.string.no_questions_selected,Toast.LENGTH_SHORT).show();
+                }
+
+
+            }
+        });
 
 
     }
@@ -193,19 +216,23 @@ public class TestOverviewActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         Common.questionList.clear();
+                        Common.answerList.clear();
+
                         for (DataSnapshot questionDataSnapshot:dataSnapshot.getChildren()) {
                             Question question = questionDataSnapshot.getValue(Question.class);
                             Answer answer = new Answer(question.getId(), Common.ANSWER_STATE.NO_ANSWER);
-                            Common.answerList.add(answer);
+                            Common.answerList.put(answer.getQuestionId(),answer);
+                            Common.mUserTestReference.child(Common.selectedTest.getId()).child(String.valueOf(question.getId())).setValue(answer);
 
-                            List<Option> optionList= new ArrayList<>();
+
+                            TreeMap<String,Option> optionList= new TreeMap<>();
                             for (DataSnapshot optionsDataSnapshot:questionDataSnapshot.child("answer").getChildren()) {
                                 Option option = optionsDataSnapshot.getValue(Option.class);
-                                optionList.add(option);
+                                optionList.put(option.getId(),option);
                             }
 
                             question.setOptionList(optionList);
-                            Common.questionList.add(question);
+                            Common.questionList.put(question.getId(),question);
 
                         }
                         if (dialog.isShowing())
@@ -216,10 +243,21 @@ public class TestOverviewActivity extends AppCompatActivity {
                         //Todas las preguntas están sin contestar
                         Common.right_answer_count =0;
 
+                        //Guardamos en la base de datos
+                        UserTest blankTest = new UserTest(Common.username,Common.selectedTest.getId(),Common.answerList);
+
+                        //TODO esto no esta bien eo eo
+                        Common.userTestList.add(blankTest);
+
+
                         int percent = Common.right_answer_count * 100 / Common.answerList.size() ;
                         tv_progress.setText(percent + "%");
                         tv_result.setText(getResult(percent));
                         tv_right_answer_and_total.setText(Common.right_answer_count+"/"+Common.answerList.size());
+
+
+                        btn_filter_total.setText(String.valueOf(Common.answerList.size()));
+                        btn_filter_right.setText(String.valueOf(Common.right_answer_count));
                     }
 
                     @Override
@@ -250,14 +288,14 @@ public class TestOverviewActivity extends AppCompatActivity {
                 for (DataSnapshot questionDataSnapshot:dataSnapshot.getChildren()) {
                     Question question = questionDataSnapshot.getValue(Question.class);
 
-                    List<Option> optionList= new ArrayList<>();
+                    TreeMap<String,Option> optionList= new TreeMap<>();
                     for (DataSnapshot optionsDataSnapshot:questionDataSnapshot.child("answer").getChildren()) {
                         Option option = optionsDataSnapshot.getValue(Option.class);
-                        optionList.add(option);
+                        optionList.put(option.getId(),option);
                     }
 
                     question.setOptionList(optionList);
-                    Common.questionList.add(question);
+                    Common.questionList.put(question.getId(),question);
                 }
                 if (dialog.isShowing())
                     dialog.dismiss();
@@ -269,6 +307,10 @@ public class TestOverviewActivity extends AppCompatActivity {
                 tv_progress.setText(percent + "%");
                 tv_result.setText(getResult(percent));
                 tv_right_answer_and_total.setText(Common.right_answer_count+"/"+Common.questionList.size());
+
+
+                btn_filter_total.setText(String.valueOf(Common.answerList.size()));
+                btn_filter_right.setText(String.valueOf(Common.right_answer_count));
             }
 
             @Override
@@ -286,10 +328,24 @@ public class TestOverviewActivity extends AppCompatActivity {
             return this.getString(R.string.good);
         if (percent> 50)
             return this.getString(R.string.fair);
-        if (percent> 40)
-            return this.getString(R.string.poor);
 
-        return this.getString(R.string.bad);
+        return this.getString(R.string.keep_trying);
+    }
+
+    public TreeMap<Integer,Answer> getFilteredAnswerList(Common.ANSWER_STATE state, TreeMap<Integer,Answer> originalList){
+
+        TreeMap<Integer,Answer> filteredList = new TreeMap<>();
+        Set<Integer> keys = originalList.keySet();
+
+        for (Integer key: keys
+        ) {
+            Answer a = originalList.get(key);
+            if (a.getState() == state) {
+                filteredList.put(a.getQuestionId(), a);
+            }else{
+            }
+        }
+        return filteredList;
     }
 
 }

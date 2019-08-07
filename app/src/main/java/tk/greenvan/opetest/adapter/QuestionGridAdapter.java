@@ -13,20 +13,22 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
 
 import tk.greenvan.opetest.QuestionActivity;
 import tk.greenvan.opetest.R;
-import tk.greenvan.opetest.TestOverviewActivity;
 import tk.greenvan.opetest.db.Common;
 import tk.greenvan.opetest.model.Answer;
+import tk.greenvan.opetest.model.Question;
 
 public class QuestionGridAdapter extends RecyclerView.Adapter<QuestionGridAdapter.MyViewHolder>  {
 
     Context context;
-    List<Answer> answerList;
+    TreeMap<Integer,Answer> answerList;
 
-    public QuestionGridAdapter(Context context, List<Answer> answerList) {
+    public QuestionGridAdapter(Context context, TreeMap<Integer,Answer> answerList) {
         this.context = context;
         this.answerList = answerList;
     }
@@ -41,16 +43,18 @@ public class QuestionGridAdapter extends RecyclerView.Adapter<QuestionGridAdapte
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        String questionLabel = context.getString(R.string.question) + " " + answerList.get(position).getQuestionId();
+        Answer answer = (new ArrayList<Answer>(answerList.values())).get(position);
+        //String questionLabel = context.getString(R.string.question) + " " + answer.getQuestionId();
+        String questionLabel = String.valueOf(answer.getQuestionId());
         holder.btn_question.setText(questionLabel);
 
         //Change color base and image on result
         Drawable img;
-        if(answerList.get(position).getState() == Common.ANSWER_STATE.RIGHT_ANSWER){
+        if(answer.getState() == Common.ANSWER_STATE.RIGHT_ANSWER){
             img = context.getDrawable(R.drawable.ic_check_white_24dp);
             holder.btn_question.setCompoundDrawablesWithIntrinsicBounds(null, null, null, img);
             holder.btn_question.setBackgroundColor(Color.parseColor("#99cc00"));
-        } else  if(answerList.get(position).getState() ==Common.ANSWER_STATE.WRONG_ANSWER){
+        } else  if(answer.getState() ==Common.ANSWER_STATE.WRONG_ANSWER){
             img = context.getDrawable(R.drawable.ic_clear_white_24dp);
             holder.btn_question.setCompoundDrawablesWithIntrinsicBounds(null, null, null, img);
             holder.btn_question.setBackgroundColor(Color.parseColor("#cc0000"));
@@ -78,9 +82,12 @@ public class QuestionGridAdapter extends RecyclerView.Adapter<QuestionGridAdapte
                 @Override
                 public void onClick(View v) {
                     //when user click to QuestionActivity button, we will  show QuestionActivity
-                    Toast.makeText(context,"Pressed on question " + answerList.get(getAdapterPosition()).getQuestionId(),Toast.LENGTH_SHORT).show();
+                    Answer answer = (new ArrayList<Answer>(answerList.values())).get(getAdapterPosition());
+                    //Toast.makeText(context,"Pressed on question " + answer.getQuestionId(),Toast.LENGTH_SHORT).show();
 
-                    Common.selectedQuestion = Common.questionList.get(getAdapterPosition());  //Assign current question
+                    Common.selectedQuestion = Common.questionList.get(answer.getQuestionId());  //Assign current question
+                    Common.selectedIndex = getAdapterPosition();
+                    Common.viewMode = Common.VIEW_MODE.VIEW;
                     Intent intent = new Intent(context, QuestionActivity.class);
                     context.startActivity(intent);
                 }

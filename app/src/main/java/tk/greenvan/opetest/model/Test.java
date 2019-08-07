@@ -2,13 +2,15 @@ package tk.greenvan.opetest.model;
 
 import androidx.annotation.NonNull;
 
-import java.util.List;
+
+import java.util.TreeMap;
+
 
 public class Test {
     private String id;
     private String name;
     private String photoUrl;
-    private List<Question> questions;
+    private TreeMap<Integer,Question> questions;
 
     public Test(){}
 
@@ -52,11 +54,11 @@ public class Test {
         this.photoUrl = photoUrl;
     }
 
-    public List<Question> getQuestions() {
+    public TreeMap<Integer,Question> getQuestions() {
         return questions;
     }
 
-    public void setQuestions(List<Question> questions) {
+    public void setQuestions(TreeMap<Integer,Question> questions) {
         this.questions = questions;
     }
 

@@ -1,18 +1,19 @@
 package tk.greenvan.opetest.model;
 
-import java.util.ArrayList;
-import java.util.List;
+
+
+import java.util.TreeMap;
 
 public class Question {
     private int id = 0;
     private String text = "";
     private String clue = "";
-    private List<Option> options = new ArrayList<>();
+    private TreeMap<String,Option> options = new TreeMap<>();
 
     public Question() {
     }
 
-    public Question(int id, String text, String clue, List<Option> options) {
+    public Question(int id, String text, String clue, TreeMap<String,Option> options) {
         this.id = id;
         this.text = text;
         this.clue = clue;
@@ -43,11 +44,11 @@ public class Question {
         this.clue = clue;
     }
 
-    public List<Option> getOptionList() {
+    public TreeMap<String,Option> getOptionList() {
         return options;
     }
 
-    public void setOptionList(List<Option> options) {
+    public void setOptionList(TreeMap<String,Option> options) {
         this.options = options;
     }
 

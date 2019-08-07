@@ -1,14 +1,14 @@
 package tk.greenvan.opetest.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
+import java.util.TreeMap;
 
 import tk.greenvan.opetest.db.Common;
 
 public class UserTest {
     private String username = "anonymous";
     private String testID = "";
-    private List<Answer> answerList = new ArrayList();
+    private TreeMap<Integer,Answer> answerList = new TreeMap<Integer,Answer> ();
 
     public UserTest() {
     }
@@ -17,7 +17,7 @@ public class UserTest {
         this.testID = testID;
     }
 
-    public UserTest(String username, String testID, List<Answer> answerList) {
+    public UserTest(String username, String testID, TreeMap<Integer,Answer> answerList) {
         this.username = username;
         this.testID = testID;
         this.answerList = answerList;
@@ -39,19 +39,20 @@ public class UserTest {
         this.testID = testID;
     }
 
-    public List<Answer> getAnswerList() {
+    public TreeMap<Integer,Answer>  getAnswerList() {
         return answerList;
     }
 
-    public void setAnswerList(List<Answer> answerList) {
+    public void setAnswerList(TreeMap<Integer,Answer>  answerList) {
         this.answerList = answerList;
     }
 
     public int getRightAnswerCount() {
         int counter=0;
-        for (Answer a: this.getAnswerList()
+        Set<Integer> keys = this.getAnswerList().keySet();
+        for (Integer key: keys
              ) {
-            if (a.getState() == Common.ANSWER_STATE.RIGHT_ANSWER)
+            if (this.getAnswerList().get(key).getState() == Common.ANSWER_STATE.RIGHT_ANSWER)
                 counter++;
         }
         return counter;

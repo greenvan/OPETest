@@ -1,17 +1,11 @@
 package tk.greenvan.opetest.model;
 
-import android.util.TimeUtils;
-
-import java.sql.Time;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 import tk.greenvan.opetest.db.Common;
 
 public class Answer {
     private int questionId = 0;
     private Common.ANSWER_STATE state = Common.ANSWER_STATE.NO_ANSWER;
-    //private Date lastAcess = new Date(System.currentTimeMillis());
     private long lastAcess = System.currentTimeMillis();
 
     public Answer() {

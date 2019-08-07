@@ -2,14 +2,14 @@
 <resources>
     <string name="app_name">OPETest</string>
     <string name="sign_out">Cerrar sesión</string>
-    <string name="show_questions">Mostrar preguntas seleccionadas</string>
+    <string name="show_questions">Mostrar preguntas</string>
     <string name="do_random_test">Test rápido aleatorio</string>
     <string name="do_test">Hacer test</string>
     <string name="question">Pregunta</string>
     <string name="excellent">Excelente</string>
     <string name="good">Bien</string>
-    <string name="poor">Insuficiente</string>
     <string name="fair">Suficiente</string>
-    <string name="bad">Muy deficiente</string>
-    <string name="title_activity_question">Pregunta</string>
+    <string name="finish_game">Acabar Test</string>
+    <string name="keep_trying">¡Ánimo!</string>
+    <string name="no_questions_selected">No hay preguntas seleccionadas</string>
 </resources>
