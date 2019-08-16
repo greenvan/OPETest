@@ -1,16 +1,13 @@
-package tk.greenvan.opetest.ui.main;
+package tk.greenvan.opetest.ui.question;
 
 import android.content.Context;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import java.util.List;
-
-import tk.greenvan.opetest.R;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -18,9 +15,6 @@ import tk.greenvan.opetest.R;
  */
 public class QuestionFragmentAdapter extends FragmentPagerAdapter {
 
-    //TODO remove this lines
-    // @StringRes
-    //private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
     private final Context mContext;
     private List<QuestionFragment> mFragmentList;
 
@@ -41,10 +35,7 @@ public class QuestionFragmentAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        //TODO remove
-        // return mContext.getResources().getString(TAB_TITLES[position]);
         return String.valueOf(mFragmentList.get(position).getArguments().getInt("question_id"));
-        //return String.valueOf(position);
     }
 
     @Override

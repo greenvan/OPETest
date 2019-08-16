@@ -1,4 +1,4 @@
-package tk.greenvan.opetest.ui.main;
+package tk.greenvan.opetest.ui.question;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;
@@ -6,11 +6,9 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Transformations;
 import androidx.lifecycle.ViewModel;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.TreeMap;
 
-import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.common.Common;
 import tk.greenvan.opetest.model.Option;
 
 public class PageViewModel extends ViewModel {
@@ -31,7 +29,7 @@ public class PageViewModel extends ViewModel {
         }
     });
 
-    //TODO eliminate all this fields after fixing recycler view
+    //TODO Future line, all this mOption fields will be deleted after implementing a recyclerview
     private LiveData<Option> mOptionA = Transformations.map(mIndex, new Function<Integer, Option>() {
         @Override
         public Option apply(Integer input) {
@@ -89,6 +87,9 @@ public class PageViewModel extends ViewModel {
         return mOptions;
     }
 
+    public MutableLiveData<Integer> getIndex() {
+        return mIndex;
+    }
 
     public LiveData<Option> getOptionA() {
         return mOptionA;

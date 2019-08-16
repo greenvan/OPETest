@@ -11,22 +11,95 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
-            android:text="@string/app_name"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/ll_check_finish_game"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/appbar_padding"
+                    android:paddingTop="@dimen/appbar_padding"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+                <LinearLayout
+                    android:id="@+id/ll_counters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/appbar_padding">
+
+                    <TextView
+                        android:id="@+id/tv_right_answer_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_question_right_answer"
+                        android:padding="8dp"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tv_wrong_answer_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/grid_question_wrong_answer"
+                        android:padding="8dp"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="00:00"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_check_finish_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/appbar_padding">
+
+                <View
+                    android:id="@+id/check_finish_game"
+                    android:layout_width="35dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ic_exit_to_app_white_24dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tl_question_tabs"
             android:layout_width="match_parent"
-            app:tabMode="scrollable"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary" />
+            android:background="?attr/colorPrimary"
+            app:tabMode="scrollable" />
     </com.google.android.material.appbar.AppBarLayout>
 
 
@@ -43,4 +116,6 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@drawable/ic_info_outline_white_24dp" />
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

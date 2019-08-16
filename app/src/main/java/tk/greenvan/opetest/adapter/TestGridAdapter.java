@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -16,7 +15,7 @@ import java.util.List;
 
 import tk.greenvan.opetest.R;
 import tk.greenvan.opetest.TestOverviewActivity;
-import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.common.Common;
 import tk.greenvan.opetest.model.Test;
 
 public class TestGridAdapter extends RecyclerView.Adapter<TestGridAdapter.MyViewHolder>  {

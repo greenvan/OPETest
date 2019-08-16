@@ -1,14 +1,11 @@
 package tk.greenvan.opetest.model;
 
-import java.util.Set;
 import java.util.TreeMap;
-
-import tk.greenvan.opetest.db.Common;
 
 public class UserTest {
     private String username = "anonymous";
     private String testID = "";
-    private TreeMap<Integer,Answer> answerList = new TreeMap<Integer,Answer> ();
+    private TreeMap<Integer, Answer> answerList = new TreeMap<>();
 
     public UserTest() {
     }
@@ -47,14 +44,4 @@ public class UserTest {
         this.answerList = answerList;
     }
 
-    public int getRightAnswerCount() {
-        int counter=0;
-        Set<Integer> keys = this.getAnswerList().keySet();
-        for (Integer key: keys
-             ) {
-            if (this.getAnswerList().get(key).getState() == Common.ANSWER_STATE.RIGHT_ANSWER)
-                counter++;
-        }
-        return counter;
-    }
 }

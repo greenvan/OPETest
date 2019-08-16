@@ -1,21 +1,28 @@
 package tk.greenvan.opetest;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.AlertDialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.firebase.ui.auth.data.model.User;
+import com.afollestad.materialdialogs.DialogAction;
+import com.afollestad.materialdialogs.MaterialDialog;
+import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -26,7 +33,7 @@ import java.util.TreeMap;
 
 import dmax.dialog.SpotsDialog;
 import tk.greenvan.opetest.adapter.QuestionGridAdapter;
-import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.common.Common;
 import tk.greenvan.opetest.model.Answer;
 import tk.greenvan.opetest.model.Option;
 import tk.greenvan.opetest.model.Question;
@@ -34,6 +41,8 @@ import tk.greenvan.opetest.model.UserTest;
 import tk.greenvan.opetest.util.SpaceDecoration;
 
 public class TestOverviewActivity extends AppCompatActivity {
+
+    private static final int CODE_GET_RESULT = 9999;
 
     TextView tv_progress, tv_result, tv_right_answer_and_total;
     Button btn_filter_total, btn_filter_right, btn_filter_wrong, btn_filter_no_answer;
@@ -48,36 +57,37 @@ public class TestOverviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_overview);
 
+        //Display home arrow in actionBar
         ActionBar actionBar = this.getSupportActionBar();
-
         if(actionBar!=null){
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setTitle(Common.selectedTest.getName());
         }
 
+        // Find all GUI components
+        //1. Header
+        tv_progress = findViewById(R.id.tv_progress);
+        tv_result = findViewById(R.id.tv_result);
+        tv_right_answer_and_total = findViewById(R.id.tv_right_answer_and_total);
 
-        tv_progress = (TextView)findViewById(R.id.tv_progress);
-        tv_result = (TextView)findViewById(R.id.tv_result);
-        tv_right_answer_and_total = (TextView)findViewById(R.id.tv_right_answer_and_total);
+        //2. Button bar
+        btn_show_questions = findViewById(R.id.btn_show_questions);
+        btn_do_test = findViewById(R.id.btn_do_test);
+        btn_random_test = findViewById(R.id.btn_random_test);
 
-        btn_filter_total = (Button)findViewById(R.id.btn_filter_total);
-        btn_filter_right = (Button)findViewById(R.id.btn_filter_right_answer);
-        btn_filter_wrong = (Button)findViewById(R.id.btn_filter_wrong_answer);
-        btn_filter_no_answer = (Button)findViewById(R.id.btn_filter_no_answer);
+        //3. Filter buttons for question grid
+        btn_filter_total = findViewById(R.id.btn_filter_total);
+        btn_filter_right = findViewById(R.id.btn_filter_right_answer);
+        btn_filter_wrong = findViewById(R.id.btn_filter_wrong_answer);
+        btn_filter_no_answer = findViewById(R.id.btn_filter_no_answer);
 
-        btn_show_questions = (Button)findViewById(R.id.btn_show_questions);
-        btn_do_test = (Button)findViewById(R.id.btn_do_test);
-        btn_random_test = (Button)findViewById(R.id.btn_random_test);
-
-        rv_question_list_grid = (RecyclerView)findViewById(R.id.rv_question_list_grid);
-        rv_question_list_grid.setHasFixedSize(true);
-        rv_question_list_grid.setLayoutManager(new GridLayoutManager(this,4));
-
+        //4. Question grid
+        rv_question_list_grid = findViewById(R.id.rv_question_list_grid);
 
 
         //Buscamos el test en la lista de test del usuario. mejor si estuvieran ordenados
         Common.selectedUserTest=new UserTest();
-        for(int i=0;i<Common.userTestList.size();i++){
+        for(int i = 0; i<Common.userTestList.size(); i++){
             UserTest u = Common.userTestList.get(i);
             if (Common.selectedTest.getId().equals(u.getTestID())) {
                 Common.selectedUserTest = u;
@@ -85,28 +95,37 @@ public class TestOverviewActivity extends AppCompatActivity {
             }
         }
 
+        //Cargamos la lista de respuestas del usuario para este test
         Common.answerList = Common.selectedUserTest.getAnswerList();
 
+        //Si no existen respuestas para este test cargamos una lista vacía junto con
         if (Common.answerList.isEmpty()) {
-            loadEmptyAnswerList(); //Cargar lista de preguntas y las respuestas en estado NO_ANSWER
+            loadQuestionsWithEmptyAnswerList(); //Cargar lista de preguntas y las respuestas en estado NO_ANSWER
+
+            //Todas las preguntas están sin contestar
+            Common.right_answer_count = 0;
+            Common.wrong_answer_count = 0;
         } else {
             // Si no está vacía, solo cargamos la lista de preguntas
-            Common.right_answer_count = Common.selectedUserTest.getRightAnswerCount();
-            loadQuestionList();
+            loadQuestions();
+            loadCounters(Common.selectedUserTest);
         }
 
 
+        //Configuramos el Question grid
+        rv_question_list_grid.setHasFixedSize(true);
+        rv_question_list_grid.setLayoutManager(new GridLayoutManager(this, 4));
         //Set Adapter
         questionGridAdapter = new QuestionGridAdapter(this, Common.answerList);
         rv_question_list_grid.addItemDecoration(new SpaceDecoration(4));
         rv_question_list_grid.setAdapter(questionGridAdapter);
 
 
-
+        // Event filter ---------------------
         //Inicialmente el filtro no está activado
         Common.filteredAnswerList = Common.answerList;
 
-        //Event filter
+        // No filter, all questions active
         btn_filter_total.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -117,6 +136,7 @@ public class TestOverviewActivity extends AppCompatActivity {
             }
         });
 
+        // Filter questions with no answer
         btn_filter_no_answer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,6 +146,7 @@ public class TestOverviewActivity extends AppCompatActivity {
             }
         });
 
+        // Filter right answers
         btn_filter_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,6 +157,7 @@ public class TestOverviewActivity extends AppCompatActivity {
             }
         });
 
+        //Filter wrong answers
         btn_filter_wrong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -172,23 +194,170 @@ public class TestOverviewActivity extends AppCompatActivity {
         btn_do_test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                int position=0;
-                if (Common.filteredAnswerList.size()>0) {
-                    Answer answer = (new ArrayList<Answer>(Common.filteredAnswerList.values())).get(position);
-                    Common.selectedQuestion = Common.questionList.get(answer.getQuestionId());  //Assign current questionCommon.selectedIndex = position;
-                    Common.viewMode = Common.VIEW_MODE.TEST;
-                    Intent intent = new Intent(v.getContext(), QuestionActivity.class);
-                    v.getContext().startActivity(intent);
-                } else {
-                    Toast.makeText(v.getContext(),R.string.no_questions_selected,Toast.LENGTH_SHORT).show();
-                }
-
-
+                doTest();
             }
         });
 
+        //Do Quick Test with selected questions
+        btn_random_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                doQuickTest();
+            }
+        });
 
+        loadGUIdata();
+    }
+
+    private void loadGUIdata() {
+        int total = Common.answerList.size();
+        int percent = 0;
+        if (total != 0)
+            percent = Common.right_answer_count * 100 / total;
+        tv_progress.setText(percent + "%");
+        tv_result.setText(getResult(percent));
+        tv_right_answer_and_total.setText(Common.right_answer_count + "/" + Common.answerList.size());
+
+
+        btn_filter_total.setText(String.valueOf(Common.answerList.size()));
+        btn_filter_right.setText(String.valueOf(Common.right_answer_count));
+        btn_filter_wrong.setText(String.valueOf(Common.wrong_answer_count));
+        btn_filter_no_answer.setText(String.valueOf(Common.answerList.size() - Common.right_answer_count - Common.wrong_answer_count));
+    }
+
+    private void doTest() {
+
+        final Context context = TestOverviewActivity.this;
+        View test_dialog_layout = LayoutInflater.from(this)
+                .inflate(R.layout.new_test_dialog, null);
+
+        //Find elements of the dialog
+        final EditText et_num_question = test_dialog_layout.findViewById(R.id.et_num_question);
+        final EditText et_start_question = test_dialog_layout.findViewById(R.id.et_start_question);
+        final CheckBox ckb_no_answer = test_dialog_layout.findViewById(R.id.ckb_no_answer);
+        final CheckBox ckb_right = test_dialog_layout.findViewById(R.id.ckb_right);
+        final CheckBox ckb_wrong = test_dialog_layout.findViewById(R.id.ckb_wrong);
+
+        et_num_question.setText("" + Common.answerList.size());
+
+        //Show dialog
+        new MaterialStyledDialog.Builder(context)
+                .setTitle(getString(R.string.do_quiz))
+                .setIcon(R.drawable.ic_mood_black_24dp)
+                .setDescription(getString(R.string.do_quiz_and_delete))
+                .setCustomView(test_dialog_layout)
+                .setNegativeText(getString(R.string.no))
+                .onNegative(new MaterialDialog.SingleButtonCallback() {
+                    @Override
+                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                        dialog.dismiss();
+                    }
+                })
+                .setPositiveText(getString(R.string.yes))
+                .onPositive(new MaterialDialog.SingleButtonCallback() {
+                    @Override
+                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                        dialog.dismiss();
+
+                        Common.viewMode = Common.VIEW_MODE.TEST;
+                        //Nueva actividad Question con parámetros
+                        //Filtros: num_questions, start_question, include_no_answer, include_right, include_wrong.
+
+                        int num_questions = new Integer(et_num_question.getText().toString()).intValue();
+                        int start_question = new Integer(et_start_question.getText().toString()).intValue();
+
+                        boolean include_no_answer = ckb_no_answer.isChecked();
+                        boolean include_right = ckb_right.isChecked();
+                        boolean include_wrong = ckb_wrong.isChecked();
+
+                        Intent intent = new Intent(context, QuestionActivity.class);
+                        intent.putExtra("num_questions", num_questions);
+                        intent.putExtra("start_question", start_question);
+                        intent.putExtra("include_no_answer", include_no_answer);
+                        intent.putExtra("include_right", include_right);
+                        intent.putExtra("include_wrong", include_wrong);
+
+                        //Debe obtener un resultado, si al volver del test hay que actualizar campos, lista y etc.
+                        //context.startActivity(intent);
+                        ((TestOverviewActivity) context).startActivityForResult(intent, CODE_GET_RESULT);
+
+                    }
+                }).show();
+
+
+    }
+
+    private void doQuickTest() {
+
+        final Context context = TestOverviewActivity.this;
+        View test_dialog_layout = LayoutInflater.from(this)
+                .inflate(R.layout.new_quick_test_dialog, null);
+
+        //Find elements of the dialog
+        final CheckBox ckb_no_answer = test_dialog_layout.findViewById(R.id.ckb_no_answer);
+        final CheckBox ckb_right = test_dialog_layout.findViewById(R.id.ckb_right);
+        final CheckBox ckb_wrong = test_dialog_layout.findViewById(R.id.ckb_wrong);
+
+        //Show dialog
+        new MaterialStyledDialog.Builder(context)
+                .setTitle(getString(R.string.do_quiz))
+                .setIcon(R.drawable.ic_mood_black_24dp)
+                .setDescription(getString(R.string.do_quiz_and_delete))
+                .setCustomView(test_dialog_layout)
+                .setNegativeText(getString(R.string.no))
+                .onNegative(new MaterialDialog.SingleButtonCallback() {
+                    @Override
+                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                        dialog.dismiss();
+                    }
+                })
+                .setPositiveText(getString(R.string.yes))
+                .onPositive(new MaterialDialog.SingleButtonCallback() {
+                    @Override
+                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                        dialog.dismiss();
+
+                        Common.viewMode = Common.VIEW_MODE.QUICKTEST;
+                        //Nueva actividad Question con parámetros
+                        //Filtros:  include_no_answer, include_right, include_wrong.
+
+                        boolean include_no_answer = ckb_no_answer.isChecked();
+                        boolean include_right = ckb_right.isChecked();
+                        boolean include_wrong = ckb_wrong.isChecked();
+
+                        Intent intent = new Intent(context, QuestionActivity.class);
+                        intent.putExtra("include_no_answer", include_no_answer);
+                        intent.putExtra("include_right", include_right);
+                        intent.putExtra("include_wrong", include_wrong);
+
+                        //Debe obtener un resultado, si al volver del test hay que actualizar campos, lista y etc.
+                        //context.startActivity(intent);
+                        ((TestOverviewActivity) context).startActivityForResult(intent, CODE_GET_RESULT);
+
+                    }
+                }).show();
+
+
+    }
+
+
+    private void loadCounters(UserTest userTest) {
+        Common.right_answer_count = 0;
+        Common.wrong_answer_count = 0;
+        Set<Integer> keys = userTest.getAnswerList().keySet();
+        for (Integer key : keys
+        ) {
+            switch (userTest.getAnswerList().get(key).getState()) {
+                case RIGHT_ANSWER:
+                    Common.right_answer_count++;
+                    break;
+                case WRONG_ANSWER:
+                    Common.wrong_answer_count++;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     @Override
@@ -199,7 +368,7 @@ public class TestOverviewActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void loadEmptyAnswerList(){
+    public void loadQuestionsWithEmptyAnswerList() {
 
         final AlertDialog dialog = new SpotsDialog.Builder()
                 .setContext(TestOverviewActivity.this)
@@ -218,10 +387,12 @@ public class TestOverviewActivity extends AppCompatActivity {
                         Common.questionList.clear();
                         Common.answerList.clear();
 
+
                         for (DataSnapshot questionDataSnapshot:dataSnapshot.getChildren()) {
                             Question question = questionDataSnapshot.getValue(Question.class);
                             Answer answer = new Answer(question.getId(), Common.ANSWER_STATE.NO_ANSWER);
                             Common.answerList.put(answer.getQuestionId(),answer);
+                            //Guardar en la base de datos
                             Common.mUserTestReference.child(Common.selectedTest.getId()).child(String.valueOf(question.getId())).setValue(answer);
 
 
@@ -238,26 +409,10 @@ public class TestOverviewActivity extends AppCompatActivity {
                         if (dialog.isShowing())
                             dialog.dismiss();
 
+                        //Actualizar la interfaz gráfica
                         questionGridAdapter.notifyDataSetChanged();
+                        loadGUIdata();
 
-                        //Todas las preguntas están sin contestar
-                        Common.right_answer_count =0;
-
-                        //Guardamos en la base de datos
-                        UserTest blankTest = new UserTest(Common.username,Common.selectedTest.getId(),Common.answerList);
-
-                        //TODO esto no esta bien eo eo
-                        Common.userTestList.add(blankTest);
-
-
-                        int percent = Common.right_answer_count * 100 / Common.answerList.size() ;
-                        tv_progress.setText(percent + "%");
-                        tv_result.setText(getResult(percent));
-                        tv_right_answer_and_total.setText(Common.right_answer_count+"/"+Common.answerList.size());
-
-
-                        btn_filter_total.setText(String.valueOf(Common.answerList.size()));
-                        btn_filter_right.setText(String.valueOf(Common.right_answer_count));
                     }
 
                     @Override
@@ -268,7 +423,7 @@ public class TestOverviewActivity extends AppCompatActivity {
 
     }
 
-    public void loadQuestionList(){
+    public void loadQuestions() {
 
         final AlertDialog dialog = new SpotsDialog.Builder()
                 .setContext(TestOverviewActivity.this)
@@ -286,6 +441,7 @@ public class TestOverviewActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Common.questionList.clear();
                 for (DataSnapshot questionDataSnapshot:dataSnapshot.getChildren()) {
+
                     Question question = questionDataSnapshot.getValue(Question.class);
 
                     TreeMap<String,Option> optionList= new TreeMap<>();
@@ -302,15 +458,6 @@ public class TestOverviewActivity extends AppCompatActivity {
 
                 questionGridAdapter.notifyDataSetChanged();
 
-                //TODO esto se hará fuera con answerListSize en lugar de questionList
-                int percent = Common.right_answer_count * 100 / Common.questionList.size() ;
-                tv_progress.setText(percent + "%");
-                tv_result.setText(getResult(percent));
-                tv_right_answer_and_total.setText(Common.right_answer_count+"/"+Common.questionList.size());
-
-
-                btn_filter_total.setText(String.valueOf(Common.answerList.size()));
-                btn_filter_right.setText(String.valueOf(Common.right_answer_count));
             }
 
             @Override
@@ -342,10 +489,17 @@ public class TestOverviewActivity extends AppCompatActivity {
             Answer a = originalList.get(key);
             if (a.getState() == state) {
                 filteredList.put(a.getQuestionId(), a);
-            }else{
             }
         }
         return filteredList;
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        Common.filteredAnswerList = Common.answerList;
+        loadCounters(Common.selectedUserTest);
+        loadGUIdata();
+        questionGridAdapter.notifyDataSetChanged();
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 }

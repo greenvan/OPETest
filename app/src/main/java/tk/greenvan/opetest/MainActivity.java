@@ -19,7 +19,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
@@ -29,7 +28,7 @@ import java.util.TreeMap;
 
 import dmax.dialog.SpotsDialog;
 import tk.greenvan.opetest.adapter.TestGridAdapter;
-import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.common.Common;
 import tk.greenvan.opetest.model.Answer;
 import tk.greenvan.opetest.model.Test;
 import tk.greenvan.opetest.model.UserTest;
@@ -64,10 +63,12 @@ public class MainActivity extends AppCompatActivity {
         Common.mTestReference = this.mFirebaseDatabase.getReference().child("tests");
         //Los datos se cargan tras autentificar: loadTestList();
 
+        //TODO cuando no hay conexión, mostrar error y no quedarse "loading..."
+
 
 
         /* TEST GRID */
-        rv_test_grid = (RecyclerView) findViewById(R.id.rv_test_list_grid);
+        rv_test_grid = findViewById(R.id.rv_test_list_grid);
         rv_test_grid.setHasFixedSize(true);
         rv_test_grid.setLayoutManager(new GridLayoutManager(this,2));
 

@@ -8,20 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.TreeMap;
 
 import tk.greenvan.opetest.QuestionActivity;
 import tk.greenvan.opetest.R;
-import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.common.Common;
 import tk.greenvan.opetest.model.Answer;
-import tk.greenvan.opetest.model.Question;
 
 public class QuestionGridAdapter extends RecyclerView.Adapter<QuestionGridAdapter.MyViewHolder>  {
 
@@ -77,7 +74,7 @@ public class QuestionGridAdapter extends RecyclerView.Adapter<QuestionGridAdapte
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            btn_question=(Button)itemView.findViewById(R.id.btn_question);
+            btn_question = itemView.findViewById(R.id.btn_question);
             btn_question.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

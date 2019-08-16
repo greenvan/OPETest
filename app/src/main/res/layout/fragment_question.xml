@@ -2,176 +2,182 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.QuestionFragment">
+    android:orientation="vertical"
+    tools:context=".ui.question.QuestionFragment">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".ui.main.QuestionFragment">
+        android:orientation="vertical"
+        tools:context=".ui.question.QuestionFragment">
 
-    <TextView
-        android:id="@+id/tv_question_text"
-        android:text="Question text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:textSize="18sp"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin" />
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_margin="16dp"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_option_a"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tv_question_text"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            app:cardCornerRadius="4dp"
-            app:elevation="14dp">
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="Question text"
+            android:textSize="18sp" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/tv_option_a"
-                    android:padding="8dp"
-                    android:text="XA. Temporal Option Text"
-                    android:textColor="@android:color/white"
-                    android:background="@drawable/grid_question_no_answer"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_option_b"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            app:cardCornerRadius="4dp"
-            app:elevation="14dp">
+            android:layout_height="match_parent">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tv_option_b"
-                    android:padding="8dp"
-                    android:text="XB. Temporal Option Text"
-                    android:textColor="@android:color/white"
-                    android:background="@drawable/grid_question_no_answer"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_option_a"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:elevation="14dp">
 
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_option_c"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            app:cardCornerRadius="4dp"
-            app:elevation="14dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_option_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/grid_question_no_answer"
+                            android:padding="8dp"
+                            android:text="XA. Temporal Option Text"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/tv_option_c"
-                    android:padding="8dp"
-                    android:text="XC. Temporal Option Text"
-                    android:textColor="@android:color/white"
-                    android:background="@drawable/grid_question_no_answer"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_option_b"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:elevation="14dp">
 
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_option_d"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            app:cardCornerRadius="4dp"
-            app:elevation="14dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_option_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/grid_question_no_answer"
+                            android:padding="8dp"
+                            android:text="XB. Temporal Option Text"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/tv_option_d"
-                    android:padding="8dp"
-                    android:text="XD. Temporal Option Text"
-                    android:textColor="@android:color/white"
-                    android:background="@drawable/grid_question_no_answer"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_option_c"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:elevation="14dp">
 
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_option_e"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            app:cardCornerRadius="4dp"
-            app:elevation="14dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_option_c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/grid_question_no_answer"
+                            android:padding="8dp"
+                            android:text="XC. Temporal Option Text"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/tv_option_e"
-                    android:padding="8dp"
-                    android:text="XE. Temporal Option Text"
-                    android:textColor="@android:color/white"
-                    android:background="@drawable/grid_question_no_answer"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    android:layout_centerInParent="true"
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_option_d"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:elevation="14dp">
 
-        </androidx.cardview.widget.CardView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-</LinearLayout>
-    </ScrollView>
+                        <TextView
+                            android:id="@+id/tv_option_d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/grid_question_no_answer"
+                            android:padding="8dp"
+                            android:text="XD. Temporal Option Text"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_option_e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:elevation="14dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_option_e"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/grid_question_no_answer"
+                            android:padding="8dp"
+                            android:text="XE. Temporal Option Text"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
 
 
-</LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

@@ -1,7 +1,7 @@
 package tk.greenvan.opetest.model;
 
 
-import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.common.Common;
 
 public class Answer {
     private int questionId = 0;

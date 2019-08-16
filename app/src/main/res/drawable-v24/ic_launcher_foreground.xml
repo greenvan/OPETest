@@ -4,6 +4,7 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+    <!--TODO diseñar un logo para la app-->
 
     <path android:fillColor="#FFFFFF"
         android:fillType="nonZero"

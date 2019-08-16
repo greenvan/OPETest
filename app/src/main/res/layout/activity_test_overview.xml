@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -12,6 +11,7 @@
 
     <LinearLayout
         android:layout_margin="8dp"
+        android:baselineAligned="false"
         android:weightSum="4"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -26,9 +26,9 @@
 
             <TextView
                 android:id="@+id/tv_progress"
-                android:text="100%"
-                android:layout_marginLeft="20dp"
-                android:textSize="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/loader0p"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -46,9 +46,9 @@
                 android:id="@+id/tv_result"
                 android:background="@drawable/border_bg"
                 android:textAlignment="center"
-                android:text="SUCCESS"
+                android:text="@string/excellent"
                 android:padding="16dp"
-                android:textSize="20dp"
+                android:textSize="26sp"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -64,12 +64,12 @@
 
             <TextView
                 android:id="@+id/tv_right_answer_and_total"
-                android:text="30/30"
-                android:layout_marginLeft="20dp"
-                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
                 android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:text="@string/loader0of0"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -123,29 +123,29 @@
 
         <Button
             android:id="@+id/btn_filter_total"
-            android:text="30"
-            android:drawableLeft="@drawable/ic_format_align_justify_black_24dp"
+            android:drawableStart="@drawable/ic_format_align_justify_black_24dp"
+            android:text="@string/loader0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btn_filter_right_answer"
-            android:text="30"
-            android:drawableLeft="@drawable/ic_check_black_24dp"
+            android:drawableStart="@drawable/ic_check_black_24dp"
+            android:text="@string/loader0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btn_filter_wrong_answer"
-            android:text="30"
-            android:drawableLeft="@drawable/ic_clear_black_24dp"
+            android:drawableStart="@drawable/ic_clear_black_24dp"
+            android:text="@string/loader0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btn_filter_no_answer"
-            android:text="30"
-            android:drawableLeft="@drawable/ic_error_outline_black_24dp"
+            android:drawableStart="@drawable/ic_error_outline_black_24dp"
+            android:text="@string/loader0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
