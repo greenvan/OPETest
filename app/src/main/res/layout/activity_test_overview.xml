@@ -66,10 +66,10 @@
                 android:id="@+id/tv_right_answer_and_total"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="16dp"
                 android:textStyle="bold"
                 android:text="@string/loader0of0"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
 

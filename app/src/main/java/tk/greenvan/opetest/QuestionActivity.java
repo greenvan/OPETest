@@ -159,7 +159,8 @@ public class QuestionActivity extends AppCompatActivity {
         genFragmentList();
 
 
-        QuestionFragmentAdapter questionFragmentAdapter = new QuestionFragmentAdapter(this, getSupportFragmentManager(),Common.fragmentList);
+        QuestionFragmentAdapter questionFragmentAdapter =
+                new QuestionFragmentAdapter(this, getSupportFragmentManager(), Common.fragmentList);
         viewPager.setAdapter(questionFragmentAdapter);
 
 

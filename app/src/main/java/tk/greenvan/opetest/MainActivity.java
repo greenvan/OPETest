@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mFirebaseAuth = FirebaseAuth.getInstance();
 
+        //TODO en modo Offline, se cargan desde SQLite
         Common.mTestReference = this.mFirebaseDatabase.getReference().child("tests");
         //Los datos se cargan tras autentificar: loadTestList();
 
