@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,7 +34,8 @@ import java.util.TreeMap;
 
 import dmax.dialog.SpotsDialog;
 import tk.greenvan.opetest.adapter.QuestionGridAdapter;
-import tk.greenvan.opetest.common.Common;
+import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.db.OfflineDB;
 import tk.greenvan.opetest.model.Answer;
 import tk.greenvan.opetest.model.Option;
 import tk.greenvan.opetest.model.Question;
@@ -85,20 +87,31 @@ public class TestOverviewActivity extends AppCompatActivity {
         rv_question_list_grid = findViewById(R.id.rv_question_list_grid);
 
 
-        //Buscamos el test en la lista de test del usuario. mejor si estuvieran ordenados
-        Common.selectedUserTest=new UserTest();
-        for(int i = 0; i<Common.userTestList.size(); i++){
-            UserTest u = Common.userTestList.get(i);
-            if (Common.selectedTest.getId().equals(u.getTestID())) {
-                Common.selectedUserTest = u;
-
+        if (Common.Mode == Common.MODE.ONLINE) {//TODO: En modo mixto también sería esta parte online
+            //Buscamos el test en la lista de test del usuario. mejor si estuvieran ordenados
+            Common.selectedUserTest = new UserTest();
+            for (int i = 0; i < Common.userTestList.size(); i++) {
+                UserTest u = Common.userTestList.get(i);
+                if (Common.selectedTest.getId().equals(u.getTestID())) {
+                    Common.selectedUserTest = u;
+                }
             }
+        } else {
+            //Cargamos el test si es OFFLINE desde la base de datos del usuario
+            Common.selectedUserTest = new UserTest();
+
+            Common.selectedUserTest.setTestID(Common.selectedTest.getId());
+            Common.selectedUserTest.setUsername(Common.username);
+            TreeMap<Integer, Answer> answerTreeMap =
+                    OfflineDB.getUserAnswers(TestOverviewActivity.this, Common.username, Common.selectedTest.getId());
+            Common.selectedUserTest.setAnswerList(answerTreeMap);
+
         }
 
         //Cargamos la lista de respuestas del usuario para este test
         Common.answerList = Common.selectedUserTest.getAnswerList();
 
-        //Si no existen respuestas para este test cargamos una lista vacía junto con
+        //Si no existen respuestas para este test cargamos una lista vacía junto con las preguntas
         if (Common.answerList.isEmpty()) {
             loadQuestionsWithEmptyAnswerList(); //Cargar lista de preguntas y las respuestas en estado NO_ANSWER
 
@@ -207,6 +220,8 @@ public class TestOverviewActivity extends AppCompatActivity {
         });
 
         loadGUIdata();
+        if (Common.Mode == Common.MODE.OFFLINE) questionGridAdapter.notifyDataSetChanged();
+        Log.i("##############Cuantos elem", Common.questionList.size() + "");
     }
 
     private void loadGUIdata() {
@@ -368,7 +383,29 @@ public class TestOverviewActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
     public void loadQuestionsWithEmptyAnswerList() {
+        if (Common.Mode == Common.MODE.ONLINE) {
+            onlineLoadQuestionsWithEmptyAnswerList();
+        } else {
+            OfflineDB.loadQuestions(TestOverviewActivity.this, Common.selectedTest.getfileName(), true);
+            //Debemos guardar los datos con la lista de preguntas vacía en la base de datos para que al terminar
+            //el test sólo guarde las preguntas modificadas.
+            OfflineDB.saveEmptyAnswerList();
+        }
+    }
+
+    public void loadQuestions() {
+        if (Common.Mode == Common.MODE.ONLINE) {
+            onlineLoadQuestions();
+        } else {
+            OfflineDB.loadQuestions(TestOverviewActivity.this, Common.selectedTest.getfileName(), false);
+
+        }
+    }
+
+
+    public void onlineLoadQuestionsWithEmptyAnswerList() {
 
         final AlertDialog dialog = new SpotsDialog.Builder()
                 .setContext(TestOverviewActivity.this)
@@ -423,7 +460,7 @@ public class TestOverviewActivity extends AppCompatActivity {
 
     }
 
-    public void loadQuestions() {
+    public void onlineLoadQuestions() {
 
         final AlertDialog dialog = new SpotsDialog.Builder()
                 .setContext(TestOverviewActivity.this)
@@ -467,6 +504,7 @@ public class TestOverviewActivity extends AppCompatActivity {
         });
 
     }
+
 
     public String getResult(int percent){
         if (percent> 90)

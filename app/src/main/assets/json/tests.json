@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "id": "general1",
+      "name": "Temario general G1",
+      "file": "general1.json"
+    },
+    {
+      "id": "general2",
+      "name": "Temario general G2",
+      "file": "general2.json"
+    },
+    {
+      "id": "general3",
+      "name": "Temario general G3",
+      "file": "general3.json"
+    },
+    {
+      "id": "multimedia3",
+      "name": "Multimedia G3",
+      "file": "multimedia3.json"
+    },
+    {
+      "id": "sistemas1",
+      "name": "TICs G1 Sistemas",
+      "file": "sistemas1.json"
+    },
+    {
+      "id": "sistemas2",
+      "name": "TICs G2 Sistemas",
+      "file": "sistemas2.json"
+    },
+    {
+      "id": "sistemas3",
+      "name": "TICs Sistemas G3",
+      "file": "sistemas3.json"
+    }
+  ]
+}

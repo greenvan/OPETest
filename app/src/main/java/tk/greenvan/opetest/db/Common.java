@@ -1,4 +1,4 @@
-package tk.greenvan.opetest.common;
+package tk.greenvan.opetest.db;
 
 import android.os.CountDownTimer;
 
@@ -15,6 +15,8 @@ import tk.greenvan.opetest.ui.question.QuestionFragment;
 
 public class Common {
 
+    //TODO load some from preferences. Create a menu item for this preferences
+    // (timeout, default number of questions, etc
 
     public static String username = "anonymous";
 
@@ -46,6 +48,7 @@ public class Common {
 
     public static VIEW_MODE viewMode = VIEW_MODE.VIEW;
 
+
     public enum VIEW_MODE {
         TEST,
         QUICKTEST,
@@ -56,6 +59,15 @@ public class Common {
         NO_ANSWER,
         WRONG_ANSWER,
         RIGHT_ANSWER
+    }
+
+    // Trabajamos en modo online con firebase o offline, con assets locales
+    public static MODE Mode = MODE.OFFLINE;
+
+    public enum MODE {
+        ONLINE,
+        OFFLINE,
+        MIXED //Not used at the moment (local test, userData online)
     }
 
 }

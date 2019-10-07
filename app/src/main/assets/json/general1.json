@@ -1,0 +1,5406 @@
+{
+  "id": "general",
+  "name": "Batería de preguntas del temario común",
+  "question": {
+    "1": {
+      "id": 1,
+      "text": "El artículo 15 del III Convenio Colectivo del Personal de Administración y Servicios Laboral de la UPV/EHU hace referencia a: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Permisos.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Constitución Española.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Fondo Social.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Provisión de Vacantes.",
+          "correcto": false
+        }
+      }
+    },
+    "2": {
+      "id": 2,
+      "text": "Los poderes del Estado son: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Ejecutivo, legislativo y judicial",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Ejecutivo, gubernamental y administrativo",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Legislativo, judicial y gubernamental",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Legislativo, administrativo y judicial",
+          "correcto": false
+        }
+      }
+    },
+    "3": {
+      "id": 3,
+      "text": "Según el artículo 16.2 de la Constitución Española, nadie podrá ser obligado a declarar sobre: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Su metodología laboral",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Su ideología, religión o creencias",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La inviolabilidad de su lugar de trabajo",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Su honorabilidad",
+          "correcto": false
+        }
+      }
+    },
+    "4": {
+      "id": 4,
+      "text": "Según la Constitución Española, el derecho a contraer matrimonio es: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un deber por su interés general",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Un derecho fundamental",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Un derecho parlamentario",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Un derecho de los/as ciudadanos/as",
+          "correcto": false
+        }
+      }
+    },
+    "5": {
+      "id": 5,
+      "text": "El derecho a la protección de la salud se reconoce en la Constitución Española como: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un derecho de los/as ciudadanos/as",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Un derecho fundamental",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Un principio rector de la política social y económica",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Un deber de los/as ciudadanos/as",
+          "correcto": false
+        }
+      }
+    },
+    "6": {
+      "id": 6,
+      "text": "Según el Estatuto Básico del Empleado Público, son empleados/as públicos quienes desempeñan funciones retribuidas en las administraciones públicas al servicio de… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los intereses generales",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los intereses de la empresa contratante",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los intereses del Gobierno Autonómico",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los intereses del Gobierno Central",
+          "correcto": false
+        }
+      }
+    },
+    "7": {
+      "id": 7,
+      "text": "Cuál de los siguientes derechos se recoge en el artículo 15 del Estatuto Básico del Empleado Público: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "A la libertad sindical",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "A las vacaciones",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "A la jubilación según normativa vigente",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "A la libertad de expresión",
+          "correcto": false
+        }
+      }
+    },
+    "8": {
+      "id": 8,
+      "text": "La promoción de personal laboral se hará efectiva a través de los procedimientos previstos en: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Acuerdos internos de carácter privado suscritos en el servicio",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El estatuto de los trabajadores o los convenios colectivos",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Acuerdos con mayoría absoluta en el Consejo de Gobierno",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Normativa ratificada por el Claustro universitario",
+          "correcto": false
+        }
+      }
+    },
+    "9": {
+      "id": 9,
+      "text": "El capítulo III del título III del Estatuto Básico del Empleado Público versa sobre: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Derechos retributivos",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Derechos fundamentales",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Derecho de reunión",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Derecho a la jornada de trabajo, permisos y vacaciones",
+          "correcto": false
+        }
+      }
+    },
+    "10": {
+      "id": 10,
+      "text": "Las retribuciones básicas del personal funcionario, que se fijan en la Ley de Presupuestos Generales del Estado, estarán integradas única y exclusivamente por: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Sueldo asignado y trienios",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Sueldo asignado",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Sueldo, trienios y complemento de destino",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Sueldo, trienios, complementos y dietas.",
+          "correcto": false
+        }
+      }
+    },
+    "11": {
+      "id": 11,
+      "text": "En el ámbito de aplicación del Estatuto Básico del Empleado Público, cuál de los siguientes apartados queda excluido de la obligatoriedad de la negociación: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los criterios generales de acción social",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los criterios generales sobre ofertas de empleo público",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La determinación y aplicación de las retribuciones complementarias de los funcionarios",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La determinación de condiciones de trabajo del personal directivo",
+          "correcto": false
+        }
+      }
+    },
+    "12": {
+      "id": 12,
+      "text": "Según el Estatuto Básico del Empleado Público, los sistemas selectivos de personal laboral fijo serán los de ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Oposición, concurso-oposición o concurso de valoración de méritos",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Oposición o concurso-oposición",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Oposición",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Bolsa de trabajo habilitada al efecto",
+          "correcto": false
+        }
+      }
+    },
+    "13": {
+      "id": 13,
+      "text": "No será causa de pérdida de la condición de personal funcionario de carrera: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La pérdida de la nacionalidad",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La jubilación total del funcionario/a",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La renuncia a la condición de funcionario/a",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La incapacidad laboral temporal",
+          "correcto": false
+        }
+      }
+    },
+    "14": {
+      "id": 14,
+      "text": "La jubilación del personal funcionario no podrá ser: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Voluntaria",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Parcial con contrato de relevo",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Forzosa, al cumplir la edad legalmente establecida",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Por declaración de una incapacidad",
+          "correcto": false
+        }
+      }
+    },
+    "15": {
+      "id": 15,
+      "text": "Según el Estatuto Básico del Empleado Público, el personal laboral se clasificará de conformidad con: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La legislación laboral",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los acuerdos internos del comité de empresa",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El acuerdo regulador de 23 de octubre de 1996",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Las disposiciones adicionales de los presupuestos Generales del Estado",
+          "correcto": false
+        }
+      }
+    },
+    "16": {
+      "id": 16,
+      "text": "La realización de actos encaminados a coartar el libre ejercicio del derecho de huelga será considerada: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Falta grave",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Falta leve",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Falta muy grave",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Falta no disciplinaria",
+          "correcto": false
+        }
+      }
+    },
+    "17": {
+      "id": 17,
+      "text": "El examen y resolución de cuestiones derivadas de la interpretación del III Convenio del Personal Laboral de Administraciones y Servicios de la UPV/EHU corresponde a: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La Comisión Paritaria",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La Comisión Negociadora",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Comité de Empresa",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La Comisión de Planificación",
+          "correcto": false
+        }
+      }
+    },
+    "18": {
+      "id": 18,
+      "text": "Según el Convenio Colectivo del Personal Laboral de Administración y Servicios de la UPV/EHU, la duración de las vacaciones retribuidas anuales en la UPV/EHU será de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "22 días",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "25 días",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "24 días",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "23 días",
+          "correcto": false
+        }
+      }
+    },
+    "19": {
+      "id": 19,
+      "text": "El personal de administración y servicios laboral de la UPV/EHU percibirá tres pagas extraordinarias los meses de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Abril, agosto y diciembre",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Marzo, junio y diciembre",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Junio, septiembre y diciembre",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Febrero, junio y octubre",
+          "correcto": false
+        }
+      }
+    },
+    "20": {
+      "id": 20,
+      "text": "Las líneas maestras de la política lingüística de la universidad que contribuyen al proceso de desarrollo y normalización del euskera se recogen en: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Plan Director del Euskera",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Plan de Dedicación Académica",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Acuerdo Marco Plurilingüe",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El Acuerdo Marco de Política Lingüística",
+          "correcto": false
+        }
+      }
+    },
+    "21": {
+      "id": 21,
+      "text": "El servicio de prevención de la UPV/EHU es: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un servicio propio",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Un servicio ajeno",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Un servicio asumido personalmente por el empresario",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Un servicio mediante trabajador designado",
+          "correcto": false
+        }
+      }
+    },
+    "22": {
+      "id": 22,
+      "text": "Una vez finalizados los correspondientes procesos de provisión, promoción, OPE y pruebas correspondientes de la disposición transitoria segunda del III Convenio del Personal Laboral de Administraciones y Servicios de la UPV/EHU, los puestos abiertos a doble grupo: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se mantendrán es su situación actual",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Se encuadrarán en el grupo superior",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se encuadrarán en el grupo inferior",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se amortizarán",
+          "correcto": false
+        }
+      }
+    },
+    "23": {
+      "id": 23,
+      "text": "Las personas o entidades ajenas a la UPV/EHU no podrán hacer uso de su sello salvo autorización expresa de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Rector o Rectora",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El o la Gerente",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Claustro universitario",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El Consejo de Gobierno",
+          "correcto": false
+        }
+      }
+    },
+    "24": {
+      "id": 24,
+      "text": "De acuerdo con sus estatutos y en el marco de las leyes, la UPV/EHU actúa en régimen: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Foral",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "De autonomía",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "De dependencia funcional",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "De competencias delegadas",
+          "correcto": false
+        }
+      }
+    },
+    "25": {
+      "id": 25,
+      "text": "La UPV/EHU en el artículo 5.3 de sus Estatutos reconoce y garantiza: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La libertad de expresión",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La libertad religiosa",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La libertad de cátedra",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La libertad de pensamiento",
+          "correcto": false
+        }
+      }
+    },
+    "26": {
+      "id": 26,
+      "text": "El II Plan de Igualdad de la UPV/EHU ha articulado su actuación en materia de igualdad en los siguientes ámbitos: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Social, docente y de servicios",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Docente, de servicios e investigador",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Institucional y social",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Docente, investigador e institucional",
+          "correcto": false
+        }
+      }
+    },
+    "27": {
+      "id": 27,
+      "text": "Las lenguas oficiales de la UPV/EHU son: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El euskera, el castellano y el inglés",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El euskera y el inglés",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El castellano y el inglés",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El euskera y el castellano",
+          "correcto": false
+        }
+      }
+    },
+    "28": {
+      "id": 28,
+      "text": "Es órgano unipersonal de la UPV/EHU: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Consejo Social",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Consejo de Gobierno",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Rectora o Rector",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La Junta de Campus de Bizkaia",
+          "correcto": false
+        }
+      }
+    },
+    "29": {
+      "id": 29,
+      "text": "La comunidad universitaria está formada por los siguientes colectivos: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Alumnado, personal docente e investigador y personal de administración y servicios",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Alumnado y trabajadores/as autónomos/as",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Personal docente e investigador y personal de administración y servicios",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Alumnado, trabajadores/as autónomos/as y cargos directivos",
+          "correcto": false
+        }
+      }
+    },
+    "30": {
+      "id": 30,
+      "text": "El profesorado ejercerá sus funciones en régimen de dedicación… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "A tiempo completo o parcial",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Sólo a tiempo completo",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Sólo a tiempo parcial",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Alternando semestralmente entre tiempo completo y parcial",
+          "correcto": false
+        }
+      }
+    },
+    "31": {
+      "id": 31,
+      "text": "Según los Estatutos de la UPV/EHU, el régimen retributivo del personal de administración y servicios lo establecerá: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El rector o rectora",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El claustro universitario",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El comité de empresa",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El consejo de gobierno",
+          "correcto": false
+        }
+      }
+    },
+    "32": {
+      "id": 32,
+      "text": "Según los Estatutos de la UPV/EHU, el personal laboral se clasificará conforme a: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los acuerdos de las juntas de centro",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Su convenio colectivo en vigor",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La ley de la función pública vasca",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El estatuto básico del empleado público",
+          "correcto": false
+        }
+      }
+    },
+    "33": {
+      "id": 33,
+      "text": "Según los estatutos de la UPV/EHU, las bases de las convocatorias de pruebas selectivas para el acceso a la condición de personal funcionario o personal contratado laboral fijo al servicio de la UPV/EHU deberán contener necesariamente: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los requisitos que deben reunir los y las aspirantes",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los nombres y apellidos de los miembros del tribunal",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Las dotaciones objeto de la convocatoria",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La fecha de publicación de los resultados",
+          "correcto": false
+        }
+      }
+    },
+    "34": {
+      "id": 34,
+      "text": "El desarrollo de la normativa sobre carrera profesional del personal de administración y servicios corresponde a: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El claustro universitario",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El consejo social",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El consejo de gobierno",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El comité de empresa",
+          "correcto": false
+        }
+      }
+    },
+    "35": {
+      "id": 35,
+      "text": "El órgano de representación unitaria del personal contratado laboral es: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La junta de personal",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El comité de empresa",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El consejo de gobierno",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El claustro universitario",
+          "correcto": false
+        }
+      }
+    },
+    "36": {
+      "id": 36,
+      "text": "El órgano de representación unitaria del personal de administración y servicios funcionario es: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La junta de personal de administración y servicios",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El comité de empresa",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El consejo de gobierno",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El claustro universitario",
+          "correcto": false
+        }
+      }
+    },
+    "37": {
+      "id": 37,
+      "text": "El entorno universitario de la UPV/EHU deberá ser accesible… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Siempre que exista alumnado que así lo demande",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Siempre que exista personal trabajador que así lo demande",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Siempre que exista alumnado o personal trabajador que así lo demande",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "De acuerdo con las condiciones legalmente establecidas",
+          "correcto": false
+        }
+      }
+    },
+    "38": {
+      "id": 38,
+      "text": "Las decisiones relativas al régimen disciplinario de estudiantes, personal docente e investigador y personal de administración y servicios que la legislación vigente no atribuya a otro órgano serán adoptadas por: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El o la aldezle",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La rectora o rector",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El comité arbitral",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El comité de seguridad y salud intercampus",
+          "correcto": false
+        }
+      }
+    },
+    "39": {
+      "id": 39,
+      "text": "En la UPV/EHU, la institución independiente e imparcial que promoverá la utilización de modos alternativos, no adversariales, para prevenir y resolver problemas y conflictos relacionados con la actividad universitaria en todos sus niveles es: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Aldezle",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Comité de empresa",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Comité de Seguridad y Salud Laboral",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El rector o rectora",
+          "correcto": false
+        }
+      }
+    },
+    "40": {
+      "id": 40,
+      "text": "La persona candidata a aldezle será: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Propuesta y elegida por el consejo de gobierno",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Propuesta y elegida por el claustro universitario",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Propuesta por el consejo de gobierno y elegida por el claustro universitario",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Propuesta por el claustro universitario y elegida por el consejo de gobierno",
+          "correcto": false
+        }
+      }
+    },
+    "41": {
+      "id": 41,
+      "text": "La o el aldezle, no intervendrá: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "De oficio",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "En procesos electorales",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "A instancia de parte",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "A partir de quejas de cualquier persona de la comunidad universitaria",
+          "correcto": false
+        }
+      }
+    },
+    "42": {
+      "id": 42,
+      "text": "Las recomendaciones del o de la aldezle serán susceptibles de recurso: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Si el rector o rectora es parte implicada",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "No serán susceptibles de recurso",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Siempre serán susceptibles de recurso",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Cuando afecten a un grupo numeroso de la comunidad universitaria",
+          "correcto": false
+        }
+      }
+    },
+    "43": {
+      "id": 43,
+      "text": "Las competencias para proponer al consejo de gobierno la aprobación de los objetivos de las enseñanzas de postgrado son de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La comisión de grado",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La comisión de postgrado",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La comisión de títulos propios",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El rector o rectora",
+          "correcto": false
+        }
+      }
+    },
+    "44": {
+      "id": 44,
+      "text": "La biblioteca universitaria es un centro de recursos para la docencia, el aprendizaje, la investigación y las actividades relacionadas con: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El funcionamiento y la gestión de la universidad en su conjunto",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El desarrollo de la capacidad de estudio del alumnado",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La capacidad investigadora del personal docente",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El servicio a la sociedad en su conjunto",
+          "correcto": false
+        }
+      }
+    },
+    "45": {
+      "id": 45,
+      "text": "La UPV/EHU garantizará, en el marco de sus competencias y funciones, el uso normal y oficial de los idiomas: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Euskera, castellano e inglés",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Inglés y castellano",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Inglés y euskera",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Euskera y castellano",
+          "correcto": false
+        }
+      }
+    },
+    "46": {
+      "id": 46,
+      "text": "En la UPV/EHU, el órgano que determina las plazas para las que es preceptivo el conocimiento de euskera y castellano es: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El consejo de gobierno",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El claustro universitario",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El comité de empresa",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La junta de personal",
+          "correcto": false
+        }
+      }
+    },
+    "47": {
+      "id": 47,
+      "text": "En la UPV/EHU, la modificación de campus universitarios corresponde a: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El consejo de gobierno a propuesta del claustro universitario",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El claustro universitario a propuesta del consejo de gobierno",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El consejo de gobierno a propuesta del campus universitario",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Al campus universitario a propuesta propia",
+          "correcto": false
+        }
+      }
+    },
+    "48": {
+      "id": 48,
+      "text": "Sin perjuicio de las delegaciones que efectúe, el órgano de contratación de la UPV/EHU es: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El o la Gerente",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La Rectora o Rector",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El o la vicegerente de contratación y compras",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El claustro universitario",
+          "correcto": false
+        }
+      }
+    },
+    "49": {
+      "id": 49,
+      "text": "La Ley de Prevención de Riesgos Laborales es la: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Ley 31/1995, de 8 de noviembre.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Ley 31/1996, de 8 de noviembre.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Ley 30/1997, de 8 de enero.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Ley 31/1995, de 8 de diciembre.",
+          "correcto": false
+        }
+      }
+    },
+    "50": {
+      "id": 50,
+      "text": "Los equipos de protección individual deberán utilizarse cuando: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La persona trabajadora considere conveniente colocárselos.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La persona trabajadora sienta que está en situación de riesgo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los riesgos no se puedan evitar o no puedan limitarse suficientemente por medios técnicos de protección colectiva o mediante medidas, métodos o procedimientos de organización del trabajo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Su colocación dependa de una reivindicación sindical.",
+          "correcto": false
+        }
+      }
+    },
+    "51": {
+      "id": 51,
+      "text": "Los equipos de protección individual, deberán ser proporcionados por: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los/as Delegados/as de Prevención.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El empresario.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Sindicato al que pertenezca la persona trabajadora.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La persona trabajadora.",
+          "correcto": false
+        }
+      }
+    },
+    "52": {
+      "id": 52,
+      "text": "El Estatuto Básico del Empleado Público entre otros se aplica a… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Únicamente al personal funcionario de las Universidades Públicas.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Únicamente al personal laboral de las Universidades Públicas.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Al personal funcionario y en lo que proceda al personal laboral al servicio de las Universidades Públicas.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "A todo el personal de las Universidades Privadas y únicamente al personal funcionario en las Universidades Públicas.",
+          "correcto": false
+        }
+      }
+    },
+    "53": {
+      "id": 53,
+      "text": "El personal empleado público se clasifica en… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Personal funcionario de carrera, personal funcionario interino, personal laboral, ya sea fijo, por tiempo indefinido o temporal y personal eventual.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Personal funcionario de carrera y personal funcionario Interino.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Personal funcionario de carrera, personal funcionario interino y personal laboral fijo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Personal funcionario de carrera, personal laboral fijo y personal eventual.",
+          "correcto": false
+        }
+      }
+    },
+    "54": {
+      "id": 54,
+      "text": "Según el Estatuto Básico del Empleado Público, es personal laboral… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Quien, en virtud de nombramiento legal, están vinculados a una Administración Pública por una relación estatutaria regulada por el Derecho Administrativo para el desempeño de servicios profesionales retribuidos de carácter permanente.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Quien, en virtud de contrato de trabajo formalizado por escrito, en cualquiera de las modalidades de contratación de personal previstas en la legislación laboral, presta servicios retribuidos por las Administraciones Pública.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Quien, por razones expresamente justificadas de necesidad y urgencia, es nombrado como tal para el desempeño de funciones propias de personal funcionario de carrera.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Quien, en virtud de nombramiento y con carácter no permanente, solo realiza funciones expresamente calificadas como de confianza o asesoramiento especial, siendo retribuido con cargo a los créditos presupuestarios consignados para este fin.",
+          "correcto": false
+        }
+      }
+    },
+    "55": {
+      "id": 55,
+      "text": "Según el Estatuto Básico del Empleado Público la carrera profesional y la promoción del personal laboral… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se hará efectiva a través de los procedimientos previstos en el Estatuto de los Trabajadores.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Se hará efectiva a través de los procedimientos previstos en los Convenios Colectivos.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se hará efectiva a través de los procedimientos previstos en el Estatuto de los Trabajadores o en los Convenios Colectivos.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se hará efectiva a través de los procedimientos previstos en La Ley de Función Pública.",
+          "correcto": false
+        }
+      }
+    },
+    "56": {
+      "id": 56,
+      "text": "La Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas se aplica al sector público que comprende… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La Administración General del Estado y Las Administraciones de las Comunidades Autónomas.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La Administración General del Estado y Las Entidades que integran la Administración Local y El sector público institucional.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Las Administraciones de las Comunidades Autónomas, Las Entidades que integran la Administración Local y El sector público institucional.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La Administración General del Estado, Las Administraciones de las Comunidades Autónomas, Las Entidades que integran la Administración Local y El sector público institucional.",
+          "correcto": false
+        }
+      }
+    },
+    "57": {
+      "id": 57,
+      "text": "¿Qué es un daño derivado del trabajo? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Tener malas relaciones con los/as compañeros/as.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Las enfermedades, patologías o lesiones sufridas con motivo u ocasión del trabajo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Sufrir una pandemia de gripe.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los golpes recibidos durante la jornada laboral.",
+          "correcto": false
+        }
+      }
+    },
+    "58": {
+      "id": 58,
+      "text": "Definición de riesgo laboral ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Estar subcontratado en una empresa.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Posibilidad de que la persona trabajadora sufra un determinado daño derivado de su trabajo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Quejarse a la persona superior jerárquica por las condiciones laborales.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Trabajar estando enfermo.",
+          "correcto": false
+        }
+      }
+    },
+    "59": {
+      "id": 59,
+      "text": "¿Qué significa hacer prevención laboral? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Realizar los cursillos de prevención laboral.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El conjunto de actividades o medidas adoptadas o medidas adoptadas o previstas en todas las fases de actividad de la empresa con el fin de evitar o disminuir los riesgos derivados del trabajo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Paralizar toda actividad laboral ante un supuesto riesgo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Observar un supuesto riesgo y no informar.",
+          "correcto": false
+        }
+      }
+    },
+    "60": {
+      "id": 60,
+      "text": "¿Quién aprueba de forma definitiva el presupuesto de la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Rector/a.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Decano/a.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Consejo de Gobierno.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El Consejo Social.",
+          "correcto": false
+        }
+      }
+    },
+    "61": {
+      "id": 61,
+      "text": "El servicio de prevención de la UPV/EHU depende directamente del: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Vicerrectorado de Investigación.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Rector/a.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Gerente/a.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Vicegerente/a de Campus.",
+          "correcto": false
+        }
+      }
+    },
+    "62": {
+      "id": 62,
+      "text": "La Resolución de 7 de abril de 2003, del rector de la UPV/EHU, de constitución, organización y funcionamiento del servicio de prevención propio de la UPV/EHU indica que el ámbito de actuación del servicio de prevención: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se extiende a la totalidad del personal trabajador de la UPV/EHU.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Se extiende a la plantilla y al alumnado de la UPV/EHU.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se extiende a la plantilla, al alumnado y a las empresas.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se extiende a la plantilla, al alumnado, a las empresas y al personal visitante.",
+          "correcto": false
+        }
+      }
+    },
+    "63": {
+      "id": 63,
+      "text": "El servicio de prevención de la UPV/EHU tiene como obligación asesorar: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Sólo a la Administración.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Sólo a su personal trabajador y a sus representantes.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "A la Administración y a su personal trabajador y sus representantes.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "A la administración, a su personal trabajador, a sus representantes y a los Comités de Campus e Intercampus de Seguridad y Salud Laboral.",
+          "correcto": false
+        }
+      }
+    },
+    "64": {
+      "id": 64,
+      "text": "Los comités de seguridad y salud de la UPV/EHU son: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un Comité Intercampus, un Comité de Seguridad y Salud por cada Campus y un Comité para la Seguridad Medioambiental.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Un Comité Intercampus, un Comité para la Seguridad Medioambiental e Inspección de Trabajo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Un Comité Intercampus, un Comité de Seguridad y Salud por cada Campus.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Un Comité Intercampus, un Comité de Seguridad y Salud por cada Campus e Inspección de Trabajo.",
+          "correcto": false
+        }
+      }
+    },
+    "65": {
+      "id": 65,
+      "text": "Según el Convenio de Personal Laboral de Administración y Servicios de la UPV/EHU, a los/as trabajadores/as que realicen cursos de euskara fuera del horario laboral se les reconocerá el derecho a disfrutar de un permiso retribuido: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Que no podrá exceder de 5 días hábiles al año.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "De cinco días hábiles al año.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Del equivalente en jornadas al total de las horas del curso.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Sólo se concede el permiso si se ha obtenido certificado de Perfil Lingüístico.",
+          "correcto": false
+        }
+      }
+    },
+    "66": {
+      "id": 66,
+      "text": "De entre los siguientes solo un puesto de trabajo corresponde a una de las categorías profesionales del personal laboral de la UPV/EHU. ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Auxiliar administrativo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Ayudante de Biblioteca.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Técnico Auxiliar de Biblioteca.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Técnico Especialista Apoyo Educativo.",
+          "correcto": false
+        }
+      }
+    },
+    "67": {
+      "id": 67,
+      "text": "La comisión paritaria emanada del Convenio de Personal Laboral de Administración y Servicios de la UPV/EHU regulador se constituye para: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La aplicación de las normas de funcionamiento del Convenio.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La aplicación de la normativa electoral en las elecciones sindicales.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El examen y resolución de cuantas cuestiones se deriven de la interpretación, vigencia y aplicación del Convenio.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Administrar los fondos destinados al desarrollo de la actividad sindical.",
+          "correcto": false
+        }
+      }
+    },
+    "68": {
+      "id": 68,
+      "text": "¿Cuáles son los grupos profesionales en que se clasifica el personal incluido dentro del ámbito de aplicación del Convenio Colectivo del PAS Laboral de la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "No existe clasificación por grupos profesionales.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Grupo I, Grupo II y Grupo III.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Grupo I, Grupo II, Grupo III y Grupo IV.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Grupo I, Grupo II, Grupo V, Grupo VI y Grupo VII.",
+          "correcto": false
+        }
+      }
+    },
+    "69": {
+      "id": 69,
+      "text": "Son miembros del personal de administración y servicios de la UPV/EHU… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Personal funcionario, Personal contratado laboral y Funcionarios y funcionarias de otras Administraciones Públicas que, de acuerdo con la legislación vigente, presten servicio en la UPV/EHU.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Personal Funcionario y Funcionarios y funcionarias de otras Administraciones Públicas que, de acuerdo con la legislación vigente, presten servicio en la UPV/EHU.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Personal Laboral y Funcionarios y funcionarias de otras Administraciones Públicas que, de acuerdo con la legislación vigente, presten servicio en la UPV/EHU.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Solo Personal Funcionario.",
+          "correcto": false
+        }
+      }
+    },
+    "70": {
+      "id": 70,
+      "text": "¿Cuál es la finalidad principal del II Plan de Igualdad de Mujeres y Hombres de la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Qué haya más mujeres que hombres en los cargos de responsabilidad.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Qué las trabajadoras y los trabajadores de la UPV/EHU sepan utilizar un lenguaje no sexista en sus escritos.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Qué los hombres no puedan acceder a los puestos de responsabilidad.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Avanzar en la incorporación de un enfoque de género en toda actividad universitaria, desarrollando políticas activas para la efectividad del principio de igualdad de hombres y mujeres y la prevención de conductas discriminatorias.",
+          "correcto": false
+        }
+      }
+    },
+    "71": {
+      "id": 71,
+      "text": "¿Cuáles son las características del II Plan de Igualdad de Mujeres y Hombres de la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Factible, Dinámico, Transversal, Catalizador, Integrador y Comprometido.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Dinámico, Integrador y Catalizador.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Factible, Dinámico, Transversal y Comprometido.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Dinámico, Transversal, Catalizador e Integrador.",
+          "correcto": false
+        }
+      }
+    },
+    "72": {
+      "id": 72,
+      "text": "Según los Estatutos de la UPV/EHU, las enseñanzas universitarias oficiales se estructurarán en… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Tres ciclos: grado, máster y doctorado.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Dos ciclos: grado y máster.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Tres ciclos: grado, máster y formación profesional.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Dos ciclos: grado y doctorado.",
+          "correcto": false
+        }
+      }
+    },
+    "73": {
+      "id": 73,
+      "text": "¿Cómo se denomina al/a la defensor/a universitario/a de la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Ararteko.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Defensor del pueblo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Aldezle.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Ninguna de las respuestas anteriores es válida.",
+          "correcto": false
+        }
+      }
+    },
+    "74": {
+      "id": 74,
+      "text": "Según los Estatutos de la UPV/EHU, la UPV/EHU es una universidad… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Multicampus.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Pluricampus.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Monocampus.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Bicampus.",
+          "correcto": false
+        }
+      }
+    },
+    "75": {
+      "id": 75,
+      "text": "Según los Estatutos de la UPV/EHU, son centros docentes… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Las escuelas y facultades.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los campus universitarios.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los colegios mayores.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los aularios.",
+          "correcto": false
+        }
+      }
+    },
+    "76": {
+      "id": 76,
+      "text": "Según los Estatutos de la UPV/EHU, la duración del mandato del decano/a será de… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "2 años.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "3 años.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "4 años.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "5 años.",
+          "correcto": false
+        }
+      }
+    },
+    "77": {
+      "id": 77,
+      "text": "¿A que órgano le corresponde aprobar la planificación estratégica y de normalización lingüística de la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Al claustro.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Al consejo de gobierno.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Al equipo rectoral.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Al rector/a.",
+          "correcto": false
+        }
+      }
+    },
+    "78": {
+      "id": 78,
+      "text": "¿Quién tiene competencia para aprobar el reglamento de un centro docente? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La junta de centro.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El consejo de dirección.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La junta de campus.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El consejo de gobierno.",
+          "correcto": false
+        }
+      }
+    },
+    "79": {
+      "id": 79,
+      "text": "¿Quién nombra a los/as decanos/as y a los/as directores/as de los centros? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La junta de centro.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El/la rector/a.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El/la vicerrector/a de campus.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El gobierno vasco.",
+          "correcto": false
+        }
+      }
+    },
+    "80": {
+      "id": 80,
+      "text": "El consejo social… ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es un órgano adscrito a la UPV/EHU.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es un órgano colegiado de la UPV/EHU.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es un órgano adscrito al Departamento de Educación del Gobierno Vasco.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Es un órgano colegiado del Departamento de Educación del Gobierno Vasco.",
+          "correcto": false
+        }
+      }
+    },
+    "81": {
+      "id": 81,
+      "text": "¿Cuál es el órgano competente para establecer los criterios generales de asignación de la docencia del profesorado universitario en la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Consejo de Gobierno.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La Comisión de Planificación docente.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Decanato o Dirección del Centro.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El Consejo del Departamento.",
+          "correcto": false
+        }
+      }
+    },
+    "82": {
+      "id": 82,
+      "text": "La eleccion del o de la aldezle exige que la persona candidata propuesta obtenga: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Una mayoría de dos tercios del Consejo de Gobierno",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Una mayoría absoluta del Consejo de Gobierno",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Una mayoría de dos tercios del Consejo Social",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Una mayoría de dos tercios de los miembros presentes del Claustro",
+          "correcto": false
+        }
+      }
+    },
+    "83": {
+      "id": 83,
+      "text": "La finalidad del/a aldezle, será: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Representar a la comunidad universitaria en los procedimientos judiciales.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "prevenir y resolver problemas y conflictos relacionados con la actividad universitaria.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Refrendar los Acuerdos aprobados por el Consejo de Gobierno.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Servir de enlace entre los distintos miembros de la comunidad universitaria.",
+          "correcto": false
+        }
+      }
+    },
+    "84": {
+      "id": 84,
+      "text": "¿Qué respuesta es la correcta según los Estatutos de la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los centros docentes se regirán por su Reglamento Marco establecido por el Consejo de Gobierno, que podrá ser complementado por su respectivo Reglamento interno.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los centros docentes se regirán por el Reglamento que para cada Facultad o Escuela elabora el Consejo de Gobierno.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los centros docentes se regirán por las decisiones y acuerdos que adopten en base a su autonomía y criterio.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los centros docentes se regirán por el Reglamento asambleario acordado por todos los miembros integrantes del Centro.",
+          "correcto": false
+        }
+      }
+    },
+    "85": {
+      "id": 85,
+      "text": "La aprobación inicial de la propuesta de creación de una Facultad ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Corresponde al Consejo de Gobierno",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Corresponde a la Junta de Facultad",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Corresponde al Rector/a",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Corresponde al Departamento competente en materia de Universidades",
+          "correcto": false
+        }
+      }
+    },
+    "86": {
+      "id": 86,
+      "text": "Conforme a los Estatutos de la UPV/EHU, la creación de una Escuela de Doctorado corresponde a: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Consejo de Gobierno",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Consejo Social",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Claustro",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Rector/a",
+          "correcto": false
+        }
+      }
+    },
+    "87": {
+      "id": 87,
+      "text": "¿Qué estructura conforma un Colegio Mayor? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es un centro universitario",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es una sección departamental",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es una sección de centro",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Es un Vicerrectorado del Campus en que se haya ubicado.",
+          "correcto": false
+        }
+      }
+    },
+    "88": {
+      "id": 88,
+      "text": "El consejo de gobierno de la UPV/EHU, entre otros, estará compuesto ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Por los miembros del Consejo Social pertenecientes a la propia comunidad universitaria",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Por cinco miembros del Consejo Social no pertenecientes a la propia comunidad universitaria",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Por tres miembros del Consejo Social pertenecientes a la propia comunidad universitaria",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Por dos miembros del Consejo Social no pertenecientes a la propia comunidad universitaria",
+          "correcto": false
+        }
+      }
+    },
+    "89": {
+      "id": 89,
+      "text": "Según los Estatutos de la UPV/EHU, la persona responsable de la organización y gestión de los servicios administrativos y económicos de la UPV/EHU es: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El/la Rector/a.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El/la Gerente.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El/la Vicerrector/a de Campus.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El/la Vicegerente/a de Patrimonio y Contratación.",
+          "correcto": false
+        }
+      }
+    },
+    "90": {
+      "id": 90,
+      "text": "¿De quién depende orgánica y funcionalmente la gerencia? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Del Consejo de Gobierno",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Del/la Vicerrector/a Asuntos Económicos",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Del/la Rector/a",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Del Consejo Social",
+          "correcto": false
+        }
+      }
+    },
+    "91": {
+      "id": 91,
+      "text": "Entre los/as integrantes de la junta de campus, entre otros/as ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Podrá haber hasta ocho representantes de los/as Directores/as de Departamento.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Podrá haber hasta seis representantes de los/as Directores/as de Departamento",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Podrá haber hasta cinco representantes los/as Directores/as de Departamento",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Podrá haber hasta cuatro representantes de los/as Directores/as de Departamento",
+          "correcto": false
+        }
+      }
+    },
+    "92": {
+      "id": 92,
+      "text": "El consejo social de la UPV/EHU ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Ejerce la potestad reglamentaria aprobando las normas de desarrollo y aplicación de los Estatutos de la UPV/EHU",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Puede crear las Comisiones que considere convenientes para el mejor ejercicio de sus funciones",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Puede crear nuevos campus universitarios",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Aprueba la programación plurianual de inversiones e infraestructuras",
+          "correcto": false
+        }
+      }
+    },
+    "93": {
+      "id": 93,
+      "text": "El artículo 35 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas regula: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La nulidad de pleno derecho",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La anulabilidad",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La motivación",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La notificación de los actos administrativos.",
+          "correcto": false
+        }
+      }
+    },
+    "94": {
+      "id": 94,
+      "text": "En relación con la nulidad de pleno derecho y la anulabilidad de los actos ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Son nulos de pleno derecho, entre otros supuestos determinados por ley, los actos de las Administraciones Públicas que se dicten como consecuencia de una infracción penal.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El defecto de forma determinará la anulabilidad del acto.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La realización de actuaciones administrativas fuera del tiempo establecido para ellas implicará la anulabilidad del acto.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La nulidad o anulabilidad en parte del acto administrativo no implicará en ningún caso la de las partes del mismo independientes de aquélla.",
+          "correcto": false
+        }
+      }
+    },
+    "95": {
+      "id": 95,
+      "text": "¿Cuál de las siguientes afirmaciones respecto al expediente electrónico es la correcta?: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Deberá contener también la información que tenga carácter auxiliar o de apoyo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Su remisión seguirá lo previsto en el Esquema Nacional de Interoperabilidad y en las correspondientes Normas Técnicas de Interoperabilidad.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Consistirá en un conjunto ordenado de documentos y actuaciones que sirven de antecedente y fundamento a la resolución administrativa, así como las diligencias encaminadas a ejecutarla, salvo los informes preceptivos o facultativos previos a la resolución.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Para el expediente electrónico basta con un índice numerado de todos los documentos que contenga cuando se remita.",
+          "correcto": false
+        }
+      }
+    },
+    "96": {
+      "id": 96,
+      "text": "Salvo disposición expresa en contrario, los informes que se soliciten para la resolución de un procedimiento administrativo serán: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "facultativos y no vinculantes.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "preceptivos y no vinculantes.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "facultativos y vinculantes.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "preceptivos y vinculantes.",
+          "correcto": false
+        }
+      }
+    },
+    "97": {
+      "id": 97,
+      "text": "Una de las siguientes afirmaciones es la correcta: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El plazo para la interposición del recurso potestativo de reposición es de 1 mes desde la notificación de la resolución del recurso de alzada.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Contra las resoluciones y actos administrativos que pongan fin a la vía administrativa se podrá interponer recurso de alzada ante el mismo órgano administrativo que los dictó o ante el competente para resolverlo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Contra las resoluciones y actos administrativos que pongan fin a la vía administrativa podrá recurrirse potestativamente en reposición ante el mismo órgano que los hubiera dictado o ser impugnados directamente ante el orden jurisdiccional contencioso-administrativo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Contra las resoluciones de los recursos de alzada o de reposición no cabe la interposición de ningún otro recurso.",
+          "correcto": false
+        }
+      }
+    },
+    "98": {
+      "id": 98,
+      "text": "Las características del presupuesto de la UPV/EHU recogidas en la Ley del Sistema Universitario Vasco en su artículo 104 son: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Que será público, único y equilibrado y comprenderá la totalidad de sus ingresos y gastos.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Que será público y equilibrado y solidario.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Que será suficiente, amplio y flexible y comprenderá la totalidad de los movimientos contables.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Que será interno, múltiple y equilibrado.",
+          "correcto": false
+        }
+      }
+    },
+    "99": {
+      "id": 99,
+      "text": "A los efectos de la autorización de costes de personal: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La universidad habrá de remitir al Departamento competente en materia de universidades con anterioridad al 31 de mayo de cada año la oportuna documentación.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La universidad habrá de remitir al Departamento competente en materia de universidades con anterioridad al 31 de diciembre de cada año la oportuna documentación.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La universidad habrá de remitir al Consejo Social con anterioridad al 31 de mayo de cada año la oportuna documentación.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La universidad habrá de remitir al Consejo Social con anterioridad al 31 de mayo de cada año la oportuna documentación.",
+          "correcto": false
+        }
+      }
+    },
+    "100": {
+      "id": 100,
+      "text": "La Ley del Sistema Universitario Vasco dedica el título II ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Al profesorado.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "A la Comunidad Universitaria.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Al régimen económico y financiero del sistema universitario vasco.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "A la calidad.",
+          "correcto": false
+        }
+      }
+    },
+    "101": {
+      "id": 101,
+      "text": "¿A cuál de estos colectivos no se aplica de manera directa la Ley 6/1989, de 6 de julio, de la Función Pública Vasca? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Al personal al servicio de la Administración General de la Comunidad Autónoma.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Al personal al servicio de los Organismos Autónomos de la Administración General de la Comunidad Autónoma.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Al personal al servicio del Parlamento Vasco.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Al personal al servicio de la Administración foral y local.",
+          "correcto": false
+        }
+      }
+    },
+    "102": {
+      "id": 102,
+      "text": "La creación, modificación o supresión de puestos de trabajo se realizará a través de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Las leyes de presupuestos.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Las relaciones de puestos de trabajo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los procedimientos de reasignación de efectivos.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Las ofertas de empleo público.",
+          "correcto": false
+        }
+      }
+    },
+    "103": {
+      "id": 103,
+      "text": "Los puestos cuya actividad primordial sea el ejercicio de un oficio, en el que se requiera predominantemente del uso de técnicas de carácter manual y para cuyo desempeño no sea imprescindible una determinada titulación académica: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se reservarán a personal laboral fijo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Podrán reservarse a personal laboral fijo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se reservarán a personal funcionario.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "No existen esos puestos en las Administraciones Públicas Vascas.",
+          "correcto": false
+        }
+      }
+    },
+    "104": {
+      "id": 104,
+      "text": "En las relaciones de puestos de trabajo de la UPV/EHU son puestos reservados a personal laboral: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los que implican participación en el ejercicio de potestades públicas.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los de carácter instrumental, tales como mantenimiento y apoyo a laboratorios.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los de apoyo administrativo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los de la Biblioteca.",
+          "correcto": false
+        }
+      }
+    },
+    "105": {
+      "id": 105,
+      "text": "El perfil lingüístico determina: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El conjunto de los niveles de competencia lingüística en euskera y castellano necesarios para la provisión y desempeño del puesto de trabajo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El idioma de uso en que la administración se relaciona.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El conjunto de los niveles de competencia lingüística en euskera necesarios para la provisión y desempeño del puesto de trabajo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El idioma en que el personal funcionario ha de relacionarse.",
+          "correcto": false
+        }
+      }
+    },
+    "106": {
+      "id": 106,
+      "text": "El personal al servicio de las administraciones públicas vascas se integra por: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Personal funcionario y laboral.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Personal funcionario, eventual y contratado mercantil.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Personal funcionario, laboral y eventual.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Personal funcionario y eventual.",
+          "correcto": false
+        }
+      }
+    },
+    "107": {
+      "id": 107,
+      "text": "Para la adquisición de la relación de servicio con la UPV/EHU el personal ha de ser seleccionado: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "A través de los servicios públicos de empleo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Entre el personal laboral temporal o indefinido no fijo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Del modo en que el órgano competente en materia de personal estime más oportuno para los intereses de la organización.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Con agilidad, sin perjuicio de la objetividad.",
+          "correcto": false
+        }
+      }
+    },
+    "108": {
+      "id": 108,
+      "text": "Según el convenio colectivo ¿cuál es el máximo de horas extraordinarias que puede realizar el personal laboral de administración y servicios de la UPV/EHU por año? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "80.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "85.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "100.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Hay un mínimo, pero no un máximo.",
+          "correcto": false
+        }
+      }
+    },
+    "109": {
+      "id": 109,
+      "text": "En el supuesto de enfermedad grave justificada de familiares hasta el segundo grado de consanguinidad y afinidad, ¿qué duración tendrá la licencia?: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Tres días laborables",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Dos días naturales",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Dos días laborables.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Tres días naturales",
+          "correcto": false
+        }
+      }
+    },
+    "110": {
+      "id": 110,
+      "text": "¿Qué tipo de contrato va aparejado a la jubilación parcial de un/a trabajador/a? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El contrato en prácticas.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El contrato por obra o servicio determinado.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El contrato de relevo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El contrato para la formación.",
+          "correcto": false
+        }
+      }
+    },
+    "111": {
+      "id": 111,
+      "text": "Los/as trabajadores/as que se acogen a la jubilación parcial, suscriben un: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Contrato laboral por obra o servicio determinado a jornada parcial",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Contrato laboral de jubilación parcial",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Contrato de relevo a tiempo parcial",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Contrato de trabajo a tiempo parcial",
+          "correcto": false
+        }
+      }
+    },
+    "112": {
+      "id": 112,
+      "text": "¿El PAS laboral de la UPV/EHU tiene derecho a solicitar una excedencia voluntaria? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Si es personal con al menos un año de antigüedad en la empresa.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "No tiene este derecho, que solo asiste al personal funcionario.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Si es personal con al menos dos años de antigüedad en la empresa.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Si es personal con dos trienios reconocidos.",
+          "correcto": false
+        }
+      }
+    },
+    "113": {
+      "id": 113,
+      "text": "De entre los siguientes solo un puesto de trabajo corresponde a una de las categorías profesionales del personal laboral de la UPV/EHU. ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Auxiliar administrativo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Ayudante de Biblioteca.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Técnico Auxiliar de Biblioteca",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Técnico Especialista de Laboratorio.",
+          "correcto": false
+        }
+      }
+    },
+    "114": {
+      "id": 114,
+      "text": "¿Cuál es la afirmación correcta respecto de la constitución de la comisión de euskaldunización del PAS?: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Está presidida por el Vicerrector o Vicerrectora del Área de Euskera y compuesta por diez personas del personal docente e investigador, tres estudiantes, una persona representante del personal de administración y servicios y dos personas representantes de cada organización sindical.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Está presidida por el Vicerrector/a del Área de Euskera y sus miembros deben ser las personas representantes de cada una de las Comisiones de Euskera de los Campus y de las Comisiones de Euskera de los Centros, en caso de haberse constituido.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Está integrada por dos personas representantes de cada organización sindical con representación en el colectivo del personal de administración y servicios y un número igual de personas representantes de la Administración. Cada organización sindical podrá, además, llevar un máximo de un/a asesor/a",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Corresponde al Consejo de Gobierno regular su designación y funcionamiento.",
+          "correcto": false
+        }
+      }
+    },
+    "115": {
+      "id": 115,
+      "text": "¿Qué es la plantilla de referencia del personal de administración y servicios? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es un instrumento de gestión para los recursos humanos.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es un instrumento de planificación de los recursos humanos.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es un instrumento de control de los recursos humanos.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Es un instrumento de valoración de puestos de trabajo.",
+          "correcto": false
+        }
+      }
+    },
+    "116": {
+      "id": 116,
+      "text": "El régimen retributivo del personal laboral de administración y servicios se estructura: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Por salario base, complemento destino, complemento específico general y complemento específico singular.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Por salario base, complemento de destino, complemento específico general, específico singular, complemento de productividad y gratificaciones extraordinarias.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Retribuciones básicas y complementos salariales.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Salario base, complemento de antigüedad y plus de toxicidad, peligrosidad o penosidad y complemento de especial dedicación.",
+          "correcto": false
+        }
+      }
+    },
+    "117": {
+      "id": 117,
+      "text": "El Estatuto de los Trabajadores fue aprobado: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Por Real Decreto Legislativo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Por Ley Ordinaria.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Por Decreto Ley.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Por Disposición Transitoria.",
+          "correcto": false
+        }
+      }
+    },
+    "118": {
+      "id": 118,
+      "text": "Según la Ley de Prevención de Riesgos Laborales, el comité de seguridad y salud se constituye en empresas o centros de trabajo que cuenten … ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Con menos de 30 trabajadores/as.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Con 30 trabajadores/as.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Con 51 trabajadores/as o más.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Con 50 o más trabajadores/as.",
+          "correcto": false
+        }
+      }
+    },
+    "119": {
+      "id": 119,
+      "text": "El comité de seguridad y salud laboral es el órgano … ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Paritario y colegiado de participación destinado a la consulta regular y periódica de las actuaciones de la empresa en materia de prevención de riesgos.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Igualitario y unipersonal de participación destinado a la consulta regular y periódica de las actuaciones de la empresa en materia de prevención de riesgos.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Individual y paritario de participación destinado a la consulta regular y periódica de las actuaciones de la empresa en materia de prevención de riesgos.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Paritario de participación destinado a la consulta regular y periódica de las actuaciones de la empresa en materia de prevención de riesgos.",
+          "correcto": false
+        }
+      }
+    },
+    "120": {
+      "id": 120,
+      "text": "Son competencias de los/as delegados/as de prevención: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Colaborar con la dirección de la empresa en la mejora de la acción preventiva.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Participar en la elaboración, puesta en práctica y evaluación de los planes y programas de Prevención.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Promover iniciativas sobre métodos y procedimientos para la efectiva prevención de los riesgos.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Formar al resto del personal trabajador en materia de prevención.",
+          "correcto": false
+        }
+      }
+    },
+    "121": {
+      "id": 121,
+      "text": "Se entenderá por servicio de prevención: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El conjunto de medios humanos y materiales necesarios para realizar las actividades preventivas.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El conjunto de personas que trabajan en la rama de salud laboral.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los locales de primeros auxilios que deben existir en cada centro de trabajo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El servicio que se presta a los/as trabajadores/as en los casos de enfermedad profesional.",
+          "correcto": false
+        }
+      }
+    },
+    "122": {
+      "id": 122,
+      "text": "Es objetivo del II Plan Director del Euskera de la UPV/EHU para el PAS: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Que todos los Puestos de la RPT tengan preceptividad vencida a fecha diciembre 2017.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Trabajar con el IVAP para la coordinación la política de formación lingüística y solución de posibles problemas.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Las fechas de preceptividad a establecer dentro de cada grupo de titulación durante el plan deben ser, como mínimo, el 25% de los puestos de trabajo de dicho grupo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El 30 % de los puestos de trabajo de los grupos A y I deben tener establecido el perfil lingüístico 4º para el final del plan, aunque no tengan toda la fecha de preceptividad cumplida.",
+          "correcto": false
+        }
+      }
+    },
+    "123": {
+      "id": 123,
+      "text": "El Decreto 86/1997 de Normalización del Uso del Euskera en las Administraciones Públicas, clasifica las unidades administrativas en: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Cuerpo y escala.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Dos categorías: de atención al público y de no atención al público.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Cuatro categorías: de atención al público, de carácter social, de carácter general y de carácter singular.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Según el nivel retributivo.",
+          "correcto": false
+        }
+      }
+    },
+    "124": {
+      "id": 124,
+      "text": "El Estatuto Básico del Empleado Público: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Elimina la figura del personal funcionario interino.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Contempla la figura del personal funcionario interino.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Mantiene la figura del personal funcionario interino solo para contratos anteriores a su entrada en vigor.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Dicta que los/as funcionarios/as interinos/as pasen a ser funcionarios/as de carrera mediante un procedimiento especial contemplado en la disposición transitoria tercera.",
+          "correcto": false
+        }
+      }
+    },
+    "125": {
+      "id": 125,
+      "text": "En relación al personal eventual: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Su nombramiento y cese son libres.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es personal con carácter no permanente.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Sólo realiza funciones expresamente calificadas como de confianza o asesoramiento especial.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Las tres respuestas anteriores son correctas.",
+          "correcto": false
+        }
+      }
+    },
+    "126": {
+      "id": 126,
+      "text": "Los trienios: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Estatuto Básico del Empleado Público los considera retribución básica.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Estatuto Básico del Empleado Público los considera retribución complementaria.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "No pueden cobrarlos los funcionarios interinos.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "No tienen carácter de retribución.",
+          "correcto": false
+        }
+      }
+    },
+    "127": {
+      "id": 127,
+      "text": "¿Cuál de estos principios es ajeno al Estatuto Básico del Empleado Público?: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El personal funcionario rechazará cualquier regalo, favor o servicio en condiciones ventajosas que vaya más allá de los usos habituales, sociales y de cortesía, sin perjuicio de lo establecido en el Código Penal.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El personal empleado público obedecerá las instrucciones y órdenes profesionales de los/as superiores, incluso aunque constituyan una infracción del ordenamiento jurídico. En ese caso se acogerá al principio de «debitum obedientia» (obediencia debida), y deberá ponerlo en conocimiento de la máxima persona responsable de la Administración para la que presta servicios.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El personal empleado público ajustará su actuación a los principios de lealtad y buena fe con la Administración en la que presten sus servicios.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El personal empleado público mantendrá actualizada su formación y cualificación.",
+          "correcto": false
+        }
+      }
+    },
+    "128": {
+      "id": 128,
+      "text": "Personas con discapacidad: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "En las ofertas de empleo público se reservará un cupo no inferior al tres por ciento de las vacantes para ser cubiertas entre personas con discapacidad.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Estatuto Básico del Empleado Público no contempla ninguna medida respecto al acceso de las personas con discapacidad a la función pública.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "En las ofertas de empleo público podrá reservarse un cupo de vacantes para ser cubiertas entre personas con discapacidad. Cada Administración Pública determinará esa cantidad que no podrá ser inferior al 3% ni superior al 10% del total de plazas ofertadas.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "En las ofertas de empleo público se reservará un cupo no inferior al siete por ciento de las vacantes para ser cubiertas entre personas con discapacidad.",
+          "correcto": false
+        }
+      }
+    },
+    "129": {
+      "id": 129,
+      "text": "Para el acceso a los cuerpos o escalas del grupo b se exigirá ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Estar en posesión del título de Grado.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Estar en posesión del título de Técnico Superior.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Para el Grupo B 1 se exigirá estar en posesión del título de Grado. No así para el B 2.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Estar en posesión del título de Bachiller o técnico.",
+          "correcto": false
+        }
+      }
+    },
+    "130": {
+      "id": 130,
+      "text": "¿Cuáles son los sistemas selectivos de personal funcionario de carrera? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Oposición.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Concurso.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Oposición y concurso-oposición.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Podrá utilizarse solo el sistema de concurso en el caso de que lo apruebe la Alta Inspección del Estado para la Administración Pública.",
+          "correcto": false
+        }
+      }
+    },
+    "131": {
+      "id": 131,
+      "text": "En los procesos selectivos de personal funcionario de carrera podrá aplicarse únicamente el sistema de concurso: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "En ningún caso.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Sólo en virtud de ley podrá aplicarse, y con carácter excepcional.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Estatuto Básico del Empleado Público no lo detalla.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Sí así lo aprueba el máximo órgano responsable de cada Administración Pública.",
+          "correcto": false
+        }
+      }
+    },
+    "132": {
+      "id": 132,
+      "text": "En todo caso, la ejecución de la oferta pública de empleo deberá desarrollarse dentro del plazo improrrogable de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Tres años.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Cuatro años.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Diez años.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El Estatuto Básico del Empleado Público no detalla plazo.",
+          "correcto": false
+        }
+      }
+    },
+    "133": {
+      "id": 133,
+      "text": "¿Cuál de estas afirmaciones es correcta?: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se prohíbe la admisión al trabajo a los/as menores de dieciocho años.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Se prohíbe la admisión al trabajo a los/as menores de dieciséis años.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La Constitución prohíbe la admisión al trabajo a los/as menores de dieciocho años.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La Constitución prohíbe la admisión al trabajo a los/as menores de dieciséis años.",
+          "correcto": false
+        }
+      }
+    },
+    "134": {
+      "id": 134,
+      "text": "¿Cuál de los siguientes epígrafes no está considerado un derecho básico de los/as trabajadores/ as según el Estatuto de los Trabajadores?: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El derecho a huelga.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Libre sindicación.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Formación continua.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Información, consulta y participación en la empresa.",
+          "correcto": false
+        }
+      }
+    },
+    "135": {
+      "id": 135,
+      "text": "Podrán contratar la prestación de su trabajo: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Las personas menores de dieciocho y mayores de dieciséis años, que vivan de forma independiente, con consentimiento de sus padres o tutores/as, o con autorización de la persona o institución que tenga a su cargo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Las personas mayores de dieciséis años.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Las personas menores de dieciocho años no tienen capacidad legal para contratar la prestación de su trabajo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Las personas menores de dieciocho años y mayores de dieciséis, siempre y cuando la jornada laboral a realizar no supere las siete horas diarias.",
+          "correcto": false
+        }
+      }
+    },
+    "136": {
+      "id": 136,
+      "text": "El contrato de trabajo ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Debe formularse siempre por escrito.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los contratos celebrados de palabra son nulos de pleno derecho.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Debe formularse según el modelo F3 de Lanbide.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Deben formularse en todo caso por escrito en el caso de los contratos de prácticas.",
+          "correcto": false
+        }
+      }
+    },
+    "137": {
+      "id": 137,
+      "text": "La duración del contrato en prácticas: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "No podrá ser superior a un año en la misma o distinta empresa en virtud de la misma titulación o certificado de profesionalidad.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "No podrá ser superior a dos años en la misma o distinta empresa en virtud de la misma titulación o certificado de profesionalidad.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se fijará por mutuo acuerdo del trabajador y de la parte contratante.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "No está regulado en el Estatuto de los Trabajadores.",
+          "correcto": false
+        }
+      }
+    },
+    "138": {
+      "id": 138,
+      "text": "Los convenios colectivos a que se refiere el Estatuto de los Trabajadores ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Debe ser registrados ante notario.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Deberán ser presentados ante la autoridad laboral competente para su definitiva entrada en vigor.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Deberán ser presentados ante la autoridad laboral competente, a los solos efectos de registro.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Deberán ser presentados y registrados ante el órgano competente de cada comunidad autónoma.",
+          "correcto": false
+        }
+      }
+    },
+    "139": {
+      "id": 139,
+      "text": "Entre el final de una jornada y el comienzo de la siguiente jornada…. ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Mediarán como mínimo 24 horas.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Mediarán como mínimo 12 horas.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Mediarán como mínimo 16 horas.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se establecerá en cada convenio colectivo atendiendo a las características del sector, gremio y producción.",
+          "correcto": false
+        }
+      }
+    },
+    "140": {
+      "id": 140,
+      "text": "El número de horas de trabajo efectivo ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "En ningún caso podrá ser superior a nueve horas diarias.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "No podrá ser superior a nueve diarias, salvo que por convenio colectivo o, en su defecto, acuerdo entre la empresa y los/as representantes de los/as trabajadores/as, se establezca otra distribución del tiempo de trabajo diario, respetando en todo caso el descanso entre jornadas.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "En ningún caso podrá ser superior a diez horas diarias.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "No podrá ser superior a diez horas diarias, salvo que por convenio colectivo o, en su defecto, acuerdo entre la empresa y los/as representantes de los/as trabajadores/as, se establezca otra distribución del tiempo de trabajo diario, respetando en todo caso el descanso entre jornadas.",
+          "correcto": false
+        }
+      }
+    },
+    "141": {
+      "id": 141,
+      "text": "Según la Ley de la Función Pública Vasca, entre la información que la relación de puestos de trabajo debe recoger obligatoriamente, una de las siguientes es errónea: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Régimen de dedicación.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Perfil lingüístico.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Fecha de preceptividad del perfil lingüístico.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Plaza bilingüe o monolingüe.",
+          "correcto": false
+        }
+      }
+    },
+    "142": {
+      "id": 142,
+      "text": "Según la Ley de la Función Pública Vasca, en un proceso selectivo mediante el sistema concurso-oposición, la valoración de la fase concurso será: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Siempre el 45%.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Como máximo el 45% de la puntuación máxima alcanzable en la de oposición.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es potestativo de la administración pública que convoca el proceso.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Como máximo el 50% de la puntuación máxima alcanzable en la de oposición.",
+          "correcto": false
+        }
+      }
+    },
+    "143": {
+      "id": 143,
+      "text": "¿Cuál de los siguientes motivos no es válido para designar a un funcionario/a en servicios especiales? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Cuando adquiera la condición de personal funcionario al servicio de organizaciones Internacionales o supranacionales.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Cuando sea autorizado por su Administración para realizar misiones internacionales o supranacionales por períodos superiores a seis meses en alguna de las Organizaciones No Gubernamentales inscritas y reconocidas por el Registro de ONGs de la CAV.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Cuando desempeñe cargo electivo retribuido y de dedicación exclusiva en las Corporaciones Locales.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Cuando sea elegido por las Cortes Generales para formar parte de los órganos constitucionales u otros cuya elección corresponda a las cámaras.",
+          "correcto": false
+        }
+      }
+    },
+    "144": {
+      "id": 144,
+      "text": "Según la Ley de la Función Pública Vasca, ¿cuál de los siguientes conceptos no es una retribución complementaria? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El complemento de destino.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El complemento de productividad.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El complemento específico.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Las pagas extras.",
+          "correcto": false
+        }
+      }
+    },
+    "145": {
+      "id": 145,
+      "text": "Según la Ley de la Función Pública Vasca, el incumplimiento de las normas sobre incompatibilidades constituye: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Falta muy grave.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Falta venial.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Falta grave.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Falta leve.",
+          "correcto": false
+        }
+      }
+    },
+    "146": {
+      "id": 146,
+      "text": "Según la Ley de la Función Pública Vasca, originar o tomar parte en altercados en los centros de trabajo constituye: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Falta grave.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Falta venial.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Falta muy grave.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Falta leve.",
+          "correcto": false
+        }
+      }
+    },
+    "147": {
+      "id": 147,
+      "text": "Para la acreditación del cumplimiento de los distintos perfiles lingüísticos, la entidad encargada de determinar el contenido y forma de las pruebas destinadas a la evaluación del conocimiento del euskera necesario en cada caso es: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Euskerazaintza.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Euskaltzaindia.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Instituto Vasco de Administraciones Públicas.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Euskara Batzorde Nagusia",
+          "correcto": false
+        }
+      }
+    },
+    "148": {
+      "id": 148,
+      "text": "Para acceder a una plaza cuyo perfil lingüístico sea preceptivo: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La persona aspirante seleccionada tiene el plazo de un año para cumplirlo, a contar desde la fecha de la publicación de los resultados definitivos del proceso selectivo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La persona aspirante seleccionada tiene el plazo de seis meses cumplirlo, a contar desde la fecha de la publicación de los resultados definitivos del proceso selectivo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El cumplimiento del mismo será exigencia para el acceso.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La persona aspirante seleccionada tiene el plazo de 3 meses para cumplirlo, a contar desde la fecha de la publicación de los resultados definitivos del proceso selectivo.",
+          "correcto": false
+        }
+      }
+    },
+    "149": {
+      "id": 149,
+      "text": "¿Qué universidades componen el Sistema Universitario Vasco? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Sistema Universitario Vasco está formado por las universidades públicas con sede en el territorio de la Comunidad Autónoma Vasca.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Sistema Universitario Vasco está formado por todas las universidades con sede en el territorio de la Comunidad Autónoma del País Vasco.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Sistema Universitario Vasco está formado por la UPV/EHU, la Universidad de Deusto, la Universidad de Mondragón, el Instituto de Máquina Herramienta y el Centro de Investigación Universitaria de Zamudio.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El Sistema Universitario Vasco está formado por todas las universidades con sede en el territorio de la Comunidad Autónoma del País Vasco, y aquellas cuya sede esté en la Comunidad Foral de Navarra y sea admitida su solicitud de adhesión, según lo dispuesto en la disposición transitoria cuarta de la Ley 3/2004, de 25 febrero.",
+          "correcto": false
+        }
+      }
+    },
+    "150": {
+      "id": 150,
+      "text": "La elaboración de los planes de estudios en la UPV/EHU: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es potestad del Claustro de cada universidad.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "En el caso de la universidad pública no será necesario el informe previo de la Agencia de Evaluación de la Calidad y Acreditación del Sistema Universitario Vasco.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "En cualquier caso será necesario el informe previo de la Agencia de Evaluación de la Calidad y Acreditación del Sistema Universitario Vasco.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Para su aprobación definitiva requiere el visto bueno del Consejo Vasco de Universidades.",
+          "correcto": false
+        }
+      }
+    },
+    "151": {
+      "id": 151,
+      "text": "La creación y supresión de universidades públicas: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Corresponde al Parlamento, si el ámbito de actuación de la universidad son los tres territorios históricos de la CAV.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Si su ámbito de actuación se ciñe a un solo territorio histórico, corresponderá a la Juntas Generales de ese territorio.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Corresponde al Parlamento Vasco, con carácter exclusivo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Corresponde al departamento del Gobierno Vasco con competencias en materia de educación universitaria.",
+          "correcto": false
+        }
+      }
+    },
+    "152": {
+      "id": 152,
+      "text": "El plan universitario: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Tiene una vigencia de cuatro años.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es plan quinquenal.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es un plan trianual.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Su vigencia la establece la Consejería de Educación.",
+          "correcto": false
+        }
+      }
+    },
+    "153": {
+      "id": 153,
+      "text": "¿Cuál de estos organismos no está recogido en la Ley de Sistema Universitario Vasco? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Consejo Vasco de Universidades.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Consejo de Coordinación de la Enseñanza Pública Universitaria.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Consejo Social.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La Conferencia de Rectores de la CAV.",
+          "correcto": false
+        }
+      }
+    },
+    "154": {
+      "id": 154,
+      "text": "En los presupuestos de la universidad pública, los contrato-programa constituyen: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La ley no autoriza a la universidad pública firmar contratos-programa. solo a las universidades privadas.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Aportación básica.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Aportación subsidiaria.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Financiación condicionada.",
+          "correcto": false
+        }
+      }
+    },
+    "155": {
+      "id": 155,
+      "text": "Si una universidad no pública del Sistema Universitario Vasco quiere crear una nueva facultad: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Necesita la previa autorización del Consejo Vasco de Universidades.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Necesita la previa autorización del departamento competente en materia de universidades.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Necesita la previa autorización del Parlamento Vasco.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Necesita la autorización de las Juntas Generales del Territorio Histórico donde vaya a tener su sede la nueva facultad.",
+          "correcto": false
+        }
+      }
+    },
+    "156": {
+      "id": 156,
+      "text": "La UPV/EHU: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es una institución de Derecho Foral.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es una institución de Derecho Público Común.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es una institución de Derecho Público.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Es una institución de Derecho Privado y Financiación Pública.",
+          "correcto": false
+        }
+      }
+    },
+    "157": {
+      "id": 157,
+      "text": "El régimen de concesión de todas las modalidades de comisiones de servicio, licencias, permisos o excedencias del personal docente e investigador de la UPV/EHU: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Corresponde al Claustro Universitario.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Se adopta por acuerdo entre el o la Gerente, el Comité de Empresa y la Junta de Personal.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Lo establecerá el Consejo de Gobierno, previo informe de la Comisión de Profesorado de la UPV/EHU.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Lo establecerá el Consejo de Gobierno, a propuesta del o la Gerente.",
+          "correcto": false
+        }
+      }
+    },
+    "158": {
+      "id": 158,
+      "text": "La convocatoria de las pruebas selectivas de acceso a las plazas vacantes comprometidas en la oferta de empleo de la UPV/EHU para el personal de administración y servicios ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Será aprobada por el o la titular de la Consejería del Gobierno Vasco que ostente las competencias en materia de Universidad.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Será aprobada por la Junta de Gobierno a propuesta del Rector o Rectora.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Será aprobada por el Consejo de Gobierno a propuesta del Rector o Rectora.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Será aprobada por el o la titular de la Consejería del Gobierno Vasco que ostente las competencias en materia de empleo público.",
+          "correcto": false
+        }
+      }
+    },
+    "159": {
+      "id": 159,
+      "text": "¿Cuál de los siguientes no es un órgano de representación del personal de administración y servicios de la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La Junta de Personal de Administración y Servicios.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Comité de Empresa.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Las Asambleas de Centro.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Las Secciones Sindicales.",
+          "correcto": false
+        }
+      }
+    },
+    "160": {
+      "id": 160,
+      "text": "El o la aldezle será elegido por: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Consejo de Gobierno por mayoría absoluta para un periodo de 5 años.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Claustro, a propuesta del Consejo de Gobierno, por mayoría absoluta de las y los miembros presentes en el Claustro, para un periodo de 5 años.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Claustro, a propuesta del Rector o Rectora, para un periodo de 5 años.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El Claustro, a propuesta del Consejo de Gobierno, por mayoría de dos tercios de las y los miembros presentes en el Claustro, para un periodo de 5 años.",
+          "correcto": false
+        }
+      }
+    },
+    "161": {
+      "id": 161,
+      "text": "La creación, modificación o supresión de centros universitarios del Sistema Universitario Vasco: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es competencia del Claustro Universitario, a propuesta del Consejo de Gobierno.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Corresponde al Consejo de Gobierno.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Será aprobado por el o la titular de la Consejería del Gobierno Vasco que ostente las competencias en materia de Universidad.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Corresponde al Consejo de Gobierno y a la Junta de Campus donde esté ubicado el Centro, o donde se vaya a ubicar.",
+          "correcto": false
+        }
+      }
+    },
+    "162": {
+      "id": 162,
+      "text": "¿Cuál es el órgano de contratación de la UPV/EHU? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La Comisión de Contratación y Planificación.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Rector o Rectora, sin perjuicio de las delegaciones que efectúe.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La Gerencia.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Las Vicegerencias de Campus, ya que es una universidad multicampus.",
+          "correcto": false
+        }
+      }
+    },
+    "163": {
+      "id": 163,
+      "text": "El presupuesto de la UPV/EHU es aprobado definitivamente por: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Consejo de Gobierno.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Claustro de Gestión que se celebra anualmente.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El Consejo Social.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El Claustro.",
+          "correcto": false
+        }
+      }
+    },
+    "164": {
+      "id": 164,
+      "text": "Según la Ley 4/2005 de 18 de febrero para la Igualdad de Mujeres y Hombres, sin perjuicio de la acción directa de las instituciones comunes de la comunidad autónoma, la ejecución de las normas en materia de igualdad de mujeres y hombres corresponde: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "A la administración General del Estado.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "A las instituciones de la Comunidad Autónoma.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "A los órganos locales de los territorios históricos y a la Administración Foral.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "A los órganos forales de los territorios históricos y a la Administración local.",
+          "correcto": false
+        }
+      }
+    },
+    "165": {
+      "id": 165,
+      "text": "Según la Ley 4/2005 de 18 de febrero para la Igualdad de Mujeres y Hombres, corresponde a las instituciones comunes en materia de igualdad el diseño y ejecución de medidas: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "De no discriminación positiva.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "De acción positiva.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "De acción pública.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "De discriminación positiva.",
+          "correcto": false
+        }
+      }
+    },
+    "166": {
+      "id": 166,
+      "text": "Según la Ley 4/2005 de 18 de febrero para la Igualdad de Mujeres y Hombres, la evaluación del grado de cumplimiento de la presente ley es de competencia: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "De la Administración de la Comunidad Autónoma de Euskadi.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "De las Administraciones Públicas Vascas.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "De los tribunales ordinarios.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "De la Administración General del Estado.",
+          "correcto": false
+        }
+      }
+    },
+    "167": {
+      "id": 167,
+      "text": "Según la Ley 4/2005 de 18 de febrero para la Igualdad de Mujeres y Hombres, corresponde a la administración de la comunidad autónoma la planificación y diseño de la metodología para adecuar al principio de igualdad: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Las ponencias.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los dictámenes.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Las estadísticas.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los informes.",
+          "correcto": false
+        }
+      }
+    },
+    "168": {
+      "id": 168,
+      "text": "Según la Ley 4/2005 de 18 de febrero para la Igualdad de Mujeres y Hombres, corresponde a la administración de la comunidad autónoma la realización de estudios e investigaciones sobre la situación de mujeres y hombres que deban hacerse con carácter unitario: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Para todos los territorios históricos.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Para toda la Comunidad Autónoma vasca y para toda Euskal Herria.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Para toda la Comunidad Autónoma vasco.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Para todos los municipios de la CAPV.",
+          "correcto": false
+        }
+      }
+    },
+    "169": {
+      "id": 169,
+      "text": "Según la Ley 4/2005 de 18 de febrero para la Igualdad de Mujeres y Hombres, corresponde a la administración de la comunidad autónoma, asimismo, la realización de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Actividades de información sobre la situación de desigualdad de mujeres y hombres.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Actividades de sensibilización sobre la situación de desigualdad de mujeres y hombres.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Actividades de orientación sobre la situación de desigualdad de mujeres y hombres.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Actividades de coordinación sobre la situación de desigualdad de mujeres y hombres.",
+          "correcto": false
+        }
+      }
+    },
+    "170": {
+      "id": 170,
+      "text": "Según la Ley 4/2005 de 18 de febrero para la Igualdad de Mujeres y Hombres, corresponde a la administración de la comunidad autónoma, la prestación de programas o servicios con el objetivo de garantizar el acceso a los derechos sociales básicos de las mujeres que sufren: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Discriminación, que por su naturaleza hayan de presentarse con carácter unitario para toda la Comunidad.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Discriminación múltiple, que por su naturaleza hayan de prestarse con carácter unitario para toda la Comunidad.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Discriminación directa, que por su naturaleza hayan de prestarse con carácter unitario para toda la Comunidad.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Discriminación indirecta, que por su naturaleza hayan de prestarse con carácter unitario para toda la Comunidad.",
+          "correcto": false
+        }
+      }
+    },
+    "171": {
+      "id": 171,
+      "text": "Según la Ley 4/2005 de 18 de febrero para la Igualdad de Mujeres y Hombres, corresponde a la administración de la comunidad autónoma, para la conciliación de la vida personal, laboral y familiar de mujeres y hombres, el establecimiento de recursos y servicios: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Públicos o privados.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Sociocomunitarios.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Públicos.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Públicos y privados.",
+          "correcto": false
+        }
+      }
+    },
+    "172": {
+      "id": 172,
+      "text": "La Ley 4/2005 de 18 de febrero para la Igualdad de Mujeres y Hombres considera que existe una representación equilibrada de mujeres y hombres en los órganos administrativos pluripersonales cuando los dos sexos están representados: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Al 50 %.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "En un porcentaje superior al 40 %.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Al menos en un 45 %.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Al menos al 40 %.",
+          "correcto": false
+        }
+      }
+    },
+    "173": {
+      "id": 173,
+      "text": "El Convenio Colectivo del Personal Laboral de Administración y Servicios de la UPV/EHU se aplicará ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Al Personal de Administración y Servicios de la UPV/EHU que tenga relación jurídico laboral de carácter indefinido y temporal.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "A todo el Personal de Administración y Servicios de la UPV/EHU.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Al personal funcionario al servicio de la UPV/EHU.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Al Personal de Administración y Servicios que tenga únicamente relación Jurídico laboral de carácter indefinido.",
+          "correcto": false
+        }
+      }
+    },
+    "174": {
+      "id": 174,
+      "text": "Las propuestas de modificaciones de las relaciones de puestos de trabajo del personal laboral: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se aprobarán por el Consejo de Gobierno de la UPV/EHU a propuesta del o de la Gerente y previa negociación en la Comisión Paritaria.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Se aprobarán por el Consejo de Gobierno de la UPV/EHU a propuesta del o de la Gerente y previa negociación en la Comisión de Planificación.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se aprobarán por el Consejo Social de la UPV/EHU a propuesta del o de la Gerente y previa negociación en la Comisión de Planificación.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se aprobarán por el Claustro de la UPV/EHU a propuesta del o de la Gerente y previa negociación en la Comisión de Planificación.",
+          "correcto": false
+        }
+      }
+    },
+    "175": {
+      "id": 175,
+      "text": "En la promoción profesional podrá participar: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los trabajadores y trabajadoras que dispongan de vínculo laboral fijo en la UPV/EHU.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los trabajadores y trabajadoras que dispongan de vínculo laboral fijo en la UPV/EHU siempre que tengan una antigüedad mínima de dos años en el puesto del que son titulares.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los trabajadores y trabajadoras que dispongan de vínculo laboral en la UPV/EHU.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Todos los trabajadores y trabajadoras que tengan una antigüedad mínima de 5 años.",
+          "correcto": false
+        }
+      }
+    },
+    "176": {
+      "id": 176,
+      "text": "Las relaciones de puestos de trabajo deberán incluir: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La totalidad de los existentes que se hallen dotados presupuestariamente.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Sólo los reservados a personal funcionario que se hallen dotados presupuestariamente.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Sólo los reservados a personal funcionario y personal laboral, excluidos los que se encuentren vacantes.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La totalidad de los existentes, estén o no dotados presupuestariamente.",
+          "correcto": false
+        }
+      }
+    },
+    "177": {
+      "id": 177,
+      "text": "Según el Convenio Colectivo del Personal Laboral de Administración y Servicios de la UPV/EHU, el permiso por asuntos propios: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Salvo causas muy justificadas, solo podrá solicitarse después de haber transcurrido un año del ingreso o reingreso en el servicio activo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Salvo causas muy justificadas, solo podrá solicitarse después de haber transcurrido un año del ingreso o reingreso en el servicio activo, previa autorización de la Comisión de Planificación.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Salvo causas muy justificadas, solo podrá solicitarse después de haber transcurrido dos años del ingreso o reingreso en el servicio activo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Salvo causas muy justificadas, solo podrá solicitarse después de haber transcurrido dos años del ingreso o reingreso en el servicio activo, previa autorización de la Comisión de Planificación.",
+          "correcto": false
+        }
+      }
+    },
+    "178": {
+      "id": 178,
+      "text": "El trabajador o trabajadora que se encuentre en excedencia forzosa: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Tendrá derecho a la reserva de su puesto de trabajo, pero no se le computará la antigüedad.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Se le computará la antigüedad, pero no tendrá derecho a la reserva de su puesto de trabajo.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Tendrá derecho a la reserva de su puesto de trabajo, y al cómputo de la antigüedad de su vigencia.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Tendrá derecho a la reserva de su puesto de trabajo si dicha excedencia es inferior a 2 años y al cómputo de la antigüedad de su vigencia.",
+          "correcto": false
+        }
+      }
+    },
+    "179": {
+      "id": 179,
+      "text": "Según el Convenio Colectivo del Personal Laboral de Administración y Servicios de la UPV/EHU, por razón de matrimonio propio, el personal tendrá derecho a una licencia de ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "15 días laborables.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "20 días laborables.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "15 días naturales.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "20 días naturales.",
+          "correcto": false
+        }
+      }
+    },
+    "180": {
+      "id": 180,
+      "text": "El fondo social de la UPV/EHU está habilitado: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Para el conjunto del personal docente e investigador y para el personal de administración y servicios de la UPV/EHU.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Única y exclusivamente para el personal funcionario.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Única y exclusivamente para el personal laboral.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Para el conjunto del personal docente e investigador de la UPV/EHU.",
+          "correcto": false
+        }
+      }
+    },
+    "181": {
+      "id": 181,
+      "text": "La comisión de formación prevista en el Convenio Colectivo del Personal Laboral de Administración y Servicios de la UPV/EHU, estará integrada por: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Dos personas representantes de cada una de las Centrales Sindicales con representación en el Comité de Empresa y un número igual de representantes de la Administración.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Una persona representante de cada una de las Centrales Sindicales con representación en el Comité de Empresa y un número igual de representantes de la Administración.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Dos personas representantes de la Central Sindical mayoritaria, más un representante del resto de Centrales Sindicales con representación en el Comité de Empresa y un número igual de representantes de la Administración.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Las mismas personas representantes de la Comisión paritaria.",
+          "correcto": false
+        }
+      }
+    },
+    "182": {
+      "id": 182,
+      "text": "El personal que desee acogerse a la jubilación parcial y contrato relevo: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Tiene que ser laboral fijo.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Tiene que tener una antigüedad de al menos 20 años.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Tiene que ser laboral fijo y ocupar con carácter definitivo una plaza en la UPV/EHU de servicio activo o en otra que comporte reserva de plaza o tenga reconocida la estabilidad.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Tiene que ser laboral fijo y ocupar con carácter definitivo una plaza en la UPV/EHU de servicio activo o en otra que comporte reserva de plaza.",
+          "correcto": false
+        }
+      }
+    },
+    "183": {
+      "id": 183,
+      "text": "El Servicio de Prevención de la UPV/EHU se organiza en: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un Área Sanitaria y un Área Técnica.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Un Área Sanitaria por Cada Campus y un Área Técnica.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Un Área Sanitaria y un Área Técnica por cada Campus.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Un Área Sanitaria, un Área Técnica y el Departamento de Psicología Aplicada.",
+          "correcto": false
+        }
+      }
+    },
+    "184": {
+      "id": 184,
+      "text": "Le corresponde al área sanitaria del Servicio de Prevención de la UPV/EHU: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Realizar la Evaluación de Riesgos de los Centros de la UPV/EHU.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Realizar las funciones de vigilancia de la salud, así como las relacionadas con la ergonomía y la psicosociología aplicada.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Investigar los accidentes e incidentes, con el fin de identificar sus causas y proceder a su eliminación.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Diseñar y coordinar la elaboración de los Planes de Emergencia.",
+          "correcto": false
+        }
+      }
+    },
+    "185": {
+      "id": 185,
+      "text": "Los delegados y delegadas de prevención son ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los responsables de diseñar los Planes de Emergencia.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Junto con los/as Técnicos/as de Prevención planificará anualmente la actividad preventiva.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los representantes de los/as trabajadores y trabajadoras de la Universidad en materia de Prevención y tendrán las competencias y derechos recogidos en la normativa sobre Prevención de Riesgos Laborales.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Serán los/as responsables de gestionar los planes de Emergencia.",
+          "correcto": false
+        }
+      }
+    },
+    "186": {
+      "id": 186,
+      "text": "El personal directivo profesional de las administraciones públicas: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Estará sujeto a evaluación con arreglo a los criterios de eficacia y eficiencia.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "No está regulado en el Estatuto Básico del Empleado Público.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es contratado para periodos de cuatro años, renovables solo por otros cuatro.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "No está contemplado para las universidades públicas.",
+          "correcto": false
+        }
+      }
+    },
+    "187": {
+      "id": 187,
+      "text": "Tienen la consideración de interesados en un procedimiento administrativo: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Quienes lo promuevan como titulares de derechos o intereses legítimos individuales o colectivos.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los que, sin haber iniciado el procedimiento, tengan derechos que puedan resultar afectados por la decisión que en el mismo se adopte.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Aquellos cuyos intereses legítimos, individuales o colectivos, puedan resultar afectados por la resolución y se personen en el procedimiento en tanto no haya recaído resolución definitiva.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Todas las respuestas anteriores son correctas.",
+          "correcto": false
+        }
+      }
+    },
+    "188": {
+      "id": 188,
+      "text": "De conformidad con lo establecido en la Ley 39/2015, del Procedimiento Administrativo Común de las Administraciones Públicas, las universidades públicas tienen la consideración de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Administraciones Públicas.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Corporaciones de Derecho Público.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Consorcios.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Sector público institucional.",
+          "correcto": false
+        }
+      }
+    },
+    "189": {
+      "id": 189,
+      "text": "Cuando en un procedimiento administrativo un determinado plazo se señale en días, se entiende: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Que son días naturales.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Que son días hábiles, excluyendo del cómputo únicamente los domingos y los declarados festivos.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Que son hábiles, excluyendo del cómputo los sábados, los domingos y los declarados festivos.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Ninguna de las anteriores respuestas es correcta.",
+          "correcto": false
+        }
+      }
+    },
+    "190": {
+      "id": 190,
+      "text": "De conformidad con lo establecido en la Ley 39/2015, son nulos de pleno derecho: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "los actos administrativos verbales.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "los actos administrativos dictados prescindiendo total y absolutamente del procedimiento legalmente establecido.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "los actos administrativos dictados fuera de plazo.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "todas las respuestas anteriores son correctas.",
+          "correcto": false
+        }
+      }
+    },
+    "191": {
+      "id": 191,
+      "text": "De conformidad con lo establecido en la Ley 39/2015, el plazo para interponer un recurso de alzada contra un acto expreso es de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Quince días.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Un mes.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Dos meses.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Tres meses.",
+          "correcto": false
+        }
+      }
+    },
+    "192": {
+      "id": 192,
+      "text": "De conformidad con lo establecido en la Ley 39/2015, interpuesto un recurso de alzada, el plazo para resolver y notificar dicha resolución es de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un mes.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Dos meses.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Tres meses.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Seis meses.",
+          "correcto": false
+        }
+      }
+    },
+    "193": {
+      "id": 193,
+      "text": "Indique cuál de los siguientes supuestos no es una causa de inadmisión de un recurso administrativo: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Que el recurrente carezca de legitimación.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Que haya transcurrido el plazo para interponer el recurso.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Que se trate de un acto no susceptible de recurso.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El error del recurrente en la calificación del recurso.",
+          "correcto": false
+        }
+      }
+    },
+    "194": {
+      "id": 194,
+      "text": "Cuando la norma reguladora de un procedimiento administrativo no regule un plazo distinto, el plazo máximo para resolver dicho procedimiento y notificar la resolución será de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un mes.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Dos meses.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Tres meses.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Seis meses.",
+          "correcto": false
+        }
+      }
+    },
+    "195": {
+      "id": 195,
+      "text": "De conformidad con lo establecido en la Ley 39/2015, toda notificación debe ser cursada: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Dentro del plazo de diez días a partir de la fecha en la que el acto administrativo haya sido dictado.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Dentro del plazo de quince días a partir de la fecha en la que el acto administrativo haya sido dictado.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Dentro del plazo de un mes a partir de la fecha en la que el acto administrativo haya sido dictado.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Dentro del plazo de dos meses a partir de la fecha en la que el acto administrativo haya sido dictado.",
+          "correcto": false
+        }
+      }
+    },
+    "196": {
+      "id": 196,
+      "text": "De conformidad con la Ley 39/2015, los actos administrativos serán objeto de publicación: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Siempre.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Cuando el acto tenga por destinatario una pluralidad indeterminada de personas.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Cuando se trate de un acto desfavorable.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los actos administrativos nunca pueden ser objeto de publicación.",
+          "correcto": false
+        }
+      }
+    },
+    "197": {
+      "id": 197,
+      "text": "De conformidad con lo establecido en la Ley 39/2015, si el/la interesado/a en un procedimiento administrativo, o su representante, rechazan la notificación de una actuación administrativa: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Deberá intentarse nuevamente la notificación hasta que el/la interesado/a la reciba.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Se publicará dicha actuación administrativa en el Boletín Oficial correspondiente.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se hará constar en el expediente, especificándose las circunstancias del intento de notificación y el medio, dando por efectuado el trámite y siguiéndose el procedimiento.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se suspenderá el procedimiento en todo caso.",
+          "correcto": false
+        }
+      }
+    },
+    "198": {
+      "id": 198,
+      "text": "El mantenimiento del Registro General de la UPV/EHU es función de: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La Secretaria o Secretario General.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La Rectora o Rector",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los jefes de servicio correspondientes.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los Vicerrectorados de Campus.",
+          "correcto": false
+        }
+      }
+    },
+    "199": {
+      "id": 199,
+      "text": "El Claustro Universitario: ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es el órgano de gobierno de la universidad.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es el órgano de participación de la sociedad en la universidad.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es la unidad de docencia e investigación encargada de coordinar las enseñanzas de uno o varios ámbitos de conocimiento.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Es el máximo órgano de representación de la comunidad universitaria.",
+          "correcto": false
+        }
+      }
+    },
+    "200": {
+      "id": 200,
+      "text": "De conformidad con lo establecido en los Estatutos de la UPV/EHU, ¿a qué órgano le corresponde el ejercicio de las competencias que no estén expresamente atribuidas a otros órganos? ",
+      "clue": "No clues",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Al Consejo de Gobierno.",
+          "correcto": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Al Claustro.",
+          "correcto": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Al Rector o Rectora.",
+          "correcto": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Al Secretario o Secretaria General.",
+          "correcto": false
+        }
+      }
+    }
+  }
+}

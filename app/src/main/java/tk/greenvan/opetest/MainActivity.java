@@ -28,7 +28,8 @@ import java.util.TreeMap;
 
 import dmax.dialog.SpotsDialog;
 import tk.greenvan.opetest.adapter.TestGridAdapter;
-import tk.greenvan.opetest.common.Common;
+import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.db.OfflineDB;
 import tk.greenvan.opetest.model.Answer;
 import tk.greenvan.opetest.model.Test;
 import tk.greenvan.opetest.model.UserTest;
@@ -44,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     TestGridAdapter testGridAdapter;
 
     private FirebaseDatabase mFirebaseDatabase;
-
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -57,21 +57,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mUsername = ANONYMOUS;
-        mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mFirebaseAuth = FirebaseAuth.getInstance();
 
-        //TODO en modo Offline, se cargan desde SQLite
-        Common.mTestReference = this.mFirebaseDatabase.getReference().child("tests");
-        //Los datos se cargan tras autentificar: loadTestList();
+        if (Common.Mode == Common.MODE.ONLINE) {
+            mFirebaseDatabase = FirebaseDatabase.getInstance();
+            mFirebaseAuth = FirebaseAuth.getInstance();
 
-        //TODO cuando no hay conexión, mostrar error y no quedarse "loading..."
+            Common.mTestReference = this.mFirebaseDatabase.getReference().child("tests");
+            //Los datos se cargan tras autentificar: loadTestList();
+
+            //TODO cuando no hay conexión, mostrar error y no quedarse "loading..."
+        }
 
 
 
         /* TEST GRID */
         rv_test_grid = findViewById(R.id.rv_test_list_grid);
         rv_test_grid.setHasFixedSize(true);
-        rv_test_grid.setLayoutManager(new GridLayoutManager(this,2));
+        rv_test_grid.setLayoutManager(new GridLayoutManager(this, 2));
 
 
         testGridAdapter = new TestGridAdapter(MainActivity.this, Common.testList);
@@ -83,47 +85,52 @@ public class MainActivity extends AppCompatActivity {
         /* END OF TEST GRID */
 
 
+        if (Common.Mode == Common.MODE.ONLINE) {
+            mAuthStateListener = new FirebaseAuth.AuthStateListener() {
+                @Override
+                public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                    FirebaseUser user = firebaseAuth.getCurrentUser();
+                    if (user != null) {
+                        //user is signed in
+                        //onSignedInItitialize(user.getDisplayName());
+                        onSignedInItitialize(user.getUid());
 
-        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    //user is signed in
-                    //onSignedInItitialize(user.getDisplayName());
-                    onSignedInItitialize(user.getUid());
+                    } else {
+                        //user is signed out
+                        onSignedOutCleanup();
+                        // Choose authentication providers
+                        List<AuthUI.IdpConfig> providers = Arrays.asList(
+                                new AuthUI.IdpConfig.EmailBuilder().build(),
+                                new AuthUI.IdpConfig.GoogleBuilder().build());
 
-                } else {
-                    //user is signed out
-                    onSignedOutCleanup();
-                    // Choose authentication providers
-                    List<AuthUI.IdpConfig> providers = Arrays.asList(
-                            new AuthUI.IdpConfig.EmailBuilder().build(),
-                            new AuthUI.IdpConfig.GoogleBuilder().build());
-
-                    // Create and launch sign-in intent
-                    startActivityForResult(
-                            AuthUI.getInstance()
-                                    .createSignInIntentBuilder()
-                                    .setIsSmartLockEnabled(false)
-                                    .setAvailableProviders(providers)
-                                    .build(),
-                            RC_SIGN_IN);
+                        // Create and launch sign-in intent
+                        startActivityForResult(
+                                AuthUI.getInstance()
+                                        .createSignInIntentBuilder()
+                                        .setIsSmartLockEnabled(false)
+                                        .setAvailableProviders(providers)
+                                        .build(),
+                                RC_SIGN_IN);
+                    }
                 }
-            }
-        };
+            };
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        mFirebaseAuth.addAuthStateListener(mAuthStateListener);
+        if (Common.Mode == Common.MODE.ONLINE)
+            mFirebaseAuth.addAuthStateListener(mAuthStateListener);
+        else onSignedInItitialize(mUsername);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        mFirebaseAuth.removeAuthStateListener(mAuthStateListener);
+        if (Common.Mode == Common.MODE.ONLINE)
+            mFirebaseAuth.removeAuthStateListener(mAuthStateListener);
+        else onSignedOutCleanup();
     }
 
 
@@ -176,6 +183,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadTestList(){
+        if (Common.Mode == Common.MODE.ONLINE) {
+            onlineLoadTestList();
+        } else {
+            OfflineDB.loadTestList(MainActivity.this);
+            testGridAdapter.notifyDataSetChanged();
+        }
+    }
+
+    public void loadUserTestList() {
+        if (Common.Mode == Common.MODE.ONLINE) {
+            onlineLoadUserTestList(); //Aquí es más eficiente porque los carga todos juntos
+        } else {
+            //OfflineDB.loadUserTestList(MainActivity.this); //Quizá no sea necesario aquí
+        }
+
+    }
+
+    public void onlineLoadTestList() {
 
         final AlertDialog dialog = new SpotsDialog.Builder()
                 .setContext(MainActivity.this)
@@ -207,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void loadUserTestList(){
+    public void onlineLoadUserTestList() {
 
         /*final AlertDialog dialog = new SpotsDialog.Builder()
                 .setContext(MainActivity.this)

@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModel;
 
 import java.util.TreeMap;
 
-import tk.greenvan.opetest.common.Common;
+import tk.greenvan.opetest.db.Common;
 import tk.greenvan.opetest.model.Option;
 
 public class PageViewModel extends ViewModel {

@@ -1,0 +1,5487 @@
+{
+  "id": "xsistemas1",
+  "name": "TICs G1 Sist. sin preguntas de G2 y G3",
+  "question": {
+    "1": {
+      "id": 1,
+      "text": "El módulo mod_status permite a los administradores de apache monitorizar: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El servidor mediante la web.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "El estado de los buzones de los usuarios.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El cortafuegos.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El acceso a cada página web.",
+          "correct": false
+        }
+      }
+    },
+    "2": {
+      "id": 2,
+      "text": "Para que la página de estado del servidor apache localizada en http://server/status se actualice a si misma cada minuto utilizaremos la url: ",
+      "clue": "C. http://server/status?refresh=60 \n https://www.tecmint.com/monitor-apache-web-server-load-and-page-statistics/",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "http://server/status?refresh",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "http://server/status?refresh=1m",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "http://server/status?refresh=60",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "http://server/status?refresheveryminute",
+          "correct": false
+        }
+      }
+    },
+    "3": {
+      "id": 3,
+      "text": "En un servidor apache, el tamaño del campo mes incluido en el registro CLF es: ",
+      "clue": "B. 3 letras. \n https://httpd.apache.org/docs/2.4/logs.html",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "un dígito.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "3 letras.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "4 dígitos.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "+ o – seguido de dos dígitos.",
+          "correct": false
+        }
+      }
+    },
+    "4": {
+      "id": 4,
+      "text": "En un servidor apache, el tamaño del campo año incluido en el registro CLF es: ",
+      "clue": "C. 4 dígitos. \n https://httpd.apache.org/docs/2.4/logs.html",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "un dígito.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "3 letras.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "4 dígitos.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "+ o – seguido de dos dígitos.",
+          "correct": false
+        }
+      }
+    },
+    "5": {
+      "id": 5,
+      "text": "En apache, los mensajes registrados al nivel de depuración de errores que incluyen el archivo fuente y el número de línea en el que se genera el mensaje, para ayudar a la depuración de errores y al desarrollo del código, son de nivel: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Alert.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Crit.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Debug.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Error.",
+          "correct": false
+        }
+      }
+    },
+    "6": {
+      "id": 6,
+      "text": "La utilidad de apache para rotar los archivos de registro y poder manejarlos cuando aumentan de tamaño es: ",
+      "clue": "D. (Pero en realidad es rotatelogs)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Rotatorio.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Apache Rotate.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "RegRotation.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Rotatelog.",
+          "correct": true
+        }
+      }
+    },
+    "7": {
+      "id": 7,
+      "text": "La utilidad para que en un servidor apache la búsqueda de nombres de host se realice de forma separada y reducir el tiempo de respuesta es: ",
+      "clue": "A. logresolve. \n http://manuales.guebs.com/apache-2.0/programs/logresolve.html",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "logresolve.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "dnslook.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "whois.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "apachelog.",
+          "correct": false
+        }
+      }
+    },
+    "8": {
+      "id": 8,
+      "text": "La variable del servidor apache para las reglas de reescritura de URL correspondiente a la URL enviada es: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "HTTP_COOKIE",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "HTTP_HOST",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "HTTP_FORWARDED",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "REMOTE_ADDR",
+          "correct": false
+        }
+      }
+    },
+    "9": {
+      "id": 9,
+      "text": "La variable del servidor apache para las reglas de reescritura de URL correspondiente a la dirección IP del cliente web es: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "HTTP_COOKIE",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "HTTP_HOST",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "HTTP_FORWARDED",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "REMOTE_ADDR",
+          "correct": true
+        }
+      }
+    },
+    "10": {
+      "id": 10,
+      "text": "Si el usuario tiene configurado un proxy en su propio navegador web, este proxy es: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Servidor proxy forward.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Servidor proxy dinámico.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Servidor proxy reverse.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Servidor proxy on air.",
+          "correct": false
+        }
+      }
+    },
+    "11": {
+      "id": 11,
+      "text": "Un medio de transmisión guiado que proporciona un enlace directo entre los dos únicos dispositivos que comparten el medio es: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "multipunto.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "punto a punto.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "compartido.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "multidrop.",
+          "correct": false
+        }
+      }
+    },
+    "12": {
+      "id": 12,
+      "text": "Cuando todas las componentes de una señal tienen frecuencias múltiplo de una dada, ésta se denomina: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Frecuencia básica.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Frecuencia de Fourier.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Frecuencia fundamental.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Primera frecuencia.",
+          "correct": false
+        }
+      }
+    },
+    "13": {
+      "id": 13,
+      "text": "La herramienta que convierte una señal analógica en una señal digital es el: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Teléfono.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Modem.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Códec.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Transmisor digital.",
+          "correct": false
+        }
+      }
+    },
+    "14": {
+      "id": 14,
+      "text": "La herramienta que convierte datos digitales en una señal analógica es el: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Teléfono.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Modem.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Códec.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Transmisor digital.",
+          "correct": false
+        }
+      }
+    },
+    "15": {
+      "id": 15,
+      "text": "Al acoplamiento no deseado entre las líneas que transportan las señales se le denomina: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Diafonía.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Ruido de intermodulación.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Ruido térmico.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Ruido de fondo.",
+          "correct": false
+        }
+      }
+    },
+    "16": {
+      "id": 16,
+      "text": "El medio guiado que consiste en dos cables de cobre embutidos en aislante y entrecruzados en espiral es: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Par trenzado.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Cable coaxial.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Fibra óptica.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "GSM.",
+          "correct": false
+        }
+      }
+    },
+    "17": {
+      "id": 17,
+      "text": "El medio guiado que consiste en un conductor cilíndrico externo que rodea un cable conductor separados por una serie de anillos aislantes regularmente espaciados es: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Par trenzado.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Cable coaxial.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Fibra óptica.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "GSM.",
+          "correct": false
+        }
+      }
+    },
+    "18": {
+      "id": 18,
+      "text": "Los servicios que proporciona IP a TCP son: ",
+      "clue": "B. Send (envío) y Deliver (entrega).\nBolsas UPV Grupo I Sistemas 2006 preg 1",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Send (envío) y Response (respuesta).",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Send (envío) y Deliver (entrega).",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Call (llamada) y Response (respuesta).",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "SYN, SYN/ACK y ACK.",
+          "correct": false
+        }
+      }
+    },
+    "19": {
+      "id": 19,
+      "text": "El SSID en una red WiFi: ",
+      "clue": "C. Puede ocultarse evitando su propagación, convirtiendo la red en encubierta.).\nBolsas UPV Grupo I Sistemas 2006 preg 2",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es la clave de la red.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es propagado por los Access Point de manera continua, no pudiendo desactivarse su emisión.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Puede ocultarse evitando su propagación, convirtiendo la red en encubierta.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Está oculto para garantizar la seguridad de la red.",
+          "correct": false
+        }
+      }
+    },
+    "20": {
+      "id": 20,
+      "text": "En una red WiFi: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La dirección física MAC se transmite mediante técnicas de encriptación.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La dirección física MAC no se transmite.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La dirección física MAC se transmite en claro.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Las direcciones físicas MAC son filtradas por los Access Point.",
+          "correct": false
+        }
+      }
+    },
+    "21": {
+      "id": 21,
+      "text": "El servicio DNS: ",
+      "clue": "Pregunta dudosa. \n En examen de bolsa: A\nBolsas UPV Grupo I Sistemas 2006 preg 5 \n Los estándares establecen que DNS se ejecuta sobre el puerto 53 tanto en UDP (forma habitual de hacer consultas) como en TCP. \n https://books.google.es/books?id=aOb3rTabO44C p38",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se ejecuta sobre UDP.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Utiliza el puerto 63.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Traduce direcciones IP a nombres de host.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se ejecuta sobre TCP.",
+          "correct": false
+        }
+      }
+    },
+    "22": {
+      "id": 22,
+      "text": "¿Cuál de los motores de base de datos de MySQL tratan tablas transaccionales?: ",
+      "clue": "B. InnoDB. \nBolsas UPV Grupo I Sistemas 2006 preg 8\n http://download.nust.na/pub6/mysql/doc/refman/5.0/es/storage-engines.html",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "MyISAM.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "InnoDB.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "MERGE.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "MEMORY.",
+          "correct": false
+        }
+      }
+    },
+    "23": {
+      "id": 23,
+      "text": "¿Cuál de los siguiente no es un fichero de log de MySQL?: ",
+      "clue": "D. Registro de triggers \nBolsas UPV Grupo I Sistemas 2006 preg 9\n http://ftp.tcrc.edu.tw/MySQL/doc/refman/5.0/es/log-files.html",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Registro de error.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Registro de lentitud.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Registro binario.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Registro de triggers",
+          "correct": true
+        }
+      }
+    },
+    "24": {
+      "id": 24,
+      "text": "¿Es posible que Apache proporcione a la vez HTTP y HTTPS? ",
+      "clue": "B. Si, pero en puertos diferentes.\nBolsas UPV Grupo I Sistemas 2006 preg 10",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Si, pero en el mismo puerto.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Si, pero en puertos diferentes.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "No, en ningún caso.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Apache no proporciona servicios HTTP/HTTPS.",
+          "correct": false
+        }
+      }
+    },
+    "25": {
+      "id": 25,
+      "text": "Con respecto a MySQL 5.0, un disparador (trigger) es un objeto de base de datos que se asocia a una tabla y que ",
+      "clue": "B. se activa con un evento particular para esa tabla.\nBolsas UPV Grupo I Sistemas 2006 preg 15",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "se activa al arrancar la base de datos.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "se activa con un evento particular para esa tabla.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "se activa cuando se llena el espacio asignado a la tabla.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "No existe en MySQL 5.0.",
+          "correct": false
+        }
+      }
+    },
+    "26": {
+      "id": 26,
+      "text": "Las interrupciones software que se envían a un proceso para informarle de algún evento asíncrono se denominan: ",
+      "clue": "D. Señales\nBolsas UPV Grupo I Sistemas 2006 preg 23",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "IRQs.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Indicadores.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Flags.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Señales.",
+          "correct": true
+        }
+      }
+    },
+    "27": {
+      "id": 27,
+      "text": "Si una transacción HTTP devuelve un código de error 404 significa: ",
+      "clue": "B. Que la URL solicitada no existe.\nBolsas UPV Grupo I Sistemas 2006 preg 31",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Que está prohibido el acceso al recurso.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Que la URL solicitada no existe.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Que el servicio está actualmente deshabilitado.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Que el objeto que se quiere acceder ha sido movido permanentemente.",
+          "correct": false
+        }
+      }
+    },
+    "28": {
+      "id": 28,
+      "text": "Tecnologías como ASP y PHP añaden a la página web la posibilidad de: ",
+      "clue": "B. Acceder a la base de datos.\nBolsas UPV Grupo I Sistemas 2006 preg 32",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Adaptarse a las limitaciones de recursos de la máquina cliente.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Acceder a la base de datos.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Mejorar la presentación de documentos.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Añadir movimiento de objetos.",
+          "correct": false
+        }
+      }
+    },
+    "29": {
+      "id": 29,
+      "text": "¿En el contexto de transmisiones mediante TCP-IP, para qué se utilizan los puertos? ",
+      "clue": "C. Para diferenciar las diferentes conexiones dentro de un mismo ordenador.\nBolsas UPV Grupo I Sistemas 2006 preg 36",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Para monitorizar el rendimiento de la red.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Para transmitir mensajes de control entre hosts.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Para diferenciar las diferentes conexiones dentro de un mismo ordenador.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Para habilitar una conexión muy sencilla entre dos ordenadores.",
+          "correct": false
+        }
+      }
+    },
+    "30": {
+      "id": 30,
+      "text": "Un DBMS es un conjunto de programas para: ",
+      "clue": "D. Tanto la creación como el control y manipulación de la información de una base de datos.\nBolsas UPV Grupo I Sistemas 2006 preg 39",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La creación de la información de una base de datos.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El control de la información de una base de datos.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Acceso e interrogación de una base de datos.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Tanto la creación como el control y manipulación de la información de una base de datos.",
+          "correct": true
+        }
+      }
+    },
+    "31": {
+      "id": 31,
+      "text": "¿Qué tarea puede implicar en ocasiones una desnormalización de las bases de datos? ",
+      "clue": "A. Optimización del modelo físico de datos.\nBolsas UPV Grupo I Sistemas 2006 preg 41",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Optimización del modelo físico de datos.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Especificación de la distribución de datos.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Especificación de los caminos de acceso a los datos.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Diseño del modelo físico de datos.",
+          "correct": false
+        }
+      }
+    },
+    "32": {
+      "id": 32,
+      "text": "La cláusula UNIQUE de SQL asegura la unicidad de las claves: ",
+      "clue": "B. Alternativas \nBolsas UPV Grupo I Sistemas 2006 preg 42",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Foráneas.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Alternativas.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Candidatas.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Primarias.",
+          "correct": false
+        }
+      }
+    },
+    "33": {
+      "id": 33,
+      "text": "¿Qué topología proporciona una mayor redundancia y protección contra fallos en los enlaces? ",
+      "clue": "C. Malla \nBolsas UPV Grupo I Sistemas 2006 preg 43",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Anillo.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Bus.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Malla.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Estrella.",
+          "correct": false
+        }
+      }
+    },
+    "34": {
+      "id": 34,
+      "text": "Una red en malla en la que todos los usuarios envían a la vez fragmentos de información que son encaminados por los distintos nodos se denomina: ",
+      "clue": "C. Red de conmutación de paquetes \nBolsas UPV Grupo I Sistemas 2006 preg 45",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Red de conmutación de circuitos.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Red de circuito dedicado.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Red de conmutación de paquetes.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Red distribuida.",
+          "correct": false
+        }
+      }
+    },
+    "35": {
+      "id": 35,
+      "text": "¿En qué fase del desarrollo de un sistema se debe determinar la mejor organización del hardware? ",
+      "clue": "C. En las primeras etapas del desarrollo.\nBolsas UPV Grupo I Sistemas 2006 preg 53",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Durante el desarrollo.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Al finalizar el desarrollo.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "En las primeras etapas del desarrollo.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "No es un factor importante a tener en cuenta.",
+          "correct": false
+        }
+      }
+    },
+    "36": {
+      "id": 36,
+      "text": "En un servidor Linux, el fichero del sistema /etc/fstab tiene relación directa con: ",
+      "clue": "C. La utilización de NFS\nBolsas UPV Grupo I Sistemas 2010 preg 2",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La utilización de NIS.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La utilización de POP o IMAP.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La utilización de NFS.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Los procesos Deamon.",
+          "correct": false
+        }
+      }
+    },
+    "37": {
+      "id": 37,
+      "text": "Si al hacer boot de un equipo Linux el sistema nos informa «iniciando CUPS», entendemos que: ",
+      "clue": "C. Se ha iniciado el sistema de gestión de impresión.\nBolsas UPV Grupo I Sistemas 2010 preg 3",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se ha iniciado el protocolo de comunicaciones Comunications Unified Protocol System.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Se ha iniciado el gestor de administración de paquetes rpm.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se ha iniciado el sistema de gestión de impresión.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Es un error. No existe CUPS en Linux.",
+          "correct": false
+        }
+      }
+    },
+    "38": {
+      "id": 38,
+      "text": "En Linux los controladores pueden formar parte del núcleo o no. Los módulos correspondientes cargados en la memoria se pueden visualizar directamente con el comando: ",
+      "clue": "A. lsmod\nBolsas UPV Grupo I Sistemas 2010 preg 4",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "lsmod.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "lsconsole.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "lscont.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Split.",
+          "correct": false
+        }
+      }
+    },
+    "39": {
+      "id": 39,
+      "text": "¿Cuál de las siguientes es una distribución Linux?: ",
+      "clue": "C. CentOS\nBolsas UPV Grupo I Sistemas 2010 preg 7",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "XWindow.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "OpenSolaris.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "CentOS.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "OpenBSD.",
+          "correct": false
+        }
+      }
+    },
+    "40": {
+      "id": 40,
+      "text": "¿Cuál de los siguientes no es un servidor web de aplicaciones Java JEE?: ",
+      "clue": "A. Jdevelopper SOA.\nBolsas UPV Grupo I Sistemas 2010 preg 9",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Jdevelopper SOA.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Weblogic.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "WebSphere.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Glassfish.",
+          "correct": false
+        }
+      }
+    },
+    "41": {
+      "id": 41,
+      "text": "La conexión con SSL a un ldap ",
+      "clue": "A. cifra toda la comunicación con el servidor\nBolsas UPV Grupo I Sistemas 2010 preg 16",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "cifra toda la comunicación con el servidor.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "cifra solo la clave de acceso.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "impide que la clave vaya cifrada.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "en caso de que la clave esté cifrada con CRYPT, hace un hash UTF-8.",
+          "correct": false
+        }
+      }
+    },
+    "42": {
+      "id": 42,
+      "text": "¿Cuál de las siguientes operaciones NO está relacionada con el protocolo LDAP? ",
+      "clue": "C. Insert\nBolsas UPV Grupo I Sistemas 2010 preg 17",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Add.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Bind.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Insert.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Search.",
+          "correct": false
+        }
+      }
+    },
+    "43": {
+      "id": 43,
+      "text": "En Java: Un programa compilado en una máquina cuyo sistema operativo sea «little endian»… ",
+      "clue": "A. se puede ejecutar con normalidad en otra máquina que sea «big endian»,\nBolsas UPV Grupo I Sistemas 2010 preg 25",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "se puede ejecutar con normalidad en otra máquina que sea «big endian»",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "hay que recompilarlo en una máquina que sea «big endian»",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "en caso de que sea de «bigendian» de 64 bits hay que recompilarlo, en caso contrario nolo es",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "hay que ejecutarlo con la opción «--litte_endian»",
+          "correct": false
+        }
+      }
+    },
+    "44": {
+      "id": 44,
+      "text": "El protocolo DHCP es el sucesor del protocolo: ",
+      "clue": "A. BOOTP. \nBolsas UPV Grupo I Sistemas 2010 preg 29\n https://es.wikipedia.org/wiki/Protocolo_de_configuraci%C3%B3n_din%C3%A1mica_de_host",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "BOOTP",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "IGMP",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "DCCP",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "L2TP",
+          "correct": false
+        }
+      }
+    },
+    "45": {
+      "id": 45,
+      "text": "Queremos comunicar dos PCs que disponen de tarjetas Gigabit. Para obtener la máxima velocidad tendremos que utilizar el siguiente cable: ",
+      "clue": "B. Latiguillo UTP Cat 5e cruzado\nBolsas UPV Grupo I Sistemas 2010 preg 30",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Latiguillo UTP Cat 5e plano",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Latiguillo UTP Cat 5e cruzado",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Latiguillo UTP Cat 5 cruzado",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Latiguillo UTP Cat 5 plano",
+          "correct": false
+        }
+      }
+    },
+    "46": {
+      "id": 46,
+      "text": "SIP es: ",
+      "clue": "D. Un protocolo de señalización para voz sobre IP\nBolsas UPV Grupo I Sistemas 2010 preg 34",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un protocolo de comunicaciones para transferencias de ficheros (alternativa a FTP)",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Un sistema de archivos equivalente al NFS",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es un protocolo de comunicaciones estrictamente relacionado con IPv6",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Un protocolo de señalización para voz sobre IP",
+          "correct": true
+        }
+      }
+    },
+    "47": {
+      "id": 47,
+      "text": "En una base de datos MySQL, la tabla tables_priv: ",
+      "clue": "D. Se utiliza para comprobar el nivel de privilegios en el control de accesos de los usuarios en caso necesario, tras haberse consultado por el sistema la tabla user\nBolsas UPV Grupo I Sistemas 2010 preg 36\n https://dev.mysql.com/doc/refman/8.0/en/grant-tables.html",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se utiliza para conocer de qué tablas debe realizarse la copia de seguridad",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Para proteger las tablas y evitar, entre otras cosas, que el comando «drop table» puede eliminarlas",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Relaciona las tablas a las que solo los usuarios con privilegio de administrador de base de datos podrán acceder",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se utiliza para comprobar el nivel de privilegios en el control de accesos de los usuarios en caso necesario, tras haberse consultado por el sistema la tabla user",
+          "correct": true
+        }
+      }
+    },
+    "48": {
+      "id": 48,
+      "text": "Una base de datos almacenada en distintos computadores conectados a la red, de forma que unos tienen acceso a los datos de los otros, se dice que: ",
+      "clue": "C. Es de tipo distribuido con fragmentación\nBolsas UPV Grupo I Sistemas 2010 preg 38",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Utiliza un modelo jerárquico",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Utiliza un modelo en red",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es de tipo distribuido con fragmentación",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Es de tipo distribuido con duplicidad",
+          "correct": false
+        }
+      }
+    },
+    "49": {
+      "id": 49,
+      "text": "Un diagrama de Gantt con las tareas del proyecto representa: ",
+      "clue": "B. Las duraciones y secuencia de las tareas del proyecto\nBolsas UPV Grupo I Sistemas 2010 preg 42",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La carga de trabajo estimada para cada recurso del proyecto",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Las duraciones y secuencia de las tareas del proyecto",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "La cantidad de esfuerzo a realizar en cada unidad de tiempo",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los recursos que participan en el camino crítico del proyecto",
+          "correct": false
+        }
+      }
+    },
+    "50": {
+      "id": 50,
+      "text": "Si deseamos modelar el comportamiento de un sistema representando la información que se trasmite en el sistema, de la entrada a la salida y las trasformaciones que se realizan en ella, debemos utilizar: ",
+      "clue": "B. Un diagrama de flujo de datos (DFD)\nBolsas UPV Grupo I Sistemas 2010 preg 46",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un diagrama de estados",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Un diagrama de flujo de datos (DFD)",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Una tabla de decisión",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Un diagrama GANTT",
+          "correct": false
+        }
+      }
+    },
+    "51": {
+      "id": 51,
+      "text": "Cuál de estas es la máscara cuya red proporciona un máximo de 30 nodos? ",
+      "clue": "C. 255.255.255.224 \nBolsas UPV Grupo I Sistemas 2010 preg 56\n32 IP: 30 host + dirección de red + dirección de broadcast\nSe deben utilizar 5 bits en el protocolo IP para identificar 32 IPs (2^5=32), por lo que el último segmento  de la máscara será (11100000)=(128+64+32+0+0+0+0+0=224)  \n https://es.wikipedia.org/wiki/M%C3%A1scara_de_red#Tabla_de_m%C3%A1scaras_de_red",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "255.255.255.0",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "255.255.255.128",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "255.255.255.224",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "255.255.255.240",
+          "correct": false
+        }
+      }
+    },
+    "52": {
+      "id": 52,
+      "text": "A la hora de configurar los Puntos de Acceso (AP) en una red corporativa Wi-Fi (802.11a, 802.11b, 802.11g), hay que tener en cuenta sobre el uso de los canales: ",
+      "clue": "A. Que no se solapen entre sí, teniendo en cuenta que cada canal (de los posibles 14 y según normativa de países) tiene un rango de 22 Mhz de ancho\nBolsas UPV Grupo I Sistemas 2010 preg 57",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Que no se solapen entre sí, teniendo en cuenta que cada canal (de los posibles 14 y según normativa de países) tiene un rango de 22 Mhz de ancho",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "No hay que tener en cuenta el solape en el diseño de una red corporativa WiFi, ya que es el usuario el que elige el canal más adecuado para comunicarse.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La mejor técnica es configurar todos los APs en los canales 1, 6 y 11 independientemente del número de APs que cubran una zona",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Que se dispone de 254 canales",
+          "correct": false
+        }
+      }
+    },
+    "53": {
+      "id": 53,
+      "text": "Una base de datos se dice que cumple el requisito de confidencialidad y seguridad si: ",
+      "clue": "C. Si se controla el acceso a los datos de múltiples usuarios, impidiéndoselo a los no autorizados y con distintos niveles de privilegio a distintos tipos de datos\nBolsas UPV Grupo I Sistemas 2010 preg 58",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Cada usuario puede tener una imagen o visión particular de la estructura de base de datos",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Si se pueden usar múltiples métodos de acceso con tiempos de respuesta razonables",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Si se controla el acceso a los datos de múltiples usuarios, impidiéndoselo a los no autorizados y con distintos niveles de privilegio a distintos tipos de datos",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Diversos usuarios pueden acceder a la base de datos, sin visiones incoherentes y sin conflictos",
+          "correct": false
+        }
+      }
+    },
+    "54": {
+      "id": 54,
+      "text": "¿Qué relación existe entre fichero, registro y campo? ",
+      "clue": "D. \nhttp://www.zonacondeduque.es/opeinf_ejer_sol_1_libre_AM_2010.pdf preg: 14 2010 Tecnico grado medio c foral navarra \nEnunciado: http://www.baquedano.es/TGMSI_ejer_1_CFN_2010.pdf Preg 57 \nSolución: http://www.baquedano.es/TGMSI_sol_provi_1_CFN_2010.pdf \nOTra fuente: http://www.preparatic.org/tests/tests/test_examen_EXAMEN_OPERADOR_AYTO._MADRID_2010_0001.html pregunta 21 (opciones distintas)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un fichero está formado por varios campos y a cada conjunto de campos con un significado relevante se le conoce como registro.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Los registros están compuestos por campos, pero no tienen ninguna relación con un fichero.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Los ficheros están formados por uno o varios registros, y llamamos campo a cada información relevante que un registro contiene, independientemente de su estructura.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los ficheros contienen registros y los registros están formados por una serie de campos cada uno de los cuales contiene un tipo de información sobre dicho registro.",
+          "correct": true
+        }
+      }
+    },
+    "55": {
+      "id": 55,
+      "text": "¿Cuál es la característica básica de la multiprogramación, desde el punto de vista del sistema operativo? ",
+      "clue": "A. La carga de varios programas en memoria simultáneamente para alternar su ejecución.\nhttps://www.seguridadpublica.es/2008/10/examen-con-respuestas-de-auxiliares-informaticos/ (pregunta 47)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La carga de varios programas en memoria simultáneamente para alternar su ejecución.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "La existencia de un lenguaje de control de trabajos (JCL).",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La existencia de dos o más CPUs.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Que sea multiusuario.",
+          "correct": false
+        }
+      }
+    },
+    "56": {
+      "id": 56,
+      "text": "¿Qué afirmación es cierta sobre Linux? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Al ser un sistema operativo abierto, los distintos dialectos como HP-UX, Solaris, etc. son idénticos.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Trata a los dispositivos como ficheros.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "No distingue entre mayúsculas y minúsculas.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Está escrito en un 90% en ensamblador.",
+          "correct": false
+        }
+      }
+    },
+    "57": {
+      "id": 57,
+      "text": "¿Linux distingue las mayúsculas de las minúsculas? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Sí.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "No.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "solo en las palabras claves.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "solo en las variables.",
+          "correct": false
+        }
+      }
+    },
+    "58": {
+      "id": 58,
+      "text": "El URL de una página web es el: ",
+      "clue": "Ninguna es correcta, la más cercana es C. \n Pero en realidad es Uniform Resource Locator. \n En 1990 sí era 'Universal' https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Unidentified Random Language.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Useful Reception Label.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Universal Resource Locator.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Ultimate Redundant Link.",
+          "correct": false
+        }
+      }
+    },
+    "59": {
+      "id": 59,
+      "text": "Un applet de Java en una página web ¿dónde se ejecuta? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "En el navegador del cliente.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "En el servidor Web.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "En el proxy.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "En el router.",
+          "correct": false
+        }
+      }
+    },
+    "60": {
+      "id": 60,
+      "text": "¿Para qué sirve el bit de paridad? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Señalar el fin de un número.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Detectar errores.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Enviar datos a Internet.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Verificar correos electrónicos entrantes.",
+          "correct": false
+        }
+      }
+    },
+    "61": {
+      "id": 61,
+      "text": "Un código de redundancia cíclica o CRC es un código de: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Detección y corrección de errores.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Encriptación.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Representación de caracteres.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Modulación de la señal.",
+          "correct": false
+        }
+      }
+    },
+    "62": {
+      "id": 62,
+      "text": "El nivel de red de X.25 es un: ",
+      "clue": "C. Protocolo de conmutación de paquetes.\nhttps://en.wikipedia.org/wiki/X.25",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Protocolo de conmutación de circuitos.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Protocolo de conmutación de mensajes.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Protocolo de conmutación de paquetes.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Protocolo de comunicaciones punto a punto.",
+          "correct": false
+        }
+      }
+    },
+    "63": {
+      "id": 63,
+      "text": "En los sistemas que responden a la arquitectura cliente/servidor: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Los datos viajan entre el cliente y el servidor.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "La presentación se realiza en el servidor.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El cliente y el servidor deben estar en la misma Red de Área Local.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Los datos deben residir en el cliente.",
+          "correct": false
+        }
+      }
+    },
+    "64": {
+      "id": 64,
+      "text": "¿Cuál es el tamaño en bytes de una dirección en IPv6? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "6.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "4.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "16.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "20.",
+          "correct": false
+        }
+      }
+    },
+    "65": {
+      "id": 65,
+      "text": "¿Qué operación lógica se aplica a la dirección IP y a la máscara de un dispositivo para obtener la dirección de la red a la que pertenece ese dispositivo? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "AND.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "OR.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "NAND.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "NOR.",
+          "correct": false
+        }
+      }
+    },
+    "66": {
+      "id": 66,
+      "text": "FTP es un protocolo de la pila TCP/IP del nivel de: ",
+      "clue": "A. Aplicación \nhttps://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_archivos",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Aplicación.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Transporte.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Red.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Sesión.",
+          "correct": false
+        }
+      }
+    },
+    "67": {
+      "id": 67,
+      "text": "¿Cómo se llaman los equipos que en Internet permiten obtener una dirección IP a partir de un nombre URL como por ejemplo www.map.es? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "DHCP.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "UNIX.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "WAP.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "DNS.",
+          "correct": true
+        }
+      }
+    },
+    "68": {
+      "id": 68,
+      "text": "¿Cuál de estas afirmaciones con respecto al protocolo IPv6 es falsa? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Permite un mayor rango de direccionamiento.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es el actual estándar de Internet.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Las direcciones tienen 16 octetos.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Es un protocolo de nivel de red.",
+          "correct": false
+        }
+      }
+    },
+    "69": {
+      "id": 69,
+      "text": "Las «Intranets» utilizan como protocolo de transporte: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "FTP.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "TCP.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "HTTP.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "X.500.",
+          "correct": false
+        }
+      }
+    },
+    "70": {
+      "id": 70,
+      "text": "En la organización de un Sistema de Información, la Explotación se encarga de: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Probar los programas de aplicación.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Elaborar el Plan de Desarrollo de Sistemas de Información.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Posibilitar la utilización del Sistema de Información por los usuarios.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Realizar el Diseño de Alto Nivel de las aplicaciones.",
+          "correct": false
+        }
+      }
+    },
+    "71": {
+      "id": 71,
+      "text": "¿Cuál de los siguientes protocolos hace referencia a redes inalámbricas? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "802.1",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "802.3",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "802.11b",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "802.3u",
+          "correct": false
+        }
+      }
+    },
+    "72": {
+      "id": 72,
+      "text": "¿Cómo se puede describir el formato de los datos en XML? ",
+      "clue": "B. Usando un DTD. \nhttp://baquedano.es/grupoI_libre_jcyl.pdf (pregunta 55)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Usando XSL",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Usando un DTD",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Usando un Nodo de Descripción (Description Node)",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Usando XSLT",
+          "correct": false
+        }
+      }
+    },
+    "73": {
+      "id": 73,
+      "text": "¿Cuál de las siguientes es la declaración correcta de la versión de XML? ",
+      "clue": "C. <?xml version=\"1.0\"?> \nhttp://baquedano.es/grupoI_libre_jcyl.pdf (pregunta 55)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "<xml version=\"1.0\" />",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "<?xml version=\"1.0\" />",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "<?xml version=\"1.0\"?>",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "<?xml version=\"1.0\"?/>",
+          "correct": false
+        }
+      }
+    },
+    "74": {
+      "id": 74,
+      "text": "En el modelo de referencia de interconexión de sistemas abiertos (OSI), ¿en qué capa estaría englobado el protocolo de enrutamiento OSPF (Open Shortest Path First) ?: ",
+      "clue": "D. Capa de red. \n https://es.wikipedia.org/wiki/Modelo_OSI#Capa_de_red",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Capa física.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Capa de enlace de datos.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Capa de transporte.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Capa de red.",
+          "correct": true
+        }
+      }
+    },
+    "81": {
+      "id": 81,
+      "text": "Señale cuál de las siguientes respuestas permitiría realizar un montaje de un CD-ROM en un sistema operativo Linux: ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 58)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "setup -t device/cdrom/cab1",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "install -t iso9660 /dev/hdb /mnt/cdrom",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "mount -t iso9660 /dev/hdb /mnt/cdrom",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "grep -t iso9660 /dev/hdb /mnt/cdrom",
+          "correct": false
+        }
+      }
+    },
+    "83": {
+      "id": 83,
+      "text": "Si queremos conocer las librerías vinculadas a un determinado programa en un sistema Linux usaremos el comando: ",
+      "clue": "A. ldd\n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 61)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "ldd",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "linkedl",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "linklib",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "lk",
+          "correct": false
+        }
+      }
+    },
+    "84": {
+      "id": 84,
+      "text": "En Linux, el comando utilizado para obtener un análisis del estado del sistema, un detalle general de los procesos, E/S, uso de memoria, swap, estado del sistema y actividad de la CPU es: ",
+      "clue": "D. vmstat \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 62)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "free",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "iostat",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "lsof",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "vmstat",
+          "correct": true
+        }
+      }
+    },
+    "85": {
+      "id": 85,
+      "text": "¿Qué componente de Unix/Linux se encarga de realizar las funciones de más bajo nivel? ",
+      "clue": "B. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 63)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El Sistemas de archivos.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El Kemel.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "El Shell.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Las Aplicaciones.",
+          "correct": false
+        }
+      }
+    },
+    "87": {
+      "id": 87,
+      "text": "En Unix/Linux, ¿qué archivo guarda la configuración de las variables de entorno de todos los usuarios? ",
+      "clue": "D. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 65)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "/proc/.profile",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "/home/.profile",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "/proc/profile",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "/etc/profile",
+          "correct": true
+        }
+      }
+    },
+    "88": {
+      "id": 88,
+      "text": "¿En qué archivo almacena Unix/Linux las contraseñas de los usuarios? ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 66)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "/$HOME/passwd",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "/$HOME/shadow",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "/etc/shadow",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "/etc/passwd",
+          "correct": false
+        }
+      }
+    },
+    "91": {
+      "id": 91,
+      "text": "En Linux, ¿en qué fichero se especifica cuáles son los servidores DNS que utiliza el sistema? ",
+      "clue": "A. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 70)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "/etc/resolv.conf",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "/etc/dns.conf",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "/etc/hosts.conf",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "/etc/hostdns.conf",
+          "correct": false
+        }
+      }
+    },
+    "92": {
+      "id": 92,
+      "text": "En Linux, ¿en qué fichero se guardan direcciones ip y los nombres que les corresponden, para poder acceder a estas mediante los nombres? ",
+      "clue": "D. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 71)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "/etc/host.conf",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "/etc/hostnarne",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "/etc/resolv.conf",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "/etc/hosts",
+          "correct": true
+        }
+      }
+    },
+    "93": {
+      "id": 93,
+      "text": "¿En qué variable guarda Unix/Linux el número total de argumentos o parámetros recibidos por un script? ",
+      "clue": "B. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 72)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "$0",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "$#",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "$*",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "$@",
+          "correct": false
+        }
+      }
+    },
+    "94": {
+      "id": 94,
+      "text": "En Linux si ejecutamos la orden: ls [!ae]* ¿Cuál sería el resultado? ",
+      "clue": "A. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 73)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Mostraría los nombres de archivos y carpetas que no empiecen ni por a ni por e.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Mostraría los nombres de archivos y carpetas que no empiecen por ae.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Mostraría los nombres de archivos y carpetas que empiecen por a o por e.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Mostraría los nombres de archivos y carpetas que empiecen por ae.",
+          "correct": false
+        }
+      }
+    },
+    "95": {
+      "id": 95,
+      "text": "En Unix/Linux si ejecutamos: sed ‘3d’ películas.txt, ¿qué resultado obtenemos? ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 74)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Muestra en pantalla las líneas del fichero películas.txt que contengan la cadena 3d.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Muestra en pantalla las líneas del fichero películas.txt que no contengan la cadena 3d.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Muestra en pantalla el fichero películas.txt completo menos la tercera línea.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Muestra en pantalla solo la tercera línea del fichero películas.txt.",
+          "correct": false
+        }
+      }
+    },
+    "96": {
+      "id": 96,
+      "text": "Si en UNIX/Linux, tenemos la siguiente línea en el fichero /etc/crontab: * 6 4 3 5 borrar.sh, indica en qué día de la semana se ejecutaría borrar.sh: ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 75) \n El orden es el siguiente: Minutos(*) Horas (6) Día del mes (4) Mes (3) Día de la semana (5). \n Los días de la semana se numeran de 0 a 7 (0 y 7 significa Domingo)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Martes.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Jueves.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Viernes.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Sábado",
+          "correct": false
+        }
+      }
+    },
+    "97": {
+      "id": 97,
+      "text": "¿En UNIX/Linux, si lanzamos el comando chmod 4777 sobre un fichero, que permisos obtendríamos? ",
+      "clue": "D. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 76) ",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "-rwxrwxrws",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "-rwxrwsrwx",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "-rwxrwxrwt",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "-rwsrwxrwx",
+          "correct": true
+        }
+      }
+    },
+    "98": {
+      "id": 98,
+      "text": "¿Cuál de los siguientes comandos Unix impide que el archivo de nombre «miarchivo» sea modificado y ejecutado por el grupo al que pertenece dicho archivo? ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 82) ",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "chmod 766 miarchivo",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "chmod a+xw miarchivo",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "chmod 644 miarchivo",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "chmod u=rwx go=wx miarchivo",
+          "correct": false
+        }
+      }
+    },
+    "99": {
+      "id": 99,
+      "text": "En Linux, guardamos en un fichero llamado log.txt todas las incidencias de una máquina con la siguiente estructura fecha#descIncidencia, ¿qué comando deberíamos usar para contar el número de filas que tienen la palabra «error»? ",
+      "clue": "A. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 12 - 83) ",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "grep error log.txt | wc –l",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "grep wc –l |error log.txt",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "grep error log.txt | ls -l |cut -r»#» -f2",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "grep cut -r»#» -f2|ls -l | error log.txt",
+          "correct": false
+        }
+      }
+    },
+    "102": {
+      "id": 102,
+      "text": "En el modelo Entidad-Relación, una Superentidad es: ",
+      "clue": "B. El resultado de generalizar un conjunto de entidades haciendo abstracción de sus características comunes. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 16)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un conjunto de entidades que están relacionadas entre sí mediante relaciones 1: 1",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El resultado de generalizar un conjunto de entidades haciendo abstracción de sus características comunes.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Una entidad que puede relacionarse con todas las demás.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Una entidad que está auto relacionada consigo misma mediante al menos 5 relaciones.",
+          "correct": false
+        }
+      }
+    },
+    "103": {
+      "id": 103,
+      "text": "En modelos de bases de datos, el número de atributos de una relación se conoce como: ",
+      "clue": "D. Grado. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 29)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Cardinalidad.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Factor de relación.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Tupla.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Grado.",
+          "correct": true
+        }
+      }
+    },
+    "104": {
+      "id": 104,
+      "text": "En una base de datos de coches hay una tabla con marcas de coches (código_marca y nombre_marca) y otra con modelos (código_marca, código_modelo, nombre_modelo). Para que la base de datos mantenga la integridad referencial: ",
+      "clue": "A. Si borro una marca, antes tengo que borrar todas las ocurrencias de modelos de esa marca. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 50)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Si borro una marca, antes tengo que borrar todas las ocurrencias de modelos de esa marca.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Si borro un modelo, antes tengo que borrar la marca correspondiente.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "No puedo dar de alta ninguna marca si no hay antes algún modelo de la misma.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Al modificar el nombre de una marca tengo que modificar antes el código_marca en los modelos correspondientes.",
+          "correct": false
+        }
+      }
+    },
+    "105": {
+      "id": 105,
+      "text": "Señale en qué nivel de aislamiento definido en ANSI/ISO SQL, puede ocurrir el problema de lecturas sucias en un sistema gestor de bases de datos relacional (SGDBR): ",
+      "clue": "D. Read Uncommitted (lecturas no comprometidas). \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 52)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Serializable.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Repeatable Read (lecturas repetibles).",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Read Committed (lecturas comprometidas).",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Read Uncommitted (lecturas no comprometidas).",
+          "correct": true
+        }
+      }
+    },
+    "106": {
+      "id": 106,
+      "text": "La descripción de la estructura de una base de datos se denomina: ",
+      "clue": "B. Esquema. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 55)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Ocurrencia.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Esquema.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Instancia.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "SGBD.",
+          "correct": false
+        }
+      }
+    },
+    "107": {
+      "id": 107,
+      "text": "En los modelos E/R, aquellos tipos de entidades en los que la existencia de ocurrencias depende de la existencia de ocurrencias de otro tipo de entidad se denominan: ",
+      "clue": "C. Entidades débiles. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 57)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Entidades fuertes.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Entidades regulares.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Entidades débiles.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Entidades independientes.",
+          "correct": false
+        }
+      }
+    },
+    "108": {
+      "id": 108,
+      "text": "En una relación de un modelo E/R, el número máximo de ocurrencias de un tipo de entidad que pueden intervenir por cada ocurrencia del otro tipo de entidad se denomina: ",
+      "clue": "A. Tipo de correspondencia. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 58)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Tipo de correspondencia.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Cardinalidad mínima.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Grado.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Dominio.",
+          "correct": false
+        }
+      }
+    },
+    "109": {
+      "id": 109,
+      "text": "En un modelo relacional, ¿cómo se denomina al conjunto de valores, homogéneos y atómicos, que puede tomar un atributo? ",
+      "clue": "C. Dominio. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 59)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Universo del discurso.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Universo del atributo.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Dominio.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Cardinalidad.",
+          "correct": false
+        }
+      }
+    },
+    "110": {
+      "id": 110,
+      "text": "¿Mediante cuál de los siguientes operadores del modelo relacional, aplicado sobre dos relaciones r1 y r2, obtendríamos otra relación cuya extensión estaría constituida por el conjunto de tuplas que pertenezcan a r1 o a r2? ",
+      "clue": "C. Unión. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 60)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Combinación.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Producto cartesiano.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Unión.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Intersección.",
+          "correct": false
+        }
+      }
+    },
+    "111": {
+      "id": 111,
+      "text": "La transformación de un esquema E/R al modelo relacional se basa, entre otros, por el siguiente principio: ",
+      "clue": "A. Todo tipo de relación N:M se transforma en una relación. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 61)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Todo tipo de relación N:M se transforma en una relación.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Todo tipo de entidad se convierte en dos relaciones.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Todo tipo de relación 1: N se transforma en dos relaciones.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Todo tipo de relación 1:1 se transforma en una relación.",
+          "correct": false
+        }
+      }
+    },
+    "112": {
+      "id": 112,
+      "text": "En la teoría de bases de datos relacionales, cuanto más alta sea la forma normal aplicable a una tabla: ",
+      "clue": "C. Menos vulnerable será a inconsistencias y anomalías. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 72)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Menor será la cohesión relacional.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Menor será el acoplamiento relacional.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Menos vulnerable será a inconsistencias y anomalías.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Más vulnerable será a inconsistencias y anomalías, pero será más eficiente.",
+          "correct": false
+        }
+      }
+    },
+    "113": {
+      "id": 113,
+      "text": "Para importar un fichero en una tabla de una base de datos (BD) relacional, el administrador de BD decide eliminar la clave primaria existente. De entre las siguientes reglas de Codd que definen el modelo relacional, ¿cuál es la que posibilita esta acción? ",
+      "clue": "C. Regla 10: Independencia de la Integridad.  \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 75)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Regla 2: Regla del Acceso Garantizado.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Regla 8: Independencia Física de los Datos.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Regla 10: Independencia de la Integridad.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Regla 11: Independencia de la Distribución.",
+          "correct": false
+        }
+      }
+    },
+    "114": {
+      "id": 114,
+      "text": "En el contexto de las bases de datos que siguen el modelo relacional, una superclave es: ",
+      "clue": "D. Un atributo o conjunto de atributos que permite identificar de forma única una fila en una tabla.  \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 76)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Una clave candidata mínima, es decir, una clave candidata formada por un solo atributo.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Una clave candidata siempre.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Una clave primaria combinada con un identificador único generado por el gestor de base de datos, con el fin de reforzar la integridad y seguridad de la información.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Un atributo o conjunto de atributos que permite identificar de forma única una fila en una tabla.",
+          "correct": true
+        }
+      }
+    },
+    "115": {
+      "id": 115,
+      "text": "En una transacción en un Sistema de Gestión de Bases de Datos (SGBD), ¿qué se entiende por el punto de integridad? ",
+      "clue": "B. El estado de la base de datos en el momento en que se inicia la transacción.  \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 19 - 13)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El momento después en el que se inicia la transacción.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El estado de la base de datos en el momento en que se inicia la transacción.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Hacer un rollback en el caso de que haya un problema antes de completar la transacción.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El retorno con la confirmación de que la transacción se ha completado con éxito.",
+          "correct": false
+        }
+      }
+    },
+    "117": {
+      "id": 117,
+      "text": "Indique cuál de las siguientes licencias le obliga a distribuir el código fuente si este se ejecuta para ofrecer servicios a través de una red de ordenadores: ",
+      "clue": "B. AGPL \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 29 - 22)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "GNU GPL.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "AGPL.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "BSD.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Creative Commons",
+          "correct": false
+        }
+      }
+    },
+    "119": {
+      "id": 119,
+      "text": "La longitud de clave que se usa en el cifrado opcional de DECT, el denominado DECT Standard Cipher (DSC) es: ",
+      "clue": "B. 64 bits. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 41 - 14)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "32 bits.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "64 bits.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "128 bits.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "256 bits.",
+          "correct": false
+        }
+      }
+    },
+    "120": {
+      "id": 120,
+      "text": "La tecnología Frame Relay implementa mecanismos de notificación de saturación. ¿A qué se corresponde la representada por las siglas FECN? ",
+      "clue": "D. Notificación de congestión explícita hacia delante. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 41 - 17)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Notificación de saturación fuera de banda.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Notificación de la saturación explícita hacia atrás.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "En esta tecnología no se implementan estos mecanismos.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Notificación de congestión explícita hacia delante.",
+          "correct": true
+        }
+      }
+    },
+    "122": {
+      "id": 122,
+      "text": "WebDAV (RFC 4918) son un conjunto de extensiones para el protocolo HTTP, entre ellos, el método PROPPATCH que sirve para: ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 42 - 17) ",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Crear colecciones.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Recuperar propiedades, almacenadas como XML, desde un recurso.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Cambiar y borrar múltiples propiedades de un recurso en una simple operación atómica.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Desbloquear un recurso.",
+          "correct": false
+        }
+      }
+    },
+    "127": {
+      "id": 127,
+      "text": "¿Cuál de las siguientes respuestas se corresponde con el número de puerto tcp «bien conocido» para poder usar el servicio de correo saliente POP3 sobre SSL (POP3s)? ",
+      "clue": "B. 995 \n Pero en realidad debería decir en el enunciado 'correo entrante POP3' (también la fuente es incorrecta)\n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 42 - 32) ",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "295",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "995",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "445",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "725",
+          "correct": false
+        }
+      }
+    },
+    "128": {
+      "id": 128,
+      "text": "El conjunto de protocolos estándares adoptados por el Internet Architecture Board (IAB), para proporcionar seguridad al correo electrónico sobre Internet se denomina: ",
+      "clue": "A. PEM \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 42 - 33) ",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "PEM",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "CMS",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "PGP",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "S/MIME",
+          "correct": false
+        }
+      }
+    },
+    "130": {
+      "id": 130,
+      "text": "Señale qué número de puerto debería usarse si se quiere configurar un servicio para la autenticación de redes Kerberos: ",
+      "clue": "A. 88 \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 35) ",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "88",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "42",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "74",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "105",
+          "correct": false
+        }
+      }
+    },
+    "131": {
+      "id": 131,
+      "text": "Indique el número de puerto que debería usarse sí se quiere configurar un servicio para usar el protocolo de configuración dinámica de host DHCP para IPv6: ",
+      "clue": "D. 547 \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 36) ",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "58",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "169",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "389",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "547",
+          "correct": true
+        }
+      }
+    },
+    "135": {
+      "id": 135,
+      "text": "El estándar conocido como WRAN (Wireless Regional Area Network) pertenece al grupo de trabajo del IEEE: ",
+      "clue": "D. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 40)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "802.19",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "802.20",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "802.21",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "802.22",
+          "correct": true
+        }
+      }
+    },
+    "136": {
+      "id": 136,
+      "text": "Señale cuáles son las direcciones IP de red y de broadcast para la siguiente subred 132.27.43.25/27: ",
+      "clue": "D. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 41)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "red: 132.27.43.31/27 y broadcast: 132.27.43.0",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "red: 132.27.43.20/27 y broadcast: 132.27.43.1",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "red: 132.27.43.0/27 y broadcast: 132.27.43.1",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "red: 132.27.43.0/27 y broadcast: 132.27.43.31",
+          "correct": true
+        }
+      }
+    },
+    "137": {
+      "id": 137,
+      "text": "Según RFC 2460, señale de las siguientes cabeceras IPv6 cuál es una cabecera de extensión: ",
+      "clue": "B. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 42)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Cabecera Siguiente.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Fragmento.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Límite de Saltos.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Longitud de la Carga Útil.",
+          "correct": false
+        }
+      }
+    },
+    "139": {
+      "id": 139,
+      "text": "¿Cuál es la dirección de broadcast de la subred 172.17.11.32/27? ",
+      "clue": "B. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 45)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "172.17.11.255",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "172.17.11.63",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "172.17.11.47",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "172.17.255.255",
+          "correct": false
+        }
+      }
+    },
+    "140": {
+      "id": 140,
+      "text": "En el ámbito de las redes inalámbricas, la variante IEEE 802.11a: ",
+      "clue": "A. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 46)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Opera dentro del rango de los 5 GHz.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Es compatible con el estándar 802.11b.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es compatible con el estándar 802.11g.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Incorpora QoS (Calidad de Servicio).",
+          "correct": false
+        }
+      }
+    },
+    "141": {
+      "id": 141,
+      "text": "El estándar IEEE 802.11e sobre redes inalámbricas se corresponde con especificaciones … ",
+      "clue": "D. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 47)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "para la coexistencia con sistemas de Radar o Satélite.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "de seguridad.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "de roaming.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "sobre calidad de servicio QoS.",
+          "correct": true
+        }
+      }
+    },
+    "142": {
+      "id": 142,
+      "text": "Señalar en qué banda de frecuencias el estándar 802.11ad alcanza sus velocidades máximas: ",
+      "clue": "A. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 49)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "60 GHz.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "6 GHz.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "600 MHz.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "60 MHz.",
+          "correct": false
+        }
+      }
+    },
+    "143": {
+      "id": 143,
+      "text": "¿Qué es WirelessMAN-Advanced? ",
+      "clue": "A. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 50)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La evolución de la norma 802.16.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Bluetooth versión 5.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El nuevo grupo de trabajo 802.13.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "LTE (Long-Term Evolution) para redes MAN.",
+          "correct": false
+        }
+      }
+    },
+    "144": {
+      "id": 144,
+      "text": "¿Qué estándar del IEEE opera con canales de 80 MHz de ancho de banda por cliente? ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 51)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "802.11n",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "802.11g",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "802.11ac",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "802.11ad",
+          "correct": false
+        }
+      }
+    },
+    "145": {
+      "id": 145,
+      "text": "El estándar del IEEE que permite a la tecnología PLC llegar a velocidades de 500 Mbps (denominado Broadband over Power Line o BPL) es: ",
+      "clue": "B. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 52)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "IEC 61850.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "IEEE 1901.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "IEEE 1613.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "IEEE 1284.",
+          "correct": false
+        }
+      }
+    },
+    "146": {
+      "id": 146,
+      "text": "¿Cuál es el estándar que define el cifrado y la autenticación de datos en redes inalámbricas? ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 53)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "802.11c",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "802.11s",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "802.11i",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "802.11ad",
+          "correct": false
+        }
+      }
+    },
+    "147": {
+      "id": 147,
+      "text": "¿Cuál es el protocolo de acceso al medio usado en Gigabit Ethernet? ",
+      "clue": "B. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 54)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "ALOHA",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "CSMA/CD",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "ARP",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "CSMA/CA",
+          "correct": false
+        }
+      }
+    },
+    "148": {
+      "id": 148,
+      "text": "El grupo de trabajo del IEEE 802.11 se refiere a: ",
+      "clue": "A. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 55)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Redes de área local inalámbricas.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Redes de área local virtuales (VLAN).",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Seguridad de red.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Redes de área local cableadas.",
+          "correct": false
+        }
+      }
+    },
+    "149": {
+      "id": 149,
+      "text": "¿Cuántas direcciones IP están contenidas en una subred con mascara /27 ó 255.255.255.224? ",
+      "clue": "C. 32. \n 30 host + dirección de red + dirección de broadcast \nhttps://es.wikipedia.org/wiki/M%C3%A1scara_de_red#Tabla_de_m%C3%A1scaras_de_red \n  https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 56)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "128",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "64",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "32",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "16",
+          "correct": false
+        }
+      }
+    },
+    "150": {
+      "id": 150,
+      "text": "Tamaño destinado en una trama básica Ethernet (IEEE 802.3-2012) para el payload: ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 63)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Tiene un mínimo de 64 Bytes hasta un máximo de 1500 Bytes.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Tiene un mínimo de 16 Bytes hasta un máximo de 1000 Bytes.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Tiene un mínimo de 46 Bytes hasta un máximo de 1500 Bytes.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Tiene un mínimo de 32 Bytes hasta un máximo de 1000 Bytes.",
+          "correct": false
+        }
+      }
+    },
+    "151": {
+      "id": 151,
+      "text": "En una red Ethernet 10BASE-T, un paquete de 1000 KBytes se transmite en: ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 64)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "0,81 ms",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "8,19 ms",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "819 ms",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "81,9 ms",
+          "correct": false
+        }
+      }
+    },
+    "152": {
+      "id": 152,
+      "text": "La especificación del Institute of Electrical and Electronics Engineers (IEEE) para acceso inalámbrico de banda ancha móvil o MBWA, es la: ",
+      "clue": "B. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 65)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "IEEE 802.19",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "IEEE 802.20",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "IEEE 802.21",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "IEEE 802.22",
+          "correct": false
+        }
+      }
+    },
+    "153": {
+      "id": 153,
+      "text": "Señale qué estándar wifi del IEEE está especialmente diseñado para uso en redes que permitan la comunicación en entornos entre vehículos: ",
+      "clue": "C. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 66)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "802.11Qay",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "802.11n",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "802.11p",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "802.11ve",
+          "correct": false
+        }
+      }
+    },
+    "154": {
+      "id": 154,
+      "text": "La tecnología WiMAX 2 es conocida formalmente como: ",
+      "clue": "A. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 43 - 73)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "802.16m",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "802.16a",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "802.11x",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "802.11",
+          "correct": false
+        }
+      }
+    },
+    "155": {
+      "id": 155,
+      "text": "En Windows Server 2008 R2, DEP: ",
+      "clue": "A. Es una tecnología de protección de memoria y marca toda la memoria asignada a una aplicación como no ejecutable, a menos que contengan código ejecutable.\nBolsas UPV Grupo I Sistemas 2014 preg 5",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es una tecnología de protección de memoria y marca toda la memoria asignada a una aplicación como no ejecutable, a menos que contengan código ejecutable.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Es una tecnología utilizada para propagar los permisos heredables.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es un controlador de dominio que replica las particiones del directorio.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Es un controlador que establece el estilo de las particiones MBR o GPT.",
+          "correct": false
+        }
+      }
+    },
+    "156": {
+      "id": 156,
+      "text": "En Windows Server 2008 R2, cual es el formato no aplicable para Archivos de Eventos: ",
+      "clue": "C. MDX\nBolsas UPV Grupo I Sistemas 2014 preg 7",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "EVTX",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "XML",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "MDX",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "CSV",
+          "correct": false
+        }
+      }
+    },
+    "157": {
+      "id": 157,
+      "text": "En Windows Server 2008 R2, es posible utilizar comandos de Wbadmin para gestionar la configuración de copias de seguridad. El comando GET ITEMS: ",
+      "clue": "D. Muestra una lista con los elementos contenidos en una copia de seguridad.\nBolsas UPV Grupo I Sistemas 2014 preg 8\nhttps://docs.microsoft.com/es-es/windows-server/administration/windows-commands/wbadmin-get-items?view=sc-vmm-1801",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Muestra una lista de los discos actualmente conectados en el equipo local.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Muestra los ítems de estado de los trabajos de copias de seguridad actualmente en ejecución.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "No es un comando de Wbadmin.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Muestra una lista con los elementos contenidos en una copia de seguridad.",
+          "correct": true
+        }
+      }
+    },
+    "158": {
+      "id": 158,
+      "text": "Queremos RENOMBRAR un DN en un OpenLDAP v3. ¿Cómo se hace?: ",
+      "clue": "A. usando MODRDN.\nBolsas UPV Grupo I Sistemas 2014 preg 9\n https://ldapwiki.com/wiki/Modrdn",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "usando MODRDN.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "usando RENAME.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "no es posible renombrar un DN. Un OpenLDAP no permite el renombrado, solo la copia.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "usando MOVEDN.",
+          "correct": false
+        }
+      }
+    },
+    "159": {
+      "id": 159,
+      "text": "OpenLDAP es un contenedor que permite almacenar: ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "solo usuarios.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "solo usuarios, grupos y equipos.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "solo unidades organizativas.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "usuarios, grupos, equipos y unidades organizativas.",
+          "correct": true
+        }
+      }
+    },
+    "160": {
+      "id": 160,
+      "text": "En un fichero de configuración DNS, un registro AAAA especifica: ",
+      "clue": "A. Una correspondencia entre nombre de equipo y dirección IPv6.\nBolsas UPV Grupo I Sistemas 2014 preg 16\nhttps://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio#Tipos_de_registros_DNS",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Una correspondencia entre nombre de equipo y dirección IPv6.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Una correspondencia entre dirección 1Pv6 y nombre de equipo.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Una dirección 1Pv6 incompleta.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Una dirección IPV4 incompleta.",
+          "correct": false
+        }
+      }
+    },
+    "161": {
+      "id": 161,
+      "text": "¿Cuál de estas herramientas es un hypervisor incluido en el kernel principal de Linux? ",
+      "clue": "C. KVM.\nBolsas UPV Grupo I Sistemas 2014 preg 33\nhttps://es.wikipedia.org/wiki/Hipervisor#Hipervisor_tipo_1",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "OpenStack",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Acronis",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "KVM",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "VirtualBox",
+          "correct": false
+        }
+      }
+    },
+    "162": {
+      "id": 162,
+      "text": "Su departamento tiene asignada la subred IP 158.227.96.128/27 ¿cuál es la dirección IP más alta disponible para un host? ",
+      "clue": "A. 158.227.96.158 \nBolsas UPV Grupo I Sistemas 2014 preg 52\n Máscara 27 indica que hay 27 bits de red y 5 de host (32 bits totales). El último segmento tendrá tres bits de red fijos para todos los hosts, el resto de host. \n Primer equipo: 10000001 (128+0+0+0+0+0+0+1=129)\n Último equipo: 10011110 (128+0+0+16+8+4+2+0=158)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "158.227.96.158",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "158.227.96.159",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "158.227.96.190",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "158.227.96.191",
+          "correct": false
+        }
+      }
+    },
+    "163": {
+      "id": 163,
+      "text": "¿Qué le sugiere procmail? ",
+      "clue": "A. Es una herramienta de filtrado de correo electrónico.\nBolsas UPV Grupo I Sistemas 2014 preg 54\nSegún Servicios en Red de Joaquin Andreu es un MDA de Unix. Pag. 115",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es una herramienta de filtrado de correo electrónico.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Es un agente de usuario (UA) más avanzado que mail.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es un gestor de listas de distribución de correo electrónico.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Es el archivo generado en /proc correspondiente a la MTA definida en el Equipo",
+          "correct": false
+        }
+      }
+    },
+    "164": {
+      "id": 164,
+      "text": "Los servicios que proporciona IP a TCP son: ",
+      "clue": "B. Send (envío) y Deliver (entrega).\nBolsas UPV Grupo I Sistemas 2006 preg 1",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Send (envío) y Response (respuesta).",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Send (envío) y Deliver (entrega).",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Call (llamada) y Response (respuesta).",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Ninguna de las anteriores.",
+          "correct": false
+        }
+      }
+    },
+    "165": {
+      "id": 165,
+      "text": "El SSID en una red WiFi: ",
+      "clue": "C. Puede ocultarse evitando su propagación, convirtiendo la red en encubierta.).\nBolsas UPV Grupo I Sistemas 2006 preg 2",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es la clave de la red.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Es propagado por los Access Point de manera continua, no pudiendo desactivarse su emisión.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Puede ocultarse evitando su propagación, convirtiendo la red en encubierta.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Todas las anteriores",
+          "correct": false
+        }
+      }
+    },
+    "166": {
+      "id": 166,
+      "text": "El servicio DNS: ",
+      "clue": "Pregunta dudosa. \n En examen de bolsa: A\nBolsas UPV Grupo I Sistemas 2006 preg 5 \n Los estándares establecen que DNS se ejecuta sobre el puerto 53 tanto en UDP (forma habitual de hacer consultas) como en TCP. \n https://books.google.es/books?id=aOb3rTabO44C p38",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se ejecuta sobre UDP.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Utiliza el puerto 63.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Traduce direcciones IP a nombres de host.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se ejecuta sobre TCP.",
+          "correct": false
+        }
+      }
+    },
+    "167": {
+      "id": 167,
+      "text": "¿Es posible que Apache proporcione a la vez HTTP y HTTPS? ",
+      "clue": "B. Si, pero en puertos diferentes.\nBolsas UPV Grupo I Sistemas 2006 preg 10",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Si, pero en el mismo puerto.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Si, pero en puertos diferentes",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "No, en ningún caso.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Ninguna de las anteriores.",
+          "correct": false
+        }
+      }
+    },
+    "169": {
+      "id": 169,
+      "text": "El uso de contraseñas shadow en Linux ",
+      "clue": "B. refuerza la seguridad en el almacenamiento de passwords\nBolsas UPV Grupo I Sistemas 2006 preg 20",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "es obligatorio",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "refuerza la seguridad en el almacenamiento de passwords",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "sólo es recomendable para usuarios con privilegios de sistema",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "permite que las contraseñas se vean en la pantalla",
+          "correct": false
+        }
+      }
+    },
+    "171": {
+      "id": 171,
+      "text": "¿Cuál es la principal característica que se buscaba en el diseño de ARPANET y que sigue siendo el principio fundamental de funcionamiento en Internet? ",
+      "clue": "B. Tolerancia a fallos en cualquiera de sus nodos\nBolsas UPV Grupo I Sistemas 2006 preg 30",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Optimización del rendimiento",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Tolerancia a fallos en cualquiera de sus nodos",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Fácil posibilidad de expansión",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Alta velocidad de transmisión",
+          "correct": false
+        }
+      }
+    },
+    "172": {
+      "id": 172,
+      "text": "En criptografía: ",
+      "clue": "D. Se puede utilizar un cifrado híbrido formado por la criptografía asimétrica para intercambiar claves de criptografía simétrica y la criptografía simétrica para la transmisión de la información.\nBolsas UPV Grupo I Sistemas 2014 preg 4",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La criptografía asimétrica utiliza 3 claves: la privada, la pública y la hash",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La criptografía simétrica, emplea 2 claves distintas para cifrar y descifrar.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "MDS es el algoritmo empleado como función resumen o hash para cifrado con claves simétricas.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se puede utilizar un cifrado híbrido formado por la criptografía asimétrica para intercambiar claves de criptografía simétrica y la criptografía simétrica para la transmisión de la información.",
+          "correct": true
+        }
+      }
+    },
+    "173": {
+      "id": 173,
+      "text": "Una técnica de discos RAID 0, significa: ",
+      "clue": "B. Que se distribuyen los datos equitativamente entre 2 o más discos sin información de paridad que proporcione redundancia.\nhttps://es.wikipedia.org/wiki/RAID#RAID_0_(Data_Striping,_Striped_Volume)",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Que se crea una copia exacta de un conjunto de datos en 2 o más discos.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Que se distribuyen los datos equitativamente entre 2 o más discos sin información de paridad que proporcione redundancia.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Que usa una división de datos a nivel de bloques distribuyendo la información de paridad entre todos los discos miembros del conjunto.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Que usa una división de datos a nivel de bloques disponiendo la información de paridad en un solo disco de entre los miembros del conjunto.",
+          "correct": false
+        }
+      }
+    },
+    "174": {
+      "id": 174,
+      "text": "En Windows Server 2008 R2, DEP: ",
+      "clue": "A. Es una tecnología de protección de memoria y marca toda la memoria asignada a una aplicación como no ejecutable, a menos que contengan código ejecutable.\nBolsas UPV Grupo I Sistemas 2014 preg 5",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es una tecnología de protección de memoria y marca toda la memoria asignada a una aplicación como no ejecutable, a menos que contengan código ejecutable.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Es una tecnología utilizada para propagar los permisos heredables.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es un controlador de dominio que replica las particiones del directorio",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Es un controlador que establece el estilo de las particiones MBR o GPT.",
+          "correct": false
+        }
+      }
+    },
+    "175": {
+      "id": 175,
+      "text": "El modo de transferencia asíncrona ATM: ",
+      "clue": "C. Utiliza paquetes de longitud fija de 53 bytes.\nBolsas UPV Grupo I Sistemas 2006 preg \n https://es.wikipedia.org/wiki/Modo_de_transferencia_as%C3%ADncrona",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Utiliza paquetes de longitud variable.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Utiliza paquetes de longitud fija de 128 bytes",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Utiliza paquetes de longitud fija de 53 bytes.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Utiliza paquetes de longitud fija de 512 bytes.",
+          "correct": false
+        }
+      }
+    },
+    "176": {
+      "id": 176,
+      "text": "¿Cuál de los motores de base de datos de MySQL tratan tablas transaccionales?: ",
+      "clue": "B. InnoDB. \nBolsas UPV Grupo I Sistemas 2006 preg 8\n http://download.nust.na/pub6/mysql/doc/refman/5.0/es/storage-engines.html",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "MyISAM",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "InnoDB",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "MERGE",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "MEMORY",
+          "correct": false
+        }
+      }
+    },
+    "177": {
+      "id": 177,
+      "text": "¿Qué protocolo fue diseñado especialmente para intercambios EDI? ",
+      "clue": "B. OFTP\nBolsas UPV Grupo I Sistemas 2006 preg 33 \nhttps://en.wikipedia.org/wiki/OFTP",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "TCP/IP",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "OFTP",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "EDIP",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "ICMP",
+          "correct": false
+        }
+      }
+    },
+    "178": {
+      "id": 178,
+      "text": "Una pasarela o gateway es un dispositivo de interconexión de redes que actúa en las siguientes capas del modelo OSI ",
+      "clue": "D. Todas las capas\nBolsas UPV Grupo I Sistemas 2006 preg 38",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Física",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Física, enlace de datos y red",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Física y de enlace de datos",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Todas las capas",
+          "correct": true
+        }
+      }
+    },
+    "179": {
+      "id": 179,
+      "text": "Un DBMS es un conjunto de programas para: ",
+      "clue": "D. Tanto la creación como el control y manipulación de la información de una base de datos.\nBolsas UPV Grupo I Sistemas 2006 preg 39",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La creación de la información de una base de datos",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El control de la información de una base de datos",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Acceso e interrogación de una base de datos",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Tanto la creación como el control y manipulación de la información de una base de datos.",
+          "correct": true
+        }
+      }
+    },
+    "180": {
+      "id": 180,
+      "text": "Se conoce como «backbone» a: ",
+      "clue": "C.  \nBolsas UPV Grupo I Sistemas 2006 preg 49",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Dispositivos que unen redes con distintos protocolos",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Una estructura de metal muy resistente donde se colocan os equipos regeneradores de la señal",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El eje principal del cable que parte del punto principal de distribución y se conecta con todas las salidas de telecomunicaciones",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Un espacio centralizado de uso específico para equipos de telecomunicaciones",
+          "correct": false
+        }
+      }
+    },
+    "181": {
+      "id": 181,
+      "text": "¿De qué manera se puede acceder a la interfaz de usuario del router? ",
+      "clue": "B. Todas son correctas. \n http://www.testsanidad.com/test-26.html pregunta 3",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "A través de una sesión de consola",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Todas son correctas",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Mediante una conexión de acceso telefónico",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Establecer una sesión Telnet con el router",
+          "correct": false
+        }
+      }
+    },
+    "182": {
+      "id": 182,
+      "text": "¿Qué componente de configuración interna de un router no lo es? ",
+      "clue": "",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "CONSOLE",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "RAM",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "DTE",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "FLASH",
+          "correct": false
+        }
+      }
+    },
+    "183": {
+      "id": 183,
+      "text": "¿Cuál de estas definiciones corresponde al protocolo rip? ",
+      "clue": "C. Protocolo de información de enrutamiento\nhttps://es.wikipedia.org/wiki/Routing_Information_Protocol",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Protocolo «Primero la ruta más corta»",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Protocolo de enrutamiento de gateway interior",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Protocolo de información de enrutamiento",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Protocolo de enrutamiento de gateway interior mejorado",
+          "correct": false
+        }
+      }
+    },
+    "184": {
+      "id": 184,
+      "text": "Un técnico de red ha descubierto que es imposible alcanzar uno de los routers de la red. El técnico desea verificar la funcionalidad de la capa 1, pero no es posible que inspeccione los cables físicamente. ¿Con qué comando se puede determinar el tipo de cable conectado al router? ",
+      "clue": "D. Show controllers.\nshow controllers: display information about the serial cable.",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Show version",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Show ip route",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Show interfaces",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Show controllers",
+          "correct": true
+        }
+      }
+    },
+    "185": {
+      "id": 185,
+      "text": "¿Cuál de los siguientes protocolos se puede usar para enrutar el tráfico entre dos ISP? ",
+      "clue": "A. BGP. \n http://www.testsanidad.com/test-26.html pregunta 8",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "BGP",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "IGRP",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "OSPF",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "RIP",
+          "correct": false
+        }
+      }
+    },
+    "186": {
+      "id": 186,
+      "text": "¿Cuál de las siguientes opciones representa un problema en la capa física del modelo OSI? ",
+      "clue": "C. Tipo de cable incorrecto. \n http://www.testsanidad.com/test-26.html pregunta 9",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Encapsulamiento incorrecto en una interfaz serial.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Formateo incorrecto de los archivos.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Tipo de cable incorrecto.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Protocolo de enrutamiento incorrecto.",
+          "correct": false
+        }
+      }
+    },
+    "187": {
+      "id": 187,
+      "text": "De las siguientes listas de sistemas de ficheros, ¿en cuál de ellas todos los sistemas de archivos son transaccionales? ",
+      "clue": "D. \n http://www.testsanidad.com/test-550.html pregunta 2",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "ext2, NTFS, JFS",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "ext4, FAT32, XFS",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "ReiserFS, NTFS, ext2",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "ext3, ext4, ReiserFS",
+          "correct": true
+        }
+      }
+    },
+    "188": {
+      "id": 188,
+      "text": "¿Cuáles son los cinco factores principales de calidad del software del modelo FURPS? ",
+      "clue": "A. Funcionalidad, Facilidad de uso, Fiabilidad, Rendimiento y Capacidad de soporte. \nhttps://red-modelos-de-evaluacion.fandom.com/es/wiki/Modelo_de_Calidad_de_FURPS \n http://www.testsanidad.com/test-550.html pregunta 3",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Funcionalidad, Facilidad de uso, Fiabilidad, Rendimiento y Capacidad de soporte.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Correctitud, Confiabilidad, Eficiencia, Integridad y Usabilidad.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Interoperabilidad, Facilidad de mantenimiento, Flexibilidad, Portabilidad y Reusabilidad.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Funcionalidad, Correctitud, Integridad, Interoperabilidad y Portabilidad.",
+          "correct": false
+        }
+      }
+    },
+    "189": {
+      "id": 189,
+      "text": "En la tecnología mpls (multiprotocol label switching), ¿cómo se denominan los routers que se encuentra en los extremos de la red MPLS? ",
+      "clue": "B. LER \nhttp://www.testsanidad.com/test-550.html pregunta 6",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "LVR",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "LER",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "LSR",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "LDR",
+          "correct": false
+        }
+      }
+    },
+    "190": {
+      "id": 190,
+      "text": "Cuando un paquete IPv6 contiene más de una cabecera suplementaria, éstas deben aparecer en un orden determinado tras la cabecera principal ipv6. Por favor, indique cuál de las siguientes secuencias de cabeceras respeta el orden establecido por el estándar IPv6. ",
+      "clue": "A. Cabecera IPv6, Cabecera Hop-by-Hop, Cabecera de confidencialidad, Cabecera de extremo a extremo.\n http://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf \nhttp://www.testsanidad.com/test-550.html pregunta 16",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Cabecera IPv6, Cabecera Hop-by-Hop, Cabecera de confidencialidad, Cabecera de extremo a extremo.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Cabecera IPv6, Cabecera Hop-by-Hop, Cabecera de autenticación, Cabecera de encaminamiento.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Cabecera IPv6, Cabecera de autenticación, Cabecera Hop-by-Hop, Cabecera extremo a extremo.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Cabecera IPv6, Cabecera de autenticación, Cabecera de confidencialidad, Cabecera de fragmentación.",
+          "correct": false
+        }
+      }
+    },
+    "191": {
+      "id": 191,
+      "text": "En el estándar de mensajería hl7 v2.X, ¿cuál es el primer segmento del mensaje que identifica entre otras cosas el tipo de mensaje y el evento disparador del mensaje? ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 142",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "EVN",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "MSH",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "OBR",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "PV1",
+          "correct": false
+        }
+      }
+    },
+    "192": {
+      "id": 192,
+      "text": "Una técnica utilizada para realizar el análisis de los requisitos y diseñar la interfaz de usuario es: ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 81",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "JAD",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "ETR",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "PERT",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "DHC.",
+          "correct": false
+        }
+      }
+    },
+    "193": {
+      "id": 193,
+      "text": "¿Qué tipos de pruebas se ejecutan durante el proceso de construcción del sistema de información en la metodología de métrica versión 3? ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 83",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se realizan pruebas unitarias, pruebas de integración y pruebas del sistema.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Únicamente se realizan pruebas unitarias y pruebas de integración.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se realizan pruebas unitarias, pruebas de integración y pruebas de implantación.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se realizan pruebas unitarias, pruebas de integración y pruebas de regresión.",
+          "correct": false
+        }
+      }
+    },
+    "194": {
+      "id": 194,
+      "text": "Indique cuál de las siguientes afirmaciones es correcta: ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 84",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "En una tabla definida en SQL solo se puede establecer una clave ajena (foránea) que referencie a la clave principal de otra tabla.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "En una tabla definida en SQL solo se puede establecer una clave ajena (foránea) que referencie a la clave principal o a un atributo que tenga la restricción de unicidad (UNIQUE) de otra tabla.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "En una tabla definida en SQL solo se puede establecer una clave ajena (foránea) que referencie a un atributo que tenga la restricción de unicidad (UNIQUE) de otra tabla.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Ninguna es correcta",
+          "correct": false
+        }
+      }
+    },
+    "195": {
+      "id": 195,
+      "text": "El proceso unificado de software consta de las cuatro fases siguientes: ",
+      "clue": "D. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 88",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Iniciación, Elaboración, Modelado y Transición.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Planificación, Elaboración, Construcción y Evolución.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Planificación, Modelado, Construcción y Evolución.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Iniciación, Elaboración, Construcción y Transición.",
+          "correct": true
+        }
+      }
+    },
+    "196": {
+      "id": 196,
+      "text": "Una LAN está definida por la dirección de red y máscara 192.168.5.64/27. Indique cuál de las siguientes direcciones corresponde con la dirección de broadcast de esta red. ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 94",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "192.168.5.95",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "192.168.5.127",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "192.168.5.255",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "192.168.5.79",
+          "correct": false
+        }
+      }
+    },
+    "197": {
+      "id": 197,
+      "text": "¿Qué tipos de mantenimiento quedan fuera del ámbito de métrica versión 3? ",
+      "clue": "D. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 96",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Mantenimiento Correctivo y Perfectivo.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Mantenimiento Adaptativo y Evolutivo.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Mantenimiento Evolutivo y Perfectivo.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Mantenimiento Adaptativo y Perfectivo.",
+          "correct": true
+        }
+      }
+    },
+    "198": {
+      "id": 198,
+      "text": "Indique cuál de las siguientes sentencias linux asignará la dirección 192.168.10.3/26 A la interfaz de red eth3: ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 97",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "ifconfig eth3 192.168.10.3 netmask 255.255.255.192 up",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "ifconfig eth3 192.168.10.3 netmask 26 up",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "ifconfig eth3 192.168.10.3 netmask 255.255.255.128 up",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "ifconfig eth3 192.168.10.3 netmask 255.255.255.0 up",
+          "correct": false
+        }
+      }
+    },
+    "199": {
+      "id": 199,
+      "text": "Las órdenes y utilidades que proporciona unix/linux: ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 98",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Pueden encadenarse utilizando la salida de una orden como entrada de otra orden.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Son grandes programas que realizan multitud de tareas.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "No pueden combinarse unas con otras para lograr un determinado objetivo.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Tratan de manera diferente los directorios, los archivos ordinarios y los dispositivos, como Windows.",
+          "correct": false
+        }
+      }
+    },
+    "200": {
+      "id": 200,
+      "text": "En frame relay, existen varios parámetros que determinan el ancho de banda contratado. Dos de ellos son el bc (ráfaga comprometida) y be (ráfaga en exceso). ¿Podría indicar qué ocurre con el tráfico entrante en la red por encima de bc+be (suma de la ráfaga comprometida y la ráfaga en exceso)? ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 129",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Se descarta directamente en el nodo de entrada.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Se descarta si hay congestión en la red.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Se marca con el bit DE (elegibilidad para descarte) activo.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Se marca con el bit ED desactivado.",
+          "correct": false
+        }
+      }
+    },
+    "201": {
+      "id": 201,
+      "text": "Para optimizar el acceso a los datos en nuestro disco duro, podemos realizar una desfragmentación de éste. Sobre la herramienta «desfragmentador de disco» de windows, indique qué afirmación es verdadera: ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 126",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Elimina tanto la fragmentación externa como la interna.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Elimina la fragmentación externa pero no la interna.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Elimina la fragmentación interna pero no la externa.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Compacta los datos reduciendo el espacio no utilizado.",
+          "correct": false
+        }
+      }
+    },
+    "202": {
+      "id": 202,
+      "text": "En el modelo relacional, la regla de integridad de entidad dice: ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 125",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Ningún atributo que forme parte de la clave primaria de una relación puede tomar valores nulos.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "En una relación no se permite la existencia de tuplas duplicadas.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Es obligatorio que exista un conjunto mínimo de atributos que identifiquen de forma unívoca las tuplas de una relación.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "El orden tanto de las tuplas como de los atributos en una relación no es significativo.",
+          "correct": false
+        }
+      }
+    },
+    "203": {
+      "id": 203,
+      "text": "Indique de los siguientes métodos de acceso que se enumeran, ¿cuál es un método de acceso al medio controlado distribuido? ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 120",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Polling bus.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Token ring.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "CSMA/CD.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Conmutación de circuitos.",
+          "correct": false
+        }
+      }
+    },
+    "204": {
+      "id": 204,
+      "text": "Un dispositivo nas (network attach storage), ¿cómo proporciona acceso remoto a los ficheros que almacena? ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 119",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "A través de protocolos de acceso a ficheros en red, como CIFS, NFS, FTP o TFTP.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Directamente, a través de una interfaz ATA o SCSI.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "A través de protocolos propios de comunicación (Fibrechannel, i-SCASI, SCASI sobre IP…)",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Mediante protocolos de bajo nivel que transmiten a nivel de bloque de datos.",
+          "correct": false
+        }
+      }
+    },
+    "205": {
+      "id": 205,
+      "text": "Un protocolo híbrido es aquel que combina aspectos de protocolos de vector de distancia como de estado de enlace. Indique, de los siguientes protocolos de routing, cuál es un ejemplo de protocolo híbrido. ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 115",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "EIGRP",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "OSPF",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "RIP",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "IGRP",
+          "correct": false
+        }
+      }
+    },
+    "206": {
+      "id": 206,
+      "text": "Power line communications o plc son tecnologías que aprovechan la red eléctrica para convertirla en un medio para la transmisión de datos a alta velocidad. Indique cuál es el estándar que regula este tipo de tecnologías: ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 116",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "IEEE 1804",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "IEEE 1901",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "IEEE 2001",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "IEEE 2104",
+          "correct": false
+        }
+      }
+    },
+    "207": {
+      "id": 207,
+      "text": "¿A qué tipo de ataque pertenece el denominado «ping de la muerte»? ",
+      "clue": "C. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 118",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Spoofing.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Man in the middle.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Denial of Service.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "Flooding.",
+          "correct": false
+        }
+      }
+    },
+    "208": {
+      "id": 208,
+      "text": "Indique qué tipo de registro de recurso dns (domain name system) es el que almacena la dirección ip del host al que deseamos acceder. ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 106",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "MX",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "A",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "SOA",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "RESOLV",
+          "correct": false
+        }
+      }
+    },
+    "209": {
+      "id": 209,
+      "text": "209. Dada la siguiente consulta SQL se puede determinar que lo que se pretende obtener es: \nSELECT destino, MIN(precio) FROM vuelos \nWHERE tipo_avion IN (SELECT tipo FROM aviones A WHERE num_asientos > (SELECT AVG(num_asientos) FROM aviones B WHERE A.tipo <> B.tipo) ) \nGROUP BY destino",
+      "clue": "C. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 138",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "El precio medio a cada uno de los destinos de los vuelos realizados por aviones con un número de asientos superior al mínimo número de asientos del resto de aviones.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "El precio más bajo a cada uno de los destinos de los vuelos realizados por aviones con un número de asientos diferente a la media del número de asientos de todos los aviones.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "El precio más bajo a cada uno de los destinos de los vuelos realizados por aviones con un número de asientos superior a la media del número de asientos del resto de aviones.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "La sentencia SQL es errónea.",
+          "correct": false
+        }
+      }
+    },
+    "210": {
+      "id": 210,
+      "text": "Sobre la fibra óptica, indique cuál de las siguientes afirmaciones es correcta: ",
+      "clue": "D. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 72",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "La fibra unimodal de índice escalonado tiene un núcleo central mayor que la fibra multimodal de índice graduado.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La fibra multimodal de índice escalonado es la que mayor ancho de banda proporciona respecto a los otros tipos de fibra.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "En la fibra unimodal de índice escalonado con revestimiento de aire, el índice de refracción del núcleo es menor que el del revestimiento.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "En la fibra multimodal de índice graduado, el índice de refracción del núcleo es mayor en el centro de la fibra.",
+          "correct": true
+        }
+      }
+    },
+    "211": {
+      "id": 211,
+      "text": "Indique la longitud en bits de la dirección MAC de una tarjeta ethernet: ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 67",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "48 bits.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "64 bits.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "92 bits",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "128 bits.",
+          "correct": false
+        }
+      }
+    },
+    "212": {
+      "id": 212,
+      "text": "Tenemos dos planes semanales de backup para nuestro sistema. Se hacen backups en la siguiente secuencia: domingo lunes martes miércoles jueves viernes sábado. En el Plan X el domingo se hace una copia completa y el resto un backup diferencial, mientras que en el plan y se hace el domingo una copia completa y luego backups incrementales. Indique qué afirmación de las siguientes es correcta: ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 66",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Ante un fallo producido el jueves, para la recuperación de la información se requiere la utilización de un menor número de copias en el Plan X que en el Y.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Ante un fallo producido el jueves, para la recuperación de la información se requiere la utilización de un menor número de copias en el Plan Y que en el X.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "La copia de seguridad del lunes en el Plan X ocupa más espacio que la del lunes del Plan Y.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La copia de seguridad del lunes en el Plan Y ocupa más espacio que la del lunes del Plan X.",
+          "correct": false
+        }
+      }
+    },
+    "213": {
+      "id": 213,
+      "text": "Seleccione el fichero de linux que contiene las direcciones de los servidores DNS necesarios para la navegación por internet. ",
+      "clue": "C. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 54",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "crontab",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "interfaces",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "resolv.conf",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "dns.conf",
+          "correct": false
+        }
+      }
+    },
+    "214": {
+      "id": 214,
+      "text": "La cantidad de texto cifrado que necesitamos para poder descubrir la clave de un criptosistema se denomina: ",
+      "clue": "D. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 53",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Entropía.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Entropía condicionada.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Índice de redundancia.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Distancia de unicidad.",
+          "correct": true
+        }
+      }
+    },
+    "215": {
+      "id": 215,
+      "text": "Cuando un cliente smtp desea enviar un e-mail a un servidor smtp, lo primero que debe realizar es establecer una conexión con dicho servidor. ¿Con qué código numérico comenzará la respuesta del servidor si la conexión se ha establecido correctamente? ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 49",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "220",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "250",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "354",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "421",
+          "correct": false
+        }
+      }
+    },
+    "216": {
+      "id": 216,
+      "text": "Respecto a la calidad del servicio en voip, indique qué es el jitter. ",
+      "clue": "D. La variación en el tiempo de llegada de los paquetes. \nhttp://www.servervoip.com/blog/factores-que-influyen-en-la-calidad/",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Parámetro que determina el número máximo de paquetes que la red pierde por unidad de tiempo.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "La latencia en la entrega de los paquetes.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Eco producido por el retorno de la señal que se escucha por los altavoces y se introduce de nuevo por el micrófono.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "La variación en el tiempo de llegada de los paquetes.",
+          "correct": true
+        }
+      }
+    },
+    "217": {
+      "id": 217,
+      "text": "Indique cuál no es una tecnología o protocolo utilizado en las redes privadas virtuales. ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 48",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "L2Sec",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "TTLP",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "L2TP",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "PPTP",
+          "correct": false
+        }
+      }
+    },
+    "218": {
+      "id": 218,
+      "text": "Respecto a la seguridad en redes, indique qué es un exploit. ",
+      "clue": "A. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 40",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Es un malware diseñado para aprovechar la vulnerabilidad de un software.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "Persona que accede a datos no autorizados.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Adware que modifica la página de inicio de los navegadores de Internet sin el consentimiento del usuario.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Software utilizado para la suplantación de la identidad de un usuario de la red.",
+          "correct": false
+        }
+      }
+    },
+    "219": {
+      "id": 219,
+      "text": "Dada la siguiente sentencia de actualización sql se puede determinar que lo que se pretende conseguir es: update trabajador t1 set tarifa_hora = tarifa_hora * 1.05 Where id_supervisor = 1520 and 30  sum(num_dias) from asignacion where id_trabajador = t1.Id_trabajador and id_edificio in (select id_edificio from edificio where id_zona = 5)) ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 30",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Incrementar en un 1,5 por ciento la tarifa por hora de todos los trabajadores cuyo supervisor sea el 1520 y que no han trabajado más de 30 días en edificios de la zona 5.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Incrementar en un 5 por ciento la tarifa por hora de todos los trabajadores cuyo supervisor sea el 1520 y que han trabajado más de 30 días en edificios de la zona 5.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Incrementar en un 5 por ciento la tarifa por hora de todos los trabajadores cuyo supervisor sea el 1520 y que han trabajado menos de 30 días en edificios de la zona 5.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Ninguna de las anteriores es correcta ya que la sentencia SQL es errónea.",
+          "correct": false
+        }
+      }
+    },
+    "220": {
+      "id": 220,
+      "text": "Las variables de sistema almacenan determinados valores que pueden sernos de utilidad para el trabajo diario en un sistema unix/linux. Indique, de las siguientes sentencias del shell bourne again (bash), cuál es correcta. ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 26",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "HOME = /home/pperez",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "HOME=/usuarios/home/pperez",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "set HOME=/home/pperez",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "No se puede asignar valor a la variable HOME pues es una variable del sistema reservada.",
+          "correct": false
+        }
+      }
+    },
+    "221": {
+      "id": 221,
+      "text": "Indique cuál de las siguientes direcciones ipv4 puede utilizarse como una IP pública de equipo en internet. ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 24",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "10.127.234.3",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "129.12.4.4",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "172.18.245.5",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "192.168.34.6",
+          "correct": false
+        }
+      }
+    },
+    "222": {
+      "id": 222,
+      "text": "Respecto a la calidad de servicio en redes, indique qué tipo de servicio se caracteriza por proporcionar un ancho de banda y un retardo máximo extremo a extremo en la entrega de los paquetes. ",
+      "clue": "B. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 23",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Servicio de control de admisión.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Servicio garantizado.",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Servicio de carga controlada.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Servicio del mejor esfuerzo.",
+          "correct": false
+        }
+      }
+    },
+    "223": {
+      "id": 223,
+      "text": "Seleccione la opción correcta de entre las siguientes afirmaciones que hacen referencia al esquema de estrella: ",
+      "clue": "C. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 18",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Un esquema de estrella es un modelo de datos que tiene una tabla de dimensiones que contiene los datos para el análisis y está rodeada de las tablas de hechos.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "En un esquema de estrella la tabla de hechos tendrá siempre una clave primaria simple.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Cuando a un esquema en estrella se aplican principios de normalización a una tabla de dimensión, el resultado se conoce como esquema de copo de nieve.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "El esquema de estrella es un modelo dimensional implementado en una base de datos multidimensional.",
+          "correct": false
+        }
+      }
+    },
+    "224": {
+      "id": 224,
+      "text": "Nuestro router wifi 802.11g emite en el canal 5 del rango de frecuencias de 2,4 ghz, pero notamos que nuestra conexión inalámbrica no funciona todo lo rápido que esperamos. Utilizando un programa escaneador de redes wifi, hemos detectado que existe una red wlan cercana que está emitiendo en el canal 7 y está produciéndonos interferencia en nuestra señal. Indique qué separación mínima de canales se debe respetar para que no se solapen las dos señales. ",
+      "clue": "C. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 16",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "1 canal.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "3 canales.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "5 canales.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "7 canales.",
+          "correct": false
+        }
+      }
+    },
+    "225": {
+      "id": 225,
+      "text": "Existen dos formas de establecer permisos para un archivo a través de la orden «chmod» en linux: de forma relativa o absoluta. Indíquenos qué permisos estamos asignando con la orden «chmod 641 prueba.Sh». ",
+      "clue": "D. \nhttp://www.baquedano.es/TIC_ejer_sol_SES_2014.pdf pregunta 6",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Permisos de lectura y ejecución al propietario, permiso de escritura al grupo y permiso de ejecución al resto de usuarios.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Permisos de lectura, escritura y ejecución al propietario, permisos de lectura y ejecución al grupo y permiso de escritura al resto de usuarios.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "Permisos de lectura y escritura al propietario, lectura y ejecución al grupo y permiso de lectura al resto de usuarios.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Permisos de lectura y escritura al propietario, lectura al grupo y permiso de ejecución al resto de usuarios.",
+          "correct": true
+        }
+      }
+    },
+    "226": {
+      "id": 226,
+      "text": "En los algoritmos de encriptación de clave pública, la clave privada y pública están relacionadas: ",
+      "clue": "A. \n http://www.testsanidad.com/test-314.html pregunta 13",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Sí, matemáticamente, de forma que a partir de una se puede obtener la otra, pero resulta muy difícil de obtener.",
+          "correct": true
+        },
+        "B": {
+          "id": "B",
+          "text": "No, no existe relación entre ambas, para que a partir de la clave pública no se pueda obtener la privada.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "No están relacionadas; ambas son elegidas por el usuario, distribuyéndose solo la clave pública y quedando la clave privada en posesión del emisor.",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "No están relacionadas; ambas son elegidas por el usuario, distribuyéndose solo la clave privada y quedando la clave pública en posesión del emisor.",
+          "correct": false
+        }
+      }
+    },
+    "227": {
+      "id": 227,
+      "text": "Al proceso de grabar en un disco los sectores en los que se podrá escribir, así como el n.º de sector e información de corrección de errores (ECC) recibe el nombre de: ",
+      "clue": "B. \n http://www.testsanidad.com/test-314.html pregunta 16",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "Formateo lógico",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "Formateo físico",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "Scandisk",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Grabación de la tabla de particiones del disco.",
+          "correct": false
+        }
+      }
+    },
+    "229": {
+      "id": 229,
+      "text": "La sentencias grant y revoke del lenguaje SQL pertenecen al: ",
+      "clue": "B. \n http://www.testsanidad.com/test-314.html pregunta 7",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "DML",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "DCL",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "DDL",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "DCU",
+          "correct": false
+        }
+      }
+    },
+    "230": {
+      "id": 230,
+      "text": "En el lenguaje SQL el operador IN es equivalente a: ",
+      "clue": "B. \n http://www.testsanidad.com/test-314.html pregunta 8",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "EXISTS",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "=ANY",
+          "correct": true
+        },
+        "C": {
+          "id": "C",
+          "text": "<>ALL",
+          "correct": false
+        },
+        "D": {
+          "id": "D",
+          "text": "Ninguna de las anteriores.",
+          "correct": false
+        }
+      }
+    }
+  }
+}

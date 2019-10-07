@@ -17,7 +17,7 @@ import java.util.TreeMap;
 
 import tk.greenvan.opetest.QuestionActivity;
 import tk.greenvan.opetest.R;
-import tk.greenvan.opetest.common.Common;
+import tk.greenvan.opetest.db.Common;
 import tk.greenvan.opetest.model.Answer;
 
 public class QuestionGridAdapter extends RecyclerView.Adapter<QuestionGridAdapter.MyViewHolder>  {

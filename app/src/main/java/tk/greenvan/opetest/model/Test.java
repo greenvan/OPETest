@@ -2,7 +2,6 @@ package tk.greenvan.opetest.model;
 
 import androidx.annotation.NonNull;
 
-
 import java.util.TreeMap;
 
 
@@ -10,6 +9,7 @@ public class Test {
     private String id;
     private String name;
     private String photoUrl;
+    private String file;
     private TreeMap<Integer,Question> questions;
 
     public Test(){}
@@ -30,6 +30,13 @@ public class Test {
         this.photoUrl = photoUrl;
     }
 
+    public Test(String id, String name, String photoUrl, String fileName) {
+        this.id = id;
+        this.name = name;
+        this.photoUrl = photoUrl;
+        this.file = fileName;
+    }
+
     public String getId() {
         return id;
     }
@@ -48,6 +55,22 @@ public class Test {
 
     public String getPhotoUrl() {
         return photoUrl;
+    }
+
+    public void setfileName(String fileName) {
+        this.file = fileName;
+    }
+
+    public String getFile() {
+        return file;
+    }
+
+    public void setFile(String fileName) {
+        this.file = fileName;
+    }
+
+    public String getfileName() {
+        return file;
     }
 
     public void setPhotoUrl(String photoUrl) {

@@ -25,7 +25,8 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.concurrent.TimeUnit;
 
-import tk.greenvan.opetest.common.Common;
+import tk.greenvan.opetest.db.Common;
+import tk.greenvan.opetest.db.OfflineDB;
 import tk.greenvan.opetest.model.Answer;
 import tk.greenvan.opetest.model.Option;
 import tk.greenvan.opetest.model.Question;
@@ -328,6 +329,11 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void saveData() {
+        if (Common.Mode == Common.MODE.ONLINE) onlineSaveData();
+        else OfflineDB.saveData();
+    }
+
+    public void onlineSaveData() {
         //TODO mostrar un cartel de "Saving..."
 
         // Guardar los datos de filteredList en answerList y la base de datos
@@ -336,8 +342,10 @@ public class QuestionActivity extends AppCompatActivity {
             Answer answer = Common.filteredAnswerList.get(key);
             Common.mUserTestReference.child(Common.selectedTest.getId()).child(String.valueOf(answer.getQuestionId())).setValue(answer);
         }
+    }
 
-
+    //TODO implement save local
+    public void offlineSaveData() {
     }
 
     private void countTimer() {
@@ -387,7 +395,9 @@ public class QuestionActivity extends AppCompatActivity {
             finishGame();
     }
 
-    //TODO Si se rota la pantalla en modo test no se guarda las respuestas obtenidas en cada momento currentAnswersheet y filtered habría que guardarlas al pause y recuperar al resume etc o bien no permitir rotar.
+    //TODO Si se rota la pantalla en modo test no se guarda las respuestas obtenidas en cada momento
+    // currentAnswersheet y filtered habría que guardarlas al pause y recuperar al resume etc o bien
+    // no permitir rotar.
 
     //TODO Si se rota en quicktest se muere la actividad.
 

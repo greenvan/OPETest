@@ -13,6 +13,13 @@ public class Question {
     public Question() {
     }
 
+    public Question(int id, String text, String clue) {
+        this.id = id;
+        this.text = text;
+        this.clue = clue;
+    }
+
+
     public Question(int id, String text, String clue, TreeMap<String,Option> options) {
         this.id = id;
         this.text = text;
