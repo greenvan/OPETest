@@ -7,6 +7,7 @@ public class Answer {
     private int questionId = 0;
     private Common.ANSWER_STATE state = Common.ANSWER_STATE.NO_ANSWER;
     private long lastAcess = System.currentTimeMillis();
+    private String selection = "";
 
     public Answer() {
     }
@@ -38,5 +39,13 @@ public class Answer {
 
     public void setLastAcess(long lastAcess) {
         this.lastAcess = lastAcess;
+    }
+
+    public String getSelection() {
+        return selection;
+    }
+
+    public void setSelection(String selection) {
+        this.selection = selection;
     }
 }

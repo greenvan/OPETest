@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.viewpager.widget.ViewPager;
 
 import java.util.TreeMap;
 
@@ -26,11 +27,16 @@ import tk.greenvan.opetest.model.Option;
  */
 public class QuestionFragment extends Fragment {
 
+
+    ViewPager viewPager;
+
+
     private static final String ARG_SECTION_NUMBER = "question_id";
     private PageViewModel pageViewModel;
 
     private TreeMap<String, Option> options = new TreeMap<String, Option>();
 
+//TODO Comprobar que funciona: hacer que se muestren en el modo view las respuestas contestadas mal por el usuario
 
     public static QuestionFragment newInstance(int index) {
         QuestionFragment fragment = new QuestionFragment();
@@ -49,6 +55,7 @@ public class QuestionFragment extends Fragment {
             index = getArguments().getInt(ARG_SECTION_NUMBER);
         }
         pageViewModel.setIndex(index);
+
     }
 
     @Override
@@ -56,6 +63,7 @@ public class QuestionFragment extends Fragment {
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_question, container, false);
+
 
         final QuestionActivity questionActivity = (QuestionActivity) getActivity();
 
@@ -78,9 +86,6 @@ public class QuestionFragment extends Fragment {
         final TextView tv_E = rootView.findViewById(R.id.tv_option_e);
 
 
-        //TODO en todas las opciones (A-B-C-D-E), si se clicka y es correcta pasar al siguiente frame,
-        // si es incorrecta aún tengo que pensar si pasar al siguiente o no.
-
         //TextView tv_A
         pageViewModel.getOptionA().observe(this, new Observer<Option>() {
             @Override
@@ -91,10 +96,15 @@ public class QuestionFragment extends Fragment {
                     tv_A.setVisibility(View.VISIBLE);
 
                     if (Common.viewMode == Common.VIEW_MODE.VIEW) {
-                        if (o.isCorrect())
+                        if (o.isCorrect()) //Si es correcta ponemos el color de correcto
                             tv_A.setBackgroundColor(Color.parseColor("#99cc00"));
-                        else //Por si acaso volvemos a poner en modo no_answer
+                        else if (currentAnswer.getSelection().equals(o.getId())) {
+                            //Si es incorrecta pero el usuario la seleccionó, marcamos WRONG
+                            tv_A.setBackgroundColor(Color.parseColor("#ff0000"));
+                        } else {//Por si acaso volvemos a poner en modo no_answer
                             tv_A.setBackgroundColor(Color.parseColor("#00ddff"));
+
+                        }
                     } else {
                         //Estamos en modo TEST o QUICKTEST
 
@@ -112,6 +122,9 @@ public class QuestionFragment extends Fragment {
                                     tv_D.setClickable(false);
                                     tv_E.setClickable(false);
 
+                                    //Guardamos la respuesta del usuario
+                                    currentAnswer.setSelection(o.getId());
+
                                     // Si es correcta, la marcamos en verde y actualizamos contador
                                     if (o.isCorrect()) {
                                         tv_A.setBackgroundColor(Color.parseColor("#99cc00"));
@@ -119,6 +132,7 @@ public class QuestionFragment extends Fragment {
                                         //Actualizar contador
                                         Common.right_answer_count++;
                                         questionActivity.tv_right_answer_count.setText(String.valueOf(Common.right_answer_count));
+                                        if (Common.onRightMoveToNext) nextQuestion();
 
                                     }
                                     // Si no es correcta, la marcamos en rojo y actualizamos contaado
@@ -199,6 +213,9 @@ public class QuestionFragment extends Fragment {
                                     tv_D.setClickable(false);
                                     tv_E.setClickable(false);
 
+                                    //Guardamos la respuesta del usuario
+                                    currentAnswer.setSelection(o.getId());
+
                                     // Si es correcta, la marcamos en verde y actualizamos contador
                                     if (o.isCorrect()) {
                                         tv_B.setBackgroundColor(Color.parseColor("#99cc00"));
@@ -206,6 +223,7 @@ public class QuestionFragment extends Fragment {
                                         //Actualizar contador
                                         Common.right_answer_count++;
                                         questionActivity.tv_right_answer_count.setText(String.valueOf(Common.right_answer_count));
+                                        if (Common.onRightMoveToNext) nextQuestion();
 
                                     }
                                     // Si no es correcta, buscamos la correcta y la marcamos en rojo y actualizamos contaado
@@ -283,6 +301,9 @@ public class QuestionFragment extends Fragment {
                                     tv_D.setClickable(false);
                                     tv_E.setClickable(false);
 
+                                    //Guardamos la respuesta del usuario
+                                    currentAnswer.setSelection(o.getId());
+
                                     // Si es correcta, la marcamos en verde y actualizamos contador
                                     if (o.isCorrect()) {
                                         tv_C.setBackgroundColor(Color.parseColor("#99cc00"));
@@ -290,6 +311,7 @@ public class QuestionFragment extends Fragment {
                                         //Actualizar contador
                                         Common.right_answer_count++;
                                         questionActivity.tv_right_answer_count.setText(String.valueOf(Common.right_answer_count));
+                                        if (Common.onRightMoveToNext) nextQuestion();
 
                                     }
                                     // Si no es correcta, buscamos la correcta y la marcamos en rojo y actualizamos contaado
@@ -368,6 +390,9 @@ public class QuestionFragment extends Fragment {
                                     tv_D.setClickable(false);
                                     tv_E.setClickable(false);
 
+                                    //Guardamos la respuesta del usuario
+                                    currentAnswer.setSelection(o.getId());
+
                                     // Si es correcta, la marcamos en verde y actualizamos contador
                                     if (o.isCorrect()) {
                                         tv_D.setBackgroundColor(Color.parseColor("#99cc00"));
@@ -375,6 +400,7 @@ public class QuestionFragment extends Fragment {
                                         //Actualizar contador
                                         Common.right_answer_count++;
                                         questionActivity.tv_right_answer_count.setText(String.valueOf(Common.right_answer_count));
+                                        if (Common.onRightMoveToNext) nextQuestion();
 
                                     }
                                     // Si no es correcta, buscamos la correcta y la marcamos en VERDE y actualizamos contador
@@ -453,6 +479,9 @@ public class QuestionFragment extends Fragment {
                                     tv_D.setClickable(false);
                                     tv_E.setClickable(false);
 
+                                    //Guardamos la respuesta del usuario
+                                    currentAnswer.setSelection(o.getId());
+
                                     // Si es correcta, la marcamos en verde y actualizamos contador
                                     if (o.isCorrect()) {
                                         tv_E.setBackgroundColor(Color.parseColor("#99cc00"));
@@ -460,6 +489,7 @@ public class QuestionFragment extends Fragment {
                                         //Actualizar contador
                                         Common.right_answer_count++;
                                         questionActivity.tv_right_answer_count.setText(String.valueOf(Common.right_answer_count));
+                                        if (Common.onRightMoveToNext) nextQuestion();
 
                                     }
                                     // Si no es correcta, buscamos la correcta y la marcamos en rojo y actualizamos contaado
@@ -509,5 +539,21 @@ public class QuestionFragment extends Fragment {
 
 
         return rootView;
+    }
+
+    private void nextQuestion() {
+        viewPager = getActivity().findViewById(R.id.vp_question_view_pager);
+
+
+        QuestionActivity questionActivity = (QuestionActivity) getActivity();
+
+        int itemCount = Common.filteredAnswerList.size();
+        int nextItem = viewPager.getCurrentItem() + 1;
+
+
+        if (nextItem < itemCount)
+            viewPager.setCurrentItem(nextItem, true);
+        else
+            questionActivity.finishGame();
     }
 }

@@ -20,7 +20,7 @@
         "C": {
           "id": "C",
           "text": "Más luminancia",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -37,7 +37,7 @@
         "A": {
           "id": "A",
           "text": "Una lista de parámetros que conforman una edición específica",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -69,7 +69,7 @@
         "B": {
           "id": "B",
           "text": "durante las mezclas",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -106,7 +106,7 @@
         "D": {
           "id": "D",
           "text": "Un sistema de compresión de vídeo con pérdidas",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -123,7 +123,7 @@
         "B": {
           "id": "B",
           "text": "la distancia desde el centro óptico de la lente al foco",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -145,7 +145,7 @@
         "A": {
           "id": "A",
           "text": "picado",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -187,7 +187,7 @@
         "D": {
           "id": "D",
           "text": "de 20 a 20.000 Hz",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -214,7 +214,7 @@
         "D": {
           "id": "D",
           "text": "Blanco",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -231,7 +231,7 @@
         "B": {
           "id": "B",
           "text": "ruido rosa",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -258,7 +258,7 @@
         "B": {
           "id": "B",
           "text": "luz principal, luz de contra y luz de relleno",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -295,7 +295,7 @@
         "D": {
           "id": "D",
           "text": "no lineal",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -307,7 +307,7 @@
         "A": {
           "id": "A",
           "text": "Colocando el eje óptico de la cámara debajo de la línea de los ojos",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -334,7 +334,7 @@
         "A": {
           "id": "A",
           "text": "1,8",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -371,7 +371,7 @@
         "C": {
           "id": "C",
           "text": "la luz de relleno",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -403,7 +403,7 @@
         "D": {
           "id": "D",
           "text": "varía la temperatura de color",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -425,7 +425,7 @@
         "C": {
           "id": "C",
           "text": "eje óptico",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -447,7 +447,7 @@
         "B": {
           "id": "B",
           "text": "no",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -474,7 +474,7 @@
         "B": {
           "id": "B",
           "text": "un decorado que rodea la parte trasera del estudio",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -501,7 +501,7 @@
         "B": {
           "id": "B",
           "text": "menor por delante del sujeto a foco que por detrás",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -523,7 +523,7 @@
         "A": {
           "id": "A",
           "text": "que disminuye la relación señal/ruido",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -550,7 +550,7 @@
         "A": {
           "id": "A",
           "text": "a la fuente luminosa",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -587,7 +587,7 @@
         "C": {
           "id": "C",
           "text": "Pitch",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -609,7 +609,7 @@
         "B": {
           "id": "B",
           "text": "tono, timbre, intensidad",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -626,12 +626,12 @@
     "24": {
       "id": 24,
       "text": "La frecuencia de 1014Hz es una radiación... ",
-      "clue": "",
+      "clue": "Entendemos que el 14 es el exponente. Diez elevado a catorce",
       "answer": {
         "A": {
           "id": "A",
           "text": "infrarroja",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -673,7 +673,7 @@
         "D": {
           "id": "D",
           "text": "el lux",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -690,7 +690,7 @@
         "B": {
           "id": "B",
           "text": "color",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -717,7 +717,7 @@
         "B": {
           "id": "B",
           "text": "la cámara, el cable y la unidad de control",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -739,7 +739,7 @@
         "A": {
           "id": "A",
           "text": "iluminación",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -766,7 +766,7 @@
         "A": {
           "id": "A",
           "text": "el balance de blancos",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -798,7 +798,7 @@
         "B": {
           "id": "B",
           "text": "el locutor",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -825,7 +825,7 @@
         "B": {
           "id": "B",
           "text": "cuadruplicar la iluminación para mantener la misma exposición",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -852,7 +852,7 @@
         "B": {
           "id": "B",
           "text": "una mayor profundidad de campo",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -874,7 +874,7 @@
         "A": {
           "id": "A",
           "text": "mayor o igual a 1",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -916,7 +916,7 @@
         "D": {
           "id": "D",
           "text": "separar las figuras del fondo",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -933,7 +933,7 @@
         "B": {
           "id": "B",
           "text": "brillo, tono, saturación",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -955,7 +955,7 @@
         "A": {
           "id": "A",
           "text": "Kelvin",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -987,7 +987,7 @@
         "B": {
           "id": "B",
           "text": "en contrapicado",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1014,7 +1014,7 @@
         "B": {
           "id": "B",
           "text": "35dB",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1051,7 +1051,7 @@
         "D": {
           "id": "D",
           "text": "la regrabación de sonidos",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -1063,7 +1063,7 @@
         "A": {
           "id": "A",
           "text": "cristalino",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1095,7 +1095,7 @@
         "B": {
           "id": "B",
           "text": "crea atención",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1122,7 +1122,7 @@
         "B": {
           "id": "B",
           "text": "60 minutos",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1144,7 +1144,7 @@
         "A": {
           "id": "A",
           "text": "longitud de onda",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1176,7 +1176,7 @@
         "B": {
           "id": "B",
           "text": "distancias focales",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1198,7 +1198,7 @@
         "A": {
           "id": "A",
           "text": "2 campos entrelazados.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1230,7 +1230,7 @@
         "B": {
           "id": "B",
           "text": "La disminuye",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1262,7 +1262,7 @@
         "C": {
           "id": "C",
           "text": "disminuye la luminosidad",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -1279,7 +1279,7 @@
         "A": {
           "id": "A",
           "text": "3.200K",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1306,7 +1306,7 @@
         "A": {
           "id": "A",
           "text": "Corrige los defectos comunes de distorsión de objetivos fotográficos",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1333,7 +1333,7 @@
         "A": {
           "id": "A",
           "text": "La alteración cronológica de una historia, trasladando la acción al pasado",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1360,7 +1360,7 @@
         "A": {
           "id": "A",
           "text": "La suma de: 30% de R + 59% de G + 11% de B",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1392,7 +1392,7 @@
         "B": {
           "id": "B",
           "text": "Para ajustar y mantener el foco correcto en todo el rango de zoom de la óptica tras el cambio de objetivo o de CDs",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1424,7 +1424,7 @@
         "C": {
           "id": "C",
           "text": "Poner un filtro azul",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -1451,7 +1451,7 @@
         "C": {
           "id": "C",
           "text": "Regulador de la cantidad de corriente que circula a través de una lámpara",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -1473,7 +1473,7 @@
         "B": {
           "id": "B",
           "text": "Disminuye a la cuarta parte",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1505,7 +1505,7 @@
         "C": {
           "id": "C",
           "text": "2 stops",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -1532,7 +1532,7 @@
         "C": {
           "id": "C",
           "text": "La ley de los treinta grados",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -1549,7 +1549,7 @@
         "A": {
           "id": "A",
           "text": "El timbre",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1576,7 +1576,7 @@
         "A": {
           "id": "A",
           "text": "Reducen el rango dinámico de la señal",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1608,7 +1608,7 @@
         "B": {
           "id": "B",
           "text": "Para evitar ruidos provocados por el viento",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1635,7 +1635,7 @@
         "B": {
           "id": "B",
           "text": "1.000 Hz",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1662,7 +1662,7 @@
         "B": {
           "id": "B",
           "text": "El MPEG1 audio layer 3, más conocido como Mp3 es un formato de audio digital comprimido con pérdida desarrollado por el Moving Picture Experts Group (MPEG)",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1694,7 +1694,7 @@
         "C": {
           "id": "C",
           "text": "Omnidireccional",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -1716,7 +1716,7 @@
         "B": {
           "id": "B",
           "text": "20 a 300 Hz",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1743,7 +1743,7 @@
         "B": {
           "id": "B",
           "text": "Unidireccionales, bidireccionales y omnidireccionales",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1765,7 +1765,7 @@
         "A": {
           "id": "A",
           "text": "Sonido no síncrono que no se registra simultáneo con la imagen",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -1802,7 +1802,7 @@
         "C": {
           "id": "C",
           "text": "Omnidireccional",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -1824,7 +1824,7 @@
         "B": {
           "id": "B",
           "text": "El video streaming hace posible escuchar música y ver vídeos sin necesidad de que los archivos estén descargados previamente",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1851,7 +1851,7 @@
         "B": {
           "id": "B",
           "text": "En los canales",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1878,7 +1878,7 @@
         "B": {
           "id": "B",
           "text": "Solo la imagen de mapa de bits",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1910,7 +1910,7 @@
         "C": {
           "id": "C",
           "text": "En una página web, es una referencia a otra página web",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -1937,7 +1937,7 @@
         "C": {
           "id": "C",
           "text": "No permiten capturar archivos de más de 4 GB",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -1959,7 +1959,7 @@
         "B": {
           "id": "B",
           "text": "Con una lista",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -1991,7 +1991,7 @@
         "C": {
           "id": "C",
           "text": "../",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2018,7 +2018,7 @@
         "C": {
           "id": "C",
           "text": "Convertir la imagen a escala de grises",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2035,7 +2035,7 @@
         "A": {
           "id": "A",
           "text": "Protocolos utilizados para videoconferencia en comunicaciones a través de RDSI y redes de banda ancha o internet",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2062,7 +2062,7 @@
         "A": {
           "id": "A",
           "text": "Un sistema que se emplea para gestionar de forma centralizada las conferencias multipunto",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2094,7 +2094,7 @@
         "B": {
           "id": "B",
           "text": "15 fps",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -2116,7 +2116,7 @@
         "A": {
           "id": "A",
           "text": "25 Hz",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2143,7 +2143,7 @@
         "A": {
           "id": "A",
           "text": "pérdida de definición",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2185,7 +2185,7 @@
         "D": {
           "id": "D",
           "text": "ondas longitudinales de presión",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -2212,7 +2212,7 @@
         "D": {
           "id": "D",
           "text": "lo veremos negro",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -2229,7 +2229,7 @@
         "B": {
           "id": "B",
           "text": "dejamos más aire en el sentido de la mirada",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -2256,7 +2256,7 @@
         "B": {
           "id": "B",
           "text": "en la posición de teleobjetivo",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -2278,7 +2278,7 @@
         "A": {
           "id": "A",
           "text": "0º y 180º",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2310,7 +2310,7 @@
         "B": {
           "id": "B",
           "text": "el límite de sensibilidad",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -2332,7 +2332,7 @@
         "A": {
           "id": "A",
           "text": "rojo",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2374,7 +2374,7 @@
         "D": {
           "id": "D",
           "text": "más de 6.000 K",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -2386,7 +2386,7 @@
         "A": {
           "id": "A",
           "text": "de cañón",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2428,7 +2428,7 @@
         "D": {
           "id": "D",
           "text": "72 pixel por pulgada si su altura y anchura está en píxeles",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -2440,7 +2440,7 @@
         "A": {
           "id": "A",
           "text": "Si aumentamos su resolución aumentaremos proporcionalmente su tamaño",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2477,7 +2477,7 @@
         "C": {
           "id": "C",
           "text": "16.777.216 tonos",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2499,7 +2499,7 @@
         "B": {
           "id": "B",
           "text": "Disminuir el número de colores que son utilizados en una imagen.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -2531,7 +2531,7 @@
         "C": {
           "id": "C",
           "text": "Su tamaño en número de bits",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2558,7 +2558,7 @@
         "C": {
           "id": "C",
           "text": "El número de colores incorporados al fichero de la imagen en cuestión para poder representarla digitalmente.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2580,7 +2580,7 @@
         "B": {
           "id": "B",
           "text": "Posee un valor cromático y de luminosidad independientemente del resto de los píxeles que componen la imagen en su conjunto",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -2612,7 +2612,7 @@
         "C": {
           "id": "C",
           "text": "Modo color RGB",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2644,7 +2644,7 @@
         "D": {
           "id": "D",
           "text": "Tres canales: rojo, verde y azul",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -2671,7 +2671,7 @@
         "D": {
           "id": "D",
           "text": "Utiliza una técnica de compresión de las llamadas sin pérdidas utilizable con archivos tipo TIFF, GIF y PDF",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -2688,7 +2688,7 @@
         "B": {
           "id": "B",
           "text": "256 tonos",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -2725,7 +2725,7 @@
         "D": {
           "id": "D",
           "text": "Con un canal alfa",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -2742,7 +2742,7 @@
         "B": {
           "id": "B",
           "text": "No admite canales alfa",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -2774,7 +2774,7 @@
         "C": {
           "id": "C",
           "text": "Utiliza una técnica de compresión de las llamadas con pérdidas utilizable con archivos tipo JPEG",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2791,7 +2791,7 @@
         "A": {
           "id": "A",
           "text": "La 10 cm por 12 cm de formato .JPEG",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2818,7 +2818,7 @@
         "A": {
           "id": "A",
           "text": "Su tamaño en número de bits",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2855,7 +2855,7 @@
         "C": {
           "id": "C",
           "text": "Efecto rodillo",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2882,7 +2882,7 @@
         "C": {
           "id": "C",
           "text": "Los campos par e impar",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2909,7 +2909,7 @@
         "C": {
           "id": "C",
           "text": "dosificando las diferentes tintas de base en porcentaje",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2926,7 +2926,7 @@
         "A": {
           "id": "A",
           "text": "Abreviatura convencional de los colores básicos utilizados en cuatricromía",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -2963,7 +2963,7 @@
         "C": {
           "id": "C",
           "text": "Aliassing",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -2990,7 +2990,7 @@
         "C": {
           "id": "C",
           "text": "Gótica",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3017,7 +3017,7 @@
         "C": {
           "id": "C",
           "text": "Distancia focal larga y apertura del iris f/1,4.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3034,7 +3034,7 @@
         "A": {
           "id": "A",
           "text": "Abriendo el diafragma.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -3076,7 +3076,7 @@
         "D": {
           "id": "D",
           "text": "Un soporte con ruedas para poner el trípode.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -3098,7 +3098,7 @@
         "C": {
           "id": "C",
           "text": "1.920 × 1.080.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3115,7 +3115,7 @@
         "A": {
           "id": "A",
           "text": "Alemania.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -3147,7 +3147,7 @@
         "B": {
           "id": "B",
           "text": "Eco.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3179,7 +3179,7 @@
         "C": {
           "id": "C",
           "text": "Con el balance de blancos.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3196,7 +3196,7 @@
         "A": {
           "id": "A",
           "text": "Modificar el número f a la mitad.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -3233,7 +3233,7 @@
         "C": {
           "id": "C",
           "text": "Un canal distinto.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3260,7 +3260,7 @@
         "C": {
           "id": "C",
           "text": "Línea de tiempo.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3287,7 +3287,7 @@
         "C": {
           "id": "C",
           "text": "Un objetivo de focal larga.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3319,7 +3319,7 @@
         "D": {
           "id": "D",
           "text": "Enfocamos primero en la longitud focal más larga con el diafragma totalmente abierto.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -3336,7 +3336,7 @@
         "B": {
           "id": "B",
           "text": "Kelvin",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3358,7 +3358,7 @@
         "A": {
           "id": "A",
           "text": "3.200 K",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -3390,7 +3390,7 @@
         "B": {
           "id": "B",
           "text": "600 ppp",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3417,7 +3417,7 @@
         "B": {
           "id": "B",
           "text": "300 ppp",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3444,7 +3444,7 @@
         "B": {
           "id": "B",
           "text": "De 5.400 a 6.000 grados Kelvin.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3471,7 +3471,7 @@
         "B": {
           "id": "B",
           "text": "Uno de densidad = 4",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3493,7 +3493,7 @@
         "A": {
           "id": "A",
           "text": "Círculos concéntricos.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -3525,7 +3525,7 @@
         "B": {
           "id": "B",
           "text": "La disminuye.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3562,7 +3562,7 @@
         "D": {
           "id": "D",
           "text": "Gris",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -3589,7 +3589,7 @@
         "D": {
           "id": "D",
           "text": "Cualquier color.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -3616,7 +3616,7 @@
         "D": {
           "id": "D",
           "text": "Textdecoration.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -3633,7 +3633,7 @@
         "B": {
           "id": "B",
           "text": "Con una lista.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3655,7 +3655,7 @@
         "A": {
           "id": "A",
           "text": "Sí.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -3687,7 +3687,7 @@
         "B": {
           "id": "B",
           "text": "Una serie de ilustraciones mostradas en secuencia con el objetivo de servir de guía para entender una historia.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3719,7 +3719,7 @@
         "C": {
           "id": "C",
           "text": "3 pines.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3741,7 +3741,7 @@
         "B": {
           "id": "B",
           "text": "Debemos de multiplicar por 1,6 para saber su distancia focal real.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3773,7 +3773,7 @@
         "C": {
           "id": "C",
           "text": "Un formato de archivo de imagen digital generalmente sin ninguna compresión, aunque en algún caso o marca concreta pueda aplicarla mínimamente.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3805,7 +3805,7 @@
         "D": {
           "id": "D",
           "text": "Alta.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -3822,7 +3822,7 @@
         "B": {
           "id": "B",
           "text": "Micrófonos direccionales, de baja sensibilidad.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3849,7 +3849,7 @@
         "B": {
           "id": "B",
           "text": "Gran angular.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -3881,7 +3881,7 @@
         "C": {
           "id": "C",
           "text": "Rojo.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3898,7 +3898,7 @@
         "A": {
           "id": "A",
           "text": "YUV.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -3935,7 +3935,7 @@
         "C": {
           "id": "C",
           "text": "Una gráfica que nos indica la distribución de luminosidad en una escena.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3962,7 +3962,7 @@
         "C": {
           "id": "C",
           "text": "Profundidad de campo.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -3984,7 +3984,7 @@
         "B": {
           "id": "B",
           "text": "Un filtro polarizador.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4006,7 +4006,7 @@
         "A": {
           "id": "A",
           "text": "Omnidireccional.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -4038,7 +4038,7 @@
         "B": {
           "id": "B",
           "text": "Unidireccional.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4070,7 +4070,7 @@
         "C": {
           "id": "C",
           "text": "Picado.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4087,7 +4087,7 @@
         "A": {
           "id": "A",
           "text": "El ruido.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -4124,7 +4124,7 @@
         "C": {
           "id": "C",
           "text": "Betacam SP",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4156,7 +4156,7 @@
         "D": {
           "id": "D",
           "text": "Una panorámica sumamente rápida.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -4183,7 +4183,7 @@
         "D": {
           "id": "D",
           "text": "mayor que un plano medio",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -4200,7 +4200,7 @@
         "B": {
           "id": "B",
           "text": "RGB",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4232,7 +4232,7 @@
         "C": {
           "id": "C",
           "text": "Suavizar o redondear la selección",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4264,7 +4264,7 @@
         "D": {
           "id": "D",
           "text": "Con un puerto SCSI",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -4286,7 +4286,7 @@
         "C": {
           "id": "C",
           "text": "Ofrece la capacidad de cambiar parámetros de disparo, como balance de blancos, después de haber realizado la foto.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4308,7 +4308,7 @@
         "B": {
           "id": "B",
           "text": "Escaleta.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4335,7 +4335,7 @@
         "B": {
           "id": "B",
           "text": "Igual que la SPDIF óptica.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4362,7 +4362,7 @@
         "B": {
           "id": "B",
           "text": "En una nueva capa.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4394,7 +4394,7 @@
         "C": {
           "id": "C",
           "text": "JPEG.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4426,7 +4426,7 @@
         "D": {
           "id": "D",
           "text": "Movimientos laterales de cámara habitualmente sobre un soporte con ruedas.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -4438,7 +4438,7 @@
         "A": {
           "id": "A",
           "text": "Fotografía de alto rango dinámico.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -4470,7 +4470,7 @@
         "B": {
           "id": "B",
           "text": "Es un concepto que se refiere a la cantidad de bits de información necesarios para representar el color de un píxel en una imagen digital.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4492,7 +4492,7 @@
         "A": {
           "id": "A",
           "text": "Escaneamos una imagen de una revista o un periódico.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -4524,7 +4524,7 @@
         "B": {
           "id": "B",
           "text": "Escanear la película fotográfica, ya que esta posee un mayor rango dinámico que la copia en papel y permite escaneados a una resolución superior.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4556,7 +4556,7 @@
         "C": {
           "id": "C",
           "text": "MPG2",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4573,7 +4573,7 @@
         "A": {
           "id": "A",
           "text": "Mpg4",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -4610,7 +4610,7 @@
         "C": {
           "id": "C",
           "text": "balance de blancos",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4637,7 +4637,7 @@
         "C": {
           "id": "C",
           "text": "De 40 a 60 mm",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4654,7 +4654,7 @@
         "A": {
           "id": "A",
           "text": "Amarillo.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -4691,7 +4691,7 @@
         "C": {
           "id": "C",
           "text": "No permite capturar archivos de más de 4 Gb.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4718,7 +4718,7 @@
         "C": {
           "id": "C",
           "text": "Meta tags",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4745,7 +4745,7 @@
         "C": {
           "id": "C",
           "text": "href",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -4767,7 +4767,7 @@
         "B": {
           "id": "B",
           "text": "CSS",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4804,7 +4804,7 @@
         "D": {
           "id": "D",
           "text": "PNG",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -4821,7 +4821,7 @@
         "B": {
           "id": "B",
           "text": "CMYK",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4848,7 +4848,7 @@
         "B": {
           "id": "B",
           "text": "TIFF",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4875,7 +4875,7 @@
         "B": {
           "id": "B",
           "text": "256",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4902,7 +4902,7 @@
         "B": {
           "id": "B",
           "text": "Un anillo de extensión.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -4924,7 +4924,7 @@
         "A": {
           "id": "A",
           "text": "Una secuencia filmada en continuidad sin corte entre planos",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -4951,7 +4951,7 @@
         "A": {
           "id": "A",
           "text": "Es la alteración cronológica de una historia, trasladando la acción al pasado",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -4978,7 +4978,7 @@
         "A": {
           "id": "A",
           "text": "Profundidad de campo",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5015,7 +5015,7 @@
         "C": {
           "id": "C",
           "text": "A la continuidad en los elementos visuales de los distintos planos",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5032,7 +5032,7 @@
         "A": {
           "id": "A",
           "text": "La suma de: 30% de R+ 59% de G+ 11% de B",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5059,7 +5059,7 @@
         "A": {
           "id": "A",
           "text": "Unidad mínima de imagen electrónica",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5096,7 +5096,7 @@
         "C": {
           "id": "C",
           "text": "Es un micrófono diseñado para ser colgado del cuello, solapa o corbata",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5113,7 +5113,7 @@
         "A": {
           "id": "A",
           "text": "Permitir el ajuste y el control remoto de las señales de la cámara de vídeo",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5150,7 +5150,7 @@
         "C": {
           "id": "C",
           "text": "A la x le corresponde el paso con el número 11",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5167,7 +5167,7 @@
         "A": {
           "id": "A",
           "text": "Nos deformará la imagen",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5204,7 +5204,7 @@
         "C": {
           "id": "C",
           "text": "Poner un filtro azul",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5236,7 +5236,7 @@
         "D": {
           "id": "D",
           "text": "Render",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -5258,7 +5258,7 @@
         "C": {
           "id": "C",
           "text": "El formato (códec) de vídeo y audio puede ser cualquiera",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5280,7 +5280,7 @@
         "B": {
           "id": "B",
           "text": "Son las páginas que soportan el nivel de prioridad 3. Son las que más se ajustan al estándar marcado por WAI sobre accesibilidad. Son las que menos problemas de accesibilidad presentan a las personas discapacitadas.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5317,7 +5317,7 @@
         "D": {
           "id": "D",
           "text": "Un DVD correctamente creado puede contener datos siguiendo los sistemas de archivos UDF e ISO 9660",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -5329,7 +5329,7 @@
         "A": {
           "id": "A",
           "text": "UDP",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5356,7 +5356,7 @@
         "A": {
           "id": "A",
           "text": "Bus AGP, gran caché e instrucciones MMX o sucesoras",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5393,7 +5393,7 @@
         "C": {
           "id": "C",
           "text": "La cámara se sitúa completamente por debajo del personaje, en un ángulo perpendicular al suelo",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5415,7 +5415,7 @@
         "B": {
           "id": "B",
           "text": "Alimentar un micrófono de condensador",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5447,7 +5447,7 @@
         "C": {
           "id": "C",
           "text": "La medida de la diagonal de la pantalla.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5464,7 +5464,7 @@
         "A": {
           "id": "A",
           "text": "Cuanto más cerca se encuentre la cámara del motivo.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5501,7 +5501,7 @@
         "C": {
           "id": "C",
           "text": "Más directivos que los tonos graves.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5523,7 +5523,7 @@
         "B": {
           "id": "B",
           "text": "ruido rosa",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5550,7 +5550,7 @@
         "B": {
           "id": "B",
           "text": "plano recurso",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5577,7 +5577,7 @@
         "B": {
           "id": "B",
           "text": "luz principal, luz de contra y luz de relleno",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5599,7 +5599,7 @@
         "A": {
           "id": "A",
           "text": "Igual que en las cámaras convencionales de película.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5626,7 +5626,7 @@
         "A": {
           "id": "A",
           "text": "MPEG2",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5653,7 +5653,7 @@
         "A": {
           "id": "A",
           "text": "Dinámico frente a uno de condensador.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5685,7 +5685,7 @@
         "B": {
           "id": "B",
           "text": "El enfoque cambia al sujeto más cercano a la cámara.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5707,7 +5707,7 @@
         "A": {
           "id": "A",
           "text": "Luz incidente",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5744,7 +5744,7 @@
         "C": {
           "id": "C",
           "text": "Lumen.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5761,7 +5761,7 @@
         "A": {
           "id": "A",
           "text": "micrófono muy direccional capaz de captar sonidos producidos a gran distancia.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -5793,7 +5793,7 @@
         "B": {
           "id": "B",
           "text": "Que la conexión a esa web es segura porque está cifrada.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5830,7 +5830,7 @@
         "D": {
           "id": "D",
           "text": "el volumen.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -5847,7 +5847,7 @@
         "B": {
           "id": "B",
           "text": "AAC",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5874,7 +5874,7 @@
         "B": {
           "id": "B",
           "text": "Firewire y I.Link",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5906,7 +5906,7 @@
         "C": {
           "id": "C",
           "text": "La frecuencia de muestreo y la profundidad de bit.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -5938,14 +5938,14 @@
         "D": {
           "id": "D",
           "text": "Órdenes y comunicaciones entre dispositivos y aparatos musicales electrónicos.",
-          "correct": false
+          "correct": true
         }
       }
     },
     "221": {
       "id": 221,
       "text": "¿Qué versión del lenguaje básico de la www incorpora códecs para mostrar los contenidos multimedia? ",
-      "clue": "",
+      "clue": "Entendiendo que hay un error tipografico y se refiere a HTML5",
       "answer": {
         "A": {
           "id": "A",
@@ -5955,7 +5955,7 @@
         "B": {
           "id": "B",
           "text": "HTMLS",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5992,7 +5992,7 @@
         "D": {
           "id": "D",
           "text": "Por discriminación de crominancia.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -6004,7 +6004,7 @@
         "A": {
           "id": "A",
           "text": "Ajustan automáticamente el rango dinámico de la señal.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6031,7 +6031,7 @@
         "A": {
           "id": "A",
           "text": "Entre –20 dB y 0 dB.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6053,7 +6053,7 @@
     "225": {
       "id": 225,
       "text": "¿En qué ventana se organizan todos los elementos del proyecto que se va a editar, y que se mostrarán en forma de lista o de iconos?: ",
-      "clue": "",
+      "clue": "Suponiendo que hablamos de Final Cut Pro",
       "answer": {
         "A": {
           "id": "A",
@@ -6063,7 +6063,7 @@
         "B": {
           "id": "B",
           "text": "Browser.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -6085,7 +6085,7 @@
         "A": {
           "id": "A",
           "text": "Se puede llevar la señal del canal correspondiente a un bus de solo.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6117,7 +6117,7 @@
         "B": {
           "id": "B",
           "text": "Cuanto más pequeña es la abertura de diafragma, mayor es la profundidad de campo.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -6149,7 +6149,7 @@
         "C": {
           "id": "C",
           "text": "Variar el tamaño de la proyección.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6176,7 +6176,7 @@
         "C": {
           "id": "C",
           "text": "Es un dispositivo que permite incrementar o atenuar ciertas frecuencias de la señal de audio.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6193,7 +6193,7 @@
         "A": {
           "id": "A",
           "text": "En un ángulo de 20º a los lados y unos 40º por encima de la línea de los ojos.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6230,7 +6230,7 @@
         "C": {
           "id": "C",
           "text": "Colocando un objeto oscuro detrás del documento.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6247,7 +6247,7 @@
         "A": {
           "id": "A",
           "text": "Plano americano.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6289,7 +6289,7 @@
         "D": {
           "id": "D",
           "text": "Camcorder y las lentes.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -6301,7 +6301,7 @@
         "A": {
           "id": "A",
           "text": "Que, al realizar una toma, ésta se sale del límite del decorado.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6333,7 +6333,7 @@
         "B": {
           "id": "B",
           "text": "Reflejada.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -6360,7 +6360,7 @@
         "B": {
           "id": "B",
           "text": "Espectro visible de la luz",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -6387,7 +6387,7 @@
         "B": {
           "id": "B",
           "text": "Rojo",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -6424,7 +6424,7 @@
         "D": {
           "id": "D",
           "text": "Cuando la mezcla con blanco es cero.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -6441,7 +6441,7 @@
         "B": {
           "id": "B",
           "text": "Escala de grises",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -6478,7 +6478,7 @@
         "D": {
           "id": "D",
           "text": "Roll",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -6500,7 +6500,7 @@
         "C": {
           "id": "C",
           "text": "telecine",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6517,7 +6517,7 @@
         "A": {
           "id": "A",
           "text": "Pasar rótulos.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6554,7 +6554,7 @@
         "C": {
           "id": "C",
           "text": "(resolución H × resolución V × n.º de bits de definición) / 8 bits",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6586,7 +6586,7 @@
         "D": {
           "id": "D",
           "text": "CGA, EGA, VGA, DVIA",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -6608,7 +6608,7 @@
         "C": {
           "id": "C",
           "text": "Se trata de un formato de almacenamiento gráfico vectorial.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6625,7 +6625,7 @@
         "A": {
           "id": "A",
           "text": "videoconferencia",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6662,7 +6662,7 @@
         "C": {
           "id": "C",
           "text": "Una empresa de Internet que proporciona servicios.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6679,7 +6679,7 @@
         "A": {
           "id": "A",
           "text": "El dominio.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6716,7 +6716,7 @@
         "C": {
           "id": "C",
           "text": "Homepage",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6733,7 +6733,7 @@
         "A": {
           "id": "A",
           "text": "Hyper Text Markup Language (Lenguaje de Marcado de Hipertexto)",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6765,7 +6765,7 @@
         "B": {
           "id": "B",
           "text": "XHTML es una revisión de HTML a partir del estándar XML.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -6797,7 +6797,7 @@
         "C": {
           "id": "C",
           "text": "Las etiquetas son marcas que indican al navegador de qué tipo son los elementos que tiene que presentar en pantalla.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6819,7 +6819,7 @@
         "B": {
           "id": "B",
           "text": "ordenadas, no ordenadas, de definición y anidadas.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -6851,7 +6851,7 @@
         "C": {
           "id": "C",
           "text": "píxel, porcentaje y tamaño por defecto del navegador del usuario",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6883,7 +6883,7 @@
         "D": {
           "id": "D",
           "text": "Accesibilidad Web.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -6905,7 +6905,7 @@
         "C": {
           "id": "C",
           "text": "Diseño Universal.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -6922,7 +6922,7 @@
         "A": {
           "id": "A",
           "text": "alt",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -6954,7 +6954,7 @@
         "B": {
           "id": "B",
           "text": "Usar texto que tenga sentido leído fuera de contexto.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -6976,7 +6976,7 @@
         "A": {
           "id": "A",
           "text": "Usar CSS para la maquetación donde sea posible.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7008,7 +7008,7 @@
         "B": {
           "id": "B",
           "text": "Cumplir como mínimo las prioridades 1 y 2",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -7040,7 +7040,7 @@
         "C": {
           "id": "C",
           "text": "Es imprescindible la intervención de una persona evaluadora.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -7062,7 +7062,7 @@
         "B": {
           "id": "B",
           "text": "Colocar información importante en una ventana emergente.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -7099,7 +7099,7 @@
         "D": {
           "id": "D",
           "text": "Más accesibles.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -7116,7 +7116,7 @@
         "B": {
           "id": "B",
           "text": "ATAG.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -7143,7 +7143,7 @@
         "B": {
           "id": "B",
           "text": "La hoja de estilo del navegador.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -7180,7 +7180,7 @@
         "D": {
           "id": "D",
           "text": "Id",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -7207,7 +7207,7 @@
         "D": {
           "id": "D",
           "text": "Tabber",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -7219,7 +7219,7 @@
         "A": {
           "id": "A",
           "text": "Clip",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7256,7 +7256,7 @@
         "C": {
           "id": "C",
           "text": "Grabar a poca distancia detalles con nitidez.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -7283,7 +7283,7 @@
         "C": {
           "id": "C",
           "text": "5.000 K.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -7315,7 +7315,7 @@
         "D": {
           "id": "D",
           "text": "Implica un cálculo con valores de 16 píxeles próximos.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -7332,7 +7332,7 @@
         "B": {
           "id": "B",
           "text": "Delante del micro.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -7364,7 +7364,7 @@
         "C": {
           "id": "C",
           "text": "Colorimétrico relativo.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -7391,7 +7391,7 @@
         "C": {
           "id": "C",
           "text": "El tiempo que tarda en finalizar una onda u oscilación.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -7418,7 +7418,7 @@
         "C": {
           "id": "C",
           "text": "En las tres luces: principal, relleno y contraluz.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -7430,12 +7430,12 @@
     "276": {
       "id": 276,
       "text": "El movimiento vertical de la cámara de vídeo se denomina: ",
-      "clue": "",
+      "clue": "La opcion c tambien es movimiento vertical pero lo limita a su propio eje. La a es menos restrictiva",
       "answer": {
         "A": {
           "id": "A",
           "text": "Crane.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7477,7 +7477,7 @@
         "D": {
           "id": "D",
           "text": "La regla de los 180º.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -7489,7 +7489,7 @@
         "A": {
           "id": "A",
           "text": "La temperatura de color.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7516,7 +7516,7 @@
         "A": {
           "id": "A",
           "text": "Panorámica oblicua.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7553,7 +7553,7 @@
         "C": {
           "id": "C",
           "text": "24 MBytes.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -7585,7 +7585,7 @@
         "D": {
           "id": "D",
           "text": "En UHF, VHF o FM.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -7597,7 +7597,7 @@
         "A": {
           "id": "A",
           "text": "Azul.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7634,7 +7634,7 @@
         "C": {
           "id": "C",
           "text": "De condensador.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -7661,7 +7661,7 @@
         "C": {
           "id": "C",
           "text": "Códecs de compresión.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -7678,7 +7678,7 @@
         "A": {
           "id": "A",
           "text": "La información de color.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7710,7 +7710,7 @@
         "B": {
           "id": "B",
           "text": "2.000 hasta 20.000 Hz.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -7732,7 +7732,7 @@
         "A": {
           "id": "A",
           "text": "Un escáner de tambor.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7759,7 +7759,7 @@
         "A": {
           "id": "A",
           "text": "Utiliza una imagen estática para mostrar un clip a través de otro.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7786,7 +7786,7 @@
         "A": {
           "id": "A",
           "text": "Una lente que permite disminuir la distancia mínima de enfoque.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7813,7 +7813,7 @@
         "A": {
           "id": "A",
           "text": "Cociente entre la distancia focal y el diámetro del diafragma.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7845,7 +7845,7 @@
         "B": {
           "id": "B",
           "text": "Consiste en un sistema de detección y corrección de motas y arañazos en originales.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -7867,7 +7867,7 @@
         "A": {
           "id": "A",
           "text": "Abriendo un diafragma y medio al valor indicado por el fotómetro de la cámara",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7899,7 +7899,7 @@
         "B": {
           "id": "B",
           "text": "Uno de 35 mm de distancia focal",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -7926,7 +7926,7 @@
         "B": {
           "id": "B",
           "text": "El número de píxeles que componen cada una",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -7948,7 +7948,7 @@
         "A": {
           "id": "A",
           "text": "Los píxeles efectivos.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -7990,7 +7990,7 @@
         "D": {
           "id": "D",
           "text": "2 Mb",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -8007,7 +8007,7 @@
         "B": {
           "id": "B",
           "text": "CCD y CMOS",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8044,7 +8044,7 @@
         "D": {
           "id": "D",
           "text": "Cuatro tintas CMYK",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -8056,7 +8056,7 @@
         "A": {
           "id": "A",
           "text": "Es el modo de imagen basado en el Tono, la Saturación y Brillo",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8093,7 +8093,7 @@
         "C": {
           "id": "C",
           "text": "Creando una instantánea en panel Historia",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -8115,7 +8115,7 @@
         "B": {
           "id": "B",
           "text": "Luz ambiente",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8137,7 +8137,7 @@
         "A": {
           "id": "A",
           "text": "El obturador",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8179,7 +8179,7 @@
         "D": {
           "id": "D",
           "text": "Es útil para la realización de retratos",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -8201,7 +8201,7 @@
         "C": {
           "id": "C",
           "text": "Para resaltar",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -8228,7 +8228,7 @@
         "C": {
           "id": "C",
           "text": "Para planos amplios a distancias cercanas a las cámaras",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -8245,7 +8245,7 @@
         "A": {
           "id": "A",
           "text": "Se trabaja la luz reflejada",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8272,7 +8272,7 @@
         "A": {
           "id": "A",
           "text": "El balance entre luces procedentes de diversas direcciones se controla con facilidad",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8299,7 +8299,7 @@
         "A": {
           "id": "A",
           "text": "Intensidad de la luz, la calidad de color de la luz, dispersión de la luz y dirección de la luz",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8331,7 +8331,7 @@
         "B": {
           "id": "B",
           "text": "Sólo se graba señal de vídeo y audio.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8358,7 +8358,7 @@
         "B": {
           "id": "B",
           "text": "Cuadros",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8385,7 +8385,7 @@
         "B": {
           "id": "B",
           "text": "4,43 Mhz.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8412,7 +8412,7 @@
         "B": {
           "id": "B",
           "text": "El que se divide en dos partes iguales, una la sonora y otra la puesta en escena.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8434,7 +8434,7 @@
         "A": {
           "id": "A",
           "text": "Más que un primer plano.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8461,7 +8461,7 @@
         "A": {
           "id": "A",
           "text": "El generador de sincronismos.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8493,7 +8493,7 @@
         "B": {
           "id": "B",
           "text": "Referencia del color.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8525,7 +8525,7 @@
         "C": {
           "id": "C",
           "text": "La iluminación",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -8542,7 +8542,7 @@
         "A": {
           "id": "A",
           "text": "Barras de control.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8569,7 +8569,7 @@
         "A": {
           "id": "A",
           "text": "rojo, verde, azul.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8596,7 +8596,7 @@
         "A": {
           "id": "A",
           "text": "blanco, amarillo, cyan, verde, magenta, rojo, azul y negro.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8623,7 +8623,7 @@
         "A": {
           "id": "A",
           "text": "25 frames.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8655,7 +8655,7 @@
         "B": {
           "id": "B",
           "text": "Panorámica de relación.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8692,7 +8692,7 @@
         "D": {
           "id": "D",
           "text": "Candela.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -8719,7 +8719,7 @@
         "D": {
           "id": "D",
           "text": "El formato 4:1:1 mostrará en reproducción unos colores más fieles a los originales que el 4:2:0.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -8736,7 +8736,7 @@
         "B": {
           "id": "B",
           "text": "Sistema de señales en RGB.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8768,7 +8768,7 @@
         "C": {
           "id": "C",
           "text": "En la hipótesis de que el ojo humano es doble de torpe a las variaciones de color que de brillo y por tanto necesita doble resolución al brillo que al color.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -8795,7 +8795,7 @@
         "C": {
           "id": "C",
           "text": "Secuencia.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -8812,7 +8812,7 @@
         "A": {
           "id": "A",
           "text": "El receptor recibe la señal por radiofrecuencia y el monitor por cable de línea.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -8844,7 +8844,7 @@
         "B": {
           "id": "B",
           "text": "Lámparas HMI.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8876,7 +8876,7 @@
         "C": {
           "id": "C",
           "text": "Disminuyendo la potencia de los focos que iluminan la escena o cerrando el diafragma.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -8908,7 +8908,7 @@
         "D": {
           "id": "D",
           "text": "0,34 m.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -8930,7 +8930,7 @@
         "C": {
           "id": "C",
           "text": "Dolby",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -8957,7 +8957,7 @@
         "C": {
           "id": "C",
           "text": "veremos el objeto negro",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -8984,7 +8984,7 @@
         "C": {
           "id": "C",
           "text": "que está en grabación de VTR",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9001,7 +9001,7 @@
         "A": {
           "id": "A",
           "text": "De 3 a 10 megas",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -9028,7 +9028,7 @@
         "A": {
           "id": "A",
           "text": "Mpg4",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -9065,7 +9065,7 @@
         "C": {
           "id": "C",
           "text": "La reducción del número de colores",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9082,7 +9082,7 @@
         "A": {
           "id": "A",
           "text": "8 bits",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -9124,7 +9124,7 @@
         "D": {
           "id": "D",
           "text": "8 bits",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -9141,7 +9141,7 @@
         "B": {
           "id": "B",
           "text": "La gama tonal de la imagen",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9173,7 +9173,7 @@
         "C": {
           "id": "C",
           "text": "Es un interfaz multiplataforma para adquirir imágenes desde escáner y cámaras digitales",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9205,7 +9205,7 @@
         "D": {
           "id": "D",
           "text": "más de 2 Bytes",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -9222,7 +9222,7 @@
         "B": {
           "id": "B",
           "text": "la eliminación de determinadas frecuencias",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9249,7 +9249,7 @@
         "B": {
           "id": "B",
           "text": "Digital",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9276,7 +9276,7 @@
         "B": {
           "id": "B",
           "text": "Que cada número F (diafragma) deja pasar a la película la mitad de luz que el anterior.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9303,7 +9303,7 @@
         "B": {
           "id": "B",
           "text": "La luz reflejada",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9340,7 +9340,7 @@
         "D": {
           "id": "D",
           "text": "Es el archivo en bruto del CCD sin procesar.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -9362,7 +9362,7 @@
         "C": {
           "id": "C",
           "text": "Es un adaptador que permite sustituir la película de una cámara fotográfica analógica por un sensor que nos permite realizar fotos digitales.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9389,7 +9389,7 @@
         "C": {
           "id": "C",
           "text": "Herramientas Tampón de clonar y Pincel corrector",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9411,7 +9411,7 @@
         "B": {
           "id": "B",
           "text": "Luz natural difusa",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9438,7 +9438,7 @@
         "B": {
           "id": "B",
           "text": "Proporciona una profundidad de campo considerable",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9470,7 +9470,7 @@
         "C": {
           "id": "C",
           "text": "Para destacar los movimientos y la velocidad de la dolly",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9487,7 +9487,7 @@
         "A": {
           "id": "A",
           "text": "Método de la luz incidente, de luz reflejada y de la luminancia",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -9514,7 +9514,7 @@
         "A": {
           "id": "A",
           "text": "Contraluz a unos 30º del eje del objetivo",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -9541,7 +9541,7 @@
         "A": {
           "id": "A",
           "text": "Luz de decorado",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -9573,7 +9573,7 @@
         "B": {
           "id": "B",
           "text": "Luz principal, luz de relleno y contraluz",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9600,7 +9600,7 @@
         "B": {
           "id": "B",
           "text": "Etalonado.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9627,7 +9627,7 @@
         "B": {
           "id": "B",
           "text": "625",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9659,7 +9659,7 @@
         "C": {
           "id": "C",
           "text": "Sección óptica y sección electrónica",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9691,7 +9691,7 @@
         "D": {
           "id": "D",
           "text": "Una radiación ultravioleta.",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -9713,7 +9713,7 @@
         "C": {
           "id": "C",
           "text": "25 Mb/segundo.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9745,7 +9745,7 @@
         "D": {
           "id": "D",
           "text": "Una parte activa que varía entre el negro a 0 voltios y el blanco a 0,7 voltios y una señal de sincronismos que varía desde el negro (0 voltios) al supernegro (–0,3 voltios).",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -9767,7 +9767,7 @@
         "C": {
           "id": "C",
           "text": "Es el número de bits necesario para que queden representados todos los niveles de grises (entre el negro y el blanco) del rango dinámico de la señal de vídeo. El ojo humano percibe 220 niveles diferentes, por lo que serán necesarias palabras de 8 bits.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9789,7 +9789,7 @@
         "B": {
           "id": "B",
           "text": "Es una señal que presenta un 75% de amplitud y un 100% de saturación.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9811,7 +9811,7 @@
         "A": {
           "id": "A",
           "text": "Un sacrificio de datos colorimétricos, imperceptible al ojo humano.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -9843,7 +9843,7 @@
         "B": {
           "id": "B",
           "text": "Dejando «aire» a la derecha del encuadre.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -9875,7 +9875,7 @@
         "C": {
           "id": "C",
           "text": "No debe tocarse con las manos desnudas.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9892,7 +9892,7 @@
         "A": {
           "id": "A",
           "text": "Midiendo la señal eléctrica generada en relación con la presión incidente en su membrana",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -9934,7 +9934,7 @@
         "D": {
           "id": "D",
           "text": "352 × 240",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -9956,7 +9956,7 @@
         "C": {
           "id": "C",
           "text": "Crear y almacenar mascaras",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -9983,7 +9983,7 @@
         "C": {
           "id": "C",
           "text": "800 × 600",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -10010,7 +10010,7 @@
         "C": {
           "id": "C",
           "text": "65.536 colores",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -10042,7 +10042,7 @@
         "D": {
           "id": "D",
           "text": "Vob",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -10064,7 +10064,7 @@
         "C": {
           "id": "C",
           "text": "720 × 576",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -10086,7 +10086,7 @@
         "B": {
           "id": "B",
           "text": "Código de tiempos",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10113,7 +10113,7 @@
         "B": {
           "id": "B",
           "text": "Comprimir los datos",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10140,7 +10140,7 @@
         "B": {
           "id": "B",
           "text": "RGB",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10167,7 +10167,7 @@
         "B": {
           "id": "B",
           "text": "diafragma",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10189,7 +10189,7 @@
         "A": {
           "id": "A",
           "text": "un micrófono",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -10221,7 +10221,7 @@
         "B": {
           "id": "B",
           "text": "Brillo, tono, saturación",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10248,7 +10248,7 @@
         "B": {
           "id": "B",
           "text": "Grabar a poca distancia detalles con nitidez",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10280,7 +10280,7 @@
         "C": {
           "id": "C",
           "text": "rojo, verde y azul",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -10302,7 +10302,7 @@
         "B": {
           "id": "B",
           "text": "genlock",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10339,7 +10339,7 @@
         "D": {
           "id": "D",
           "text": "el vectorscopio",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -10366,7 +10366,7 @@
         "D": {
           "id": "D",
           "text": "disminuye",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -10378,7 +10378,7 @@
         "A": {
           "id": "A",
           "text": "moiré",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -10415,7 +10415,7 @@
         "C": {
           "id": "C",
           "text": "que está en grabación",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -10432,7 +10432,7 @@
         "A": {
           "id": "A",
           "text": "Ruido",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -10464,7 +10464,7 @@
         "B": {
           "id": "B",
           "text": "El locutor.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10501,7 +10501,7 @@
         "D": {
           "id": "D",
           "text": "Roll",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -10518,7 +10518,7 @@
         "B": {
           "id": "B",
           "text": "Relación ordenada en el tiempo de los acontecimientos de un guion.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10540,7 +10540,7 @@
         "A": {
           "id": "A",
           "text": "Panel para el conexionado de equipos de una instalación de vídeo",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -10572,7 +10572,7 @@
         "B": {
           "id": "B",
           "text": "Un dispositivo que aumenta o disminuye el nivel de una señal de audio",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10604,7 +10604,7 @@
         "C": {
           "id": "C",
           "text": "un conector de vídeo",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -10621,7 +10621,7 @@
         "A": {
           "id": "A",
           "text": "Desentrelazado",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -10653,7 +10653,7 @@
         "B": {
           "id": "B",
           "text": "La separación horizontal entre los caracteres de un texto",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10680,7 +10680,7 @@
         "B": {
           "id": "B",
           "text": "BNC.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10707,7 +10707,7 @@
         "B": {
           "id": "B",
           "text": "Noche americana",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10744,7 +10744,7 @@
         "D": {
           "id": "D",
           "text": "El balance de blancos",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -10771,7 +10771,7 @@
         "D": {
           "id": "D",
           "text": "Las zonas quemadas",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -10793,7 +10793,7 @@
         "C": {
           "id": "C",
           "text": "Una incrustación de una imagen en otra",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -10825,7 +10825,7 @@
         "D": {
           "id": "D",
           "text": "Cámara rápida",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -10842,7 +10842,7 @@
         "B": {
           "id": "B",
           "text": "Flujo de datos",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -10864,7 +10864,7 @@
         "A": {
           "id": "A",
           "text": "Efecto de cámara lenta",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -10891,7 +10891,7 @@
         "A": {
           "id": "A",
           "text": "Los 0 db",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -10928,7 +10928,7 @@
         "C": {
           "id": "C",
           "text": "3 pines",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -10955,7 +10955,7 @@
         "C": {
           "id": "C",
           "text": "De bobina móvil",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -10987,7 +10987,7 @@
         "D": {
           "id": "D",
           "text": "Raccord",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -10999,7 +10999,7 @@
         "A": {
           "id": "A",
           "text": "Lúmenes",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11036,7 +11036,7 @@
         "C": {
           "id": "C",
           "text": "El número de píxeles que componen cada una",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -11068,7 +11068,7 @@
         "D": {
           "id": "D",
           "text": "La sensibilidad de la película",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -11085,7 +11085,7 @@
         "B": {
           "id": "B",
           "text": "Para eliminar la radiación ultravioleta",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11112,7 +11112,7 @@
         "B": {
           "id": "B",
           "text": "Píxel.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11139,7 +11139,7 @@
         "B": {
           "id": "B",
           "text": "Reguladores de intensidad.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11161,7 +11161,7 @@
         "A": {
           "id": "A",
           "text": "El CCD",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11188,7 +11188,7 @@
         "A": {
           "id": "A",
           "text": "JPG",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11225,7 +11225,7 @@
         "C": {
           "id": "C",
           "text": "Se puede hacer conectando la cámara mediante un cable USB o utilizar un lector de tarjetas de memoria",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -11252,7 +11252,7 @@
         "C": {
           "id": "C",
           "text": "Mantener el foco correcto en todo el rango del zoom.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -11274,7 +11274,7 @@
         "B": {
           "id": "B",
           "text": "Plano subjetivo",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11301,7 +11301,7 @@
         "B": {
           "id": "B",
           "text": "El regidor",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11328,7 +11328,7 @@
         "B": {
           "id": "B",
           "text": "Escuchar la señal de audio que entra en un canal sin necesidad de subir el fader.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11350,7 +11350,7 @@
         "A": {
           "id": "A",
           "text": "Render",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11382,7 +11382,7 @@
         "B": {
           "id": "B",
           "text": "claqueta",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11409,7 +11409,7 @@
         "B": {
           "id": "B",
           "text": "Photoshop",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11431,7 +11431,7 @@
         "A": {
           "id": "A",
           "text": "Luz de decorado",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11458,7 +11458,7 @@
         "A": {
           "id": "A",
           "text": "Los errores de base de tiempo.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11495,7 +11495,7 @@
         "C": {
           "id": "C",
           "text": "Las barras de color",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -11522,7 +11522,7 @@
         "C": {
           "id": "C",
           "text": "objeto y márgenes",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -11554,7 +11554,7 @@
         "D": {
           "id": "D",
           "text": "ecualizador",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -11571,7 +11571,7 @@
         "B": {
           "id": "B",
           "text": "trípode",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11593,7 +11593,7 @@
         "A": {
           "id": "A",
           "text": "sustituir un plano ya montado por otro de la misma duración",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11620,7 +11620,7 @@
         "A": {
           "id": "A",
           "text": "un salto hacia delante en el tiempo",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11647,7 +11647,7 @@
         "A": {
           "id": "A",
           "text": "suavizar la imagen disminuyendo la excesiva nitidez",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11674,7 +11674,7 @@
         "A": {
           "id": "A",
           "text": "que el modelado de la luz quede reducido",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11711,7 +11711,7 @@
         "C": {
           "id": "C",
           "text": "Un elemento para acoplar la cámara al trípode",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -11728,7 +11728,7 @@
         "A": {
           "id": "A",
           "text": "las grabaciones",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11760,7 +11760,7 @@
         "B": {
           "id": "B",
           "text": "secuencia",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11792,7 +11792,7 @@
         "C": {
           "id": "C",
           "text": "un fallo de lectura",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -11814,7 +11814,7 @@
         "B": {
           "id": "B",
           "text": "un obturador electrónico variable",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11841,7 +11841,7 @@
         "B": {
           "id": "B",
           "text": "un diafragma",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11873,7 +11873,7 @@
         "C": {
           "id": "C",
           "text": "una traslación circular de la cámara",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -11895,7 +11895,7 @@
         "B": {
           "id": "B",
           "text": "disminuye la luminosidad",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -11917,7 +11917,7 @@
         "A": {
           "id": "A",
           "text": "teleobjetivos",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -11954,7 +11954,7 @@
         "C": {
           "id": "C",
           "text": "0%",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -11981,7 +11981,7 @@
         "C": {
           "id": "C",
           "text": "eliminar el parpadeo",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -12013,7 +12013,7 @@
         "D": {
           "id": "D",
           "text": "magnetoscopio",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -12040,7 +12040,7 @@
         "D": {
           "id": "D",
           "text": "steadicam",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -12067,7 +12067,7 @@
         "D": {
           "id": "D",
           "text": "pureza del color",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -12094,7 +12094,7 @@
         "D": {
           "id": "D",
           "text": "la fuente está próxima al micrófono",
-          "correct": false
+          "correct": true
         }
       }
     },
@@ -12116,7 +12116,7 @@
         "C": {
           "id": "C",
           "text": "tono",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -12138,7 +12138,7 @@
         "B": {
           "id": "B",
           "text": "120 mm 1:2,8",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -12160,7 +12160,7 @@
         "A": {
           "id": "A",
           "text": "HDMI",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -12192,7 +12192,7 @@
         "B": {
           "id": "B",
           "text": "un encadenado",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -12214,7 +12214,7 @@
         "A": {
           "id": "A",
           "text": "Grabación de audios separados",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -12241,7 +12241,7 @@
         "A": {
           "id": "A",
           "text": "cabalgado",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -12273,7 +12273,7 @@
         "B": {
           "id": "B",
           "text": "un punto clave localizado en la línea de tiempos",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -12300,7 +12300,7 @@
         "B": {
           "id": "B",
           "text": "clímax",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -12332,7 +12332,7 @@
         "C": {
           "id": "C",
           "text": "ángulo",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -12354,7 +12354,7 @@
         "B": {
           "id": "B",
           "text": "un decorado de fondo que rodea la parte trasera del estudio",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -12386,7 +12386,7 @@
         "C": {
           "id": "C",
           "text": "blanco, negro, colores secundarios y colores primarios",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -12413,7 +12413,7 @@
         "C": {
           "id": "C",
           "text": "VGA",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -12435,7 +12435,7 @@
         "B": {
           "id": "B",
           "text": "edición",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -12467,7 +12467,7 @@
         "C": {
           "id": "C",
           "text": "eje óptico",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -12484,7 +12484,7 @@
         "A": {
           "id": "A",
           "text": "Para evitar ruidos provocados por el viento",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -12521,7 +12521,7 @@
         "C": {
           "id": "C",
           "text": "un plano general, porque contiene mayor cantidad de información",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -12548,7 +12548,7 @@
         "C": {
           "id": "C",
           "text": "utilizar un teleobjetivo",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
@@ -12570,7 +12570,7 @@
         "B": {
           "id": "B",
           "text": "un dispositivo electrónico que regula la cantidad de corriente",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -12592,7 +12592,7 @@
         "A": {
           "id": "A",
           "text": "limitar la cantidad de luz",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
@@ -12634,7 +12634,7 @@
         "D": {
           "id": "D",
           "text": "video streaming",
-          "correct": false
+          "correct": true
         }
       }
     }

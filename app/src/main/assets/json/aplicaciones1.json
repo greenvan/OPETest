@@ -6943,7 +6943,7 @@
     },
     "258": {
       "id": 258,
-      "text": "¿Qué hace la siguiente sentencia SQL? « SELECT TITULO FROM LIBROS WHERE TITULO LIKE ‘’ » ",
+      "text": "¿Qué hace la siguiente sentencia SQL? « SELECT TITULO FROM LIBROS WHERE TITULO LIKE ‘%DE%’ » ",
       "clue": "D. \nhttp://www.auxiliar-enfermeria.com/test/test_4412ot.htm",
       "answer": {
         "A": {

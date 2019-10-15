@@ -15,8 +15,6 @@ import tk.greenvan.opetest.ui.question.QuestionFragment;
 
 public class Common {
 
-    //TODO load some from preferences. Create a menu item for this preferences
-    // (timeout, default number of questions, etc
 
     public static String username = "anonymous";
 
@@ -29,12 +27,10 @@ public class Common {
     public static TreeMap<Integer,Question> questionList = new TreeMap<Integer,Question>();
     public static TreeMap<Integer,Answer> answerList = new TreeMap<Integer,Answer>();
     public static TreeMap<Integer,Answer>  filteredAnswerList = new TreeMap<Integer,Answer> ();
-    public static final int NUM_QUESTIONS_QUICK_TEST = 30;
     public static Question selectedQuestion = new Question();
 
     public static ArrayList<UserTest> userTestList = new ArrayList<>();
     public static UserTest selectedUserTest = new UserTest();
-    public static final int TOTAL_TIME_QUICK_TEST = 10 * 60 * 1000; //10 minutos
     //Contiene las opciones que ha elegido el usuario para cada pregunta
     public static TreeMap<Integer, String> currentAnswerSheet = new TreeMap<Integer, String>();
     public static CountDownTimer countDownTimer;
@@ -46,8 +42,22 @@ public class Common {
 
     public static ArrayList<QuestionFragment> fragmentList = new ArrayList<QuestionFragment>();
 
-    public static VIEW_MODE viewMode = VIEW_MODE.VIEW;
 
+    //Variables a definir por el usuario
+    public static int TOTAL_TIME_QUICK_TEST = 6 * 60 * 1000; //6 minutos
+    public static int NUM_QUESTIONS_QUICK_TEST = 30;
+    public static MODE Mode = MODE.OFFLINE;
+    public static boolean onRightMoveToNext = false;
+
+
+    // Trabajamos en modo online con firebase o offline, con assets locales
+    public enum MODE {
+        ONLINE,
+        OFFLINE,
+        MIXED //Not used at the moment (local test, userData online)
+    }
+
+    public static VIEW_MODE viewMode = VIEW_MODE.VIEW;
 
     public enum VIEW_MODE {
         TEST,
@@ -61,13 +71,6 @@ public class Common {
         RIGHT_ANSWER
     }
 
-    // Trabajamos en modo online con firebase o offline, con assets locales
-    public static MODE Mode = MODE.OFFLINE;
 
-    public enum MODE {
-        ONLINE,
-        OFFLINE,
-        MIXED //Not used at the moment (local test, userData online)
-    }
 
 }

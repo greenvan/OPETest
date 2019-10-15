@@ -16,11 +16,6 @@
       "file": "general3.json"
     },
     {
-      "id": "multimedia3",
-      "name": "Multimedia G3",
-      "file": "multimedia3.json"
-    },
-    {
       "id": "sistemas1",
       "name": "TICs G1 Sistemas",
       "file": "sistemas1.json"
@@ -34,6 +29,36 @@
       "id": "sistemas3",
       "name": "TICs Sistemas G3",
       "file": "sistemas3.json"
+    },
+    {
+      "id": "aplicaciones1",
+      "name": "TICs G1 Aplicaciones",
+      "file": "aplicaciones1.json"
+    },
+    {
+      "id": "aplicaciones3",
+      "name": "TICs G3 Aplicaciones",
+      "file": "aplicaciones3.json"
+    },
+    {
+      "id": "multimedia3",
+      "name": "Multimedia G3",
+      "file": "multimedia3.json"
+    },
+    {
+      "id": "xsistemas1",
+      "name": "TICs G1 Sist. sin preguntas de G2 y G3",
+      "file": "xsistemas1.json"
+    },
+    {
+      "id": "xsistemas2",
+      "name": "TICs G2 Sist. sin preguntas de G3",
+      "file": "xsistemas2.json"
+    },
+    {
+      "id": "xaplicaciones1",
+      "name": "TICs G1 Aplic. sin preguntas de Sist.",
+      "file": "xaplicaciones1.json"
     }
   ]
 }

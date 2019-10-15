@@ -11209,7 +11209,7 @@
     },
     "416": {
       "id": 416,
-      "text": "¿Qué hace la siguiente sentencia SQL en la mayoría de RDBMS? «SELECT TITULO FROM LIBROS WHERE TITULO LIKE ‘’» ",
+      "text": "¿Qué hace la siguiente sentencia SQL en la mayoría de RDBMS? «SELECT TITULO FROM LIBROS WHERE TITULO LIKE ‘%DE%’» ",
       "clue": "D. \nhttp://www.auxiliar-enfermeria.com/test/test_4412ot.htm",
       "answer": {
         "A": {

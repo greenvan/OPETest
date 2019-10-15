@@ -61,7 +61,7 @@ public final class DBContract {
         /**
          * Last accessed.
          * <p>
-         * Type: TEXT
+         * Type: INTEGER
          */
         public final static String COLUMN_LAST_ACCESS = "lastAcess";
 

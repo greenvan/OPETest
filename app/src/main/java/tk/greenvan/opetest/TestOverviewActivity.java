@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -54,10 +53,12 @@ public class TestOverviewActivity extends AppCompatActivity {
     QuestionGridAdapter questionGridAdapter;
     QuestionGridAdapter filteredQuestionGridAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_overview);
+
 
         //Display home arrow in actionBar
         ActionBar actionBar = this.getSupportActionBar();
@@ -97,6 +98,9 @@ public class TestOverviewActivity extends AppCompatActivity {
                 }
             }
         } else {
+
+            //TODO en modo OFFLINE mostrar una barra de progreso hasta que se cargue la interfaz
+
             //Cargamos el test si es OFFLINE desde la base de datos del usuario
             Common.selectedUserTest = new UserTest();
 
@@ -105,6 +109,7 @@ public class TestOverviewActivity extends AppCompatActivity {
             TreeMap<Integer, Answer> answerTreeMap =
                     OfflineDB.getUserAnswers(TestOverviewActivity.this, Common.username, Common.selectedTest.getId());
             Common.selectedUserTest.setAnswerList(answerTreeMap);
+
 
         }
 
@@ -221,7 +226,8 @@ public class TestOverviewActivity extends AppCompatActivity {
 
         loadGUIdata();
         if (Common.Mode == Common.MODE.OFFLINE) questionGridAdapter.notifyDataSetChanged();
-        Log.i("##############Cuantos elem", Common.questionList.size() + "");
+
+
     }
 
     private void loadGUIdata() {
@@ -391,7 +397,7 @@ public class TestOverviewActivity extends AppCompatActivity {
             OfflineDB.loadQuestions(TestOverviewActivity.this, Common.selectedTest.getfileName(), true);
             //Debemos guardar los datos con la lista de preguntas vacía en la base de datos para que al terminar
             //el test sólo guarde las preguntas modificadas.
-            OfflineDB.saveEmptyAnswerList();
+            OfflineDB.saveData(TestOverviewActivity.this, Common.username, Common.selectedTest.getId(), Common.answerList);
         }
     }
 
@@ -407,9 +413,10 @@ public class TestOverviewActivity extends AppCompatActivity {
 
     public void onlineLoadQuestionsWithEmptyAnswerList() {
 
+        //TODO si cancela y por ejemplo no tiene conexión ver qué podemos hacer...
         final AlertDialog dialog = new SpotsDialog.Builder()
                 .setContext(TestOverviewActivity.this)
-                .setCancelable(false)
+                .setCancelable(true)
                 .build();
 
         if(!dialog.isShowing())
@@ -462,9 +469,10 @@ public class TestOverviewActivity extends AppCompatActivity {
 
     public void onlineLoadQuestions() {
 
+        //TODO si cancela y por ejemplo no tiene conexión ver qué podemos hacer...
         final AlertDialog dialog = new SpotsDialog.Builder()
                 .setContext(TestOverviewActivity.this)
-                .setCancelable(false)
+                .setCancelable(true)
                 .build();
 
         if(!dialog.isShowing())

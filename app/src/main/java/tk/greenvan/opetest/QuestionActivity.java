@@ -1,9 +1,16 @@
 package tk.greenvan.opetest;
 
+import android.animation.ArgbEvaluator;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Vibrator;
 import android.view.View;
+import android.view.animation.Animation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -38,7 +45,19 @@ public class QuestionActivity extends AppCompatActivity {
     public TextView tv_right_answer_count, tv_wrong_answer_count, tv_timer;
     public TextView tv_bottom_sheet_title, tv_bottom_sheet_detail;
     int time_play = Common.TOTAL_TIME_QUICK_TEST;
+    boolean blink = false;
     private BottomSheetDialog mBottomSheetDialog;
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+
+        super.onSaveInstanceState(outState);
+        outState.putSerializable("filteredAnswerList", Common.filteredAnswerList);
+        outState.putInt("right_answer_count", Common.right_answer_count);
+        outState.putInt("wrong_answer_count", Common.wrong_answer_count);
+
+        outState.putInt("time_play", time_play);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,18 +143,29 @@ public class QuestionActivity extends AppCompatActivity {
             ll_counters.setVisibility(View.GONE);
         } else {
 
-            Common.right_answer_count = 0;
-            Common.wrong_answer_count = 0;
+            //Si hay estado guardado
+            if (savedInstanceState != null && savedInstanceState.getSerializable("filteredAnswerList") != null) {
+                Common.filteredAnswerList = (TreeMap<Integer, Answer>) savedInstanceState.getSerializable("filteredAnswerList");
+                Common.right_answer_count = savedInstanceState.getInt("right_answer_count");
+                Common.wrong_answer_count = savedInstanceState.getInt("wrong_answer_count");
 
-            if (Common.viewMode == Common.VIEW_MODE.TEST) {
-                //Escondemos el timer
-                tv_timer.setVisibility(View.GONE);
-                loadAnswerListForTest(this.getIntent());
+                tv_right_answer_count.setText(String.valueOf(Common.right_answer_count));
+                tv_wrong_answer_count.setText(String.valueOf(Common.wrong_answer_count));
+
             } else {
-                //Estamos en quicktestmod
-                //Escondemos el fab
-                fab.hide();
-                loadAnswerListForQuickTest(this.getIntent());
+                //Si no hay estado guardado inicializamos
+
+                Common.right_answer_count = 0;
+                Common.wrong_answer_count = 0;
+
+
+                if (Common.viewMode == Common.VIEW_MODE.TEST) {
+                    //Escondemos el timer
+                    loadAnswerListForTest(this.getIntent());
+                } else {
+                    //Estamos en quicktestmod
+                    loadAnswerListForQuickTest(this.getIntent());
+                }
             }
         }
 
@@ -168,13 +198,23 @@ public class QuestionActivity extends AppCompatActivity {
         //En modo VIEW Hay que activar como seleccionado el fragment que coincide con selected question.
         if (Common.viewMode == Common.VIEW_MODE.VIEW)
             viewPager.setCurrentItem(Common.selectedIndex); //TODO Esto no funciona bien, arreglar
-        else
+        else {
             viewPager.setCurrentItem(0);
+            //Si es un test rápido ponemos en marcha la cuenta atrás
+            if (Common.viewMode == Common.VIEW_MODE.QUICKTEST) {
 
-        //Si es un test rápido ponemos en marcha la cuenta atrás
-        if (Common.viewMode == Common.VIEW_MODE.QUICKTEST) {
-            countTimer();
+                int total_time = Common.TOTAL_TIME_QUICK_TEST;
 
+                if (savedInstanceState != null)
+                    time_play = savedInstanceState.getInt("time_play");
+
+                countTimer(time_play);
+                //Escondemos el fab
+                fab.hide();
+            } else {
+                //Estamos en Test
+                tv_timer.setVisibility(View.GONE);
+            }
         }
 
 
@@ -329,30 +369,58 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     public void saveData() {
-        if (Common.Mode == Common.MODE.ONLINE) onlineSaveData();
-        else OfflineDB.saveData();
+        if (Common.Mode == Common.MODE.ONLINE) onlineSaveData(); //TODO También en modo mixto
+        else
+            OfflineDB.saveData(QuestionActivity.this, Common.username, Common.selectedTest.getId(), Common.filteredAnswerList);
     }
 
     public void onlineSaveData() {
         //TODO mostrar un cartel de "Saving..."
 
+        long lastAccessed = System.currentTimeMillis();
         // Guardar los datos de filteredList en answerList y la base de datos
         Set<Integer> keys = Common.filteredAnswerList.keySet();
         for (Integer key : keys) {
             Answer answer = Common.filteredAnswerList.get(key);
+            answer.setLastAcess(lastAccessed);
             Common.mUserTestReference.child(Common.selectedTest.getId()).child(String.valueOf(answer.getQuestionId())).setValue(answer);
         }
     }
 
-    //TODO implement save local
-    public void offlineSaveData() {
+    public void hurryUp() {
+
+        Vibrator v = (Vibrator) QuestionActivity.this.getSystemService(Context.VIBRATOR_SERVICE);
+        // Vibrate for "whatever_time_u_want" milliseconds
+        v.vibrate(500);
+
+        if (blink) {
+            tv_timer.setTextAppearance(R.style.blinkText);
+        } else {
+            tv_timer.setTextAppearance(R.style.normalText);
+        }
+        blink = !blink;
+
     }
 
-    private void countTimer() {
+    private void manageBlinkEffect() {
+        ObjectAnimator anim = ObjectAnimator.ofInt(tv_timer, "backgroundColor", Color.WHITE, Color.RED,
+                Color.WHITE);
+        anim.setDuration(1500);
+        anim.setEvaluator(new ArgbEvaluator());
+        anim.setRepeatMode(ValueAnimator.REVERSE);
+        anim.setRepeatCount(Animation.INFINITE);
+        anim.start();
+    }
+
+
+    private void countTimer(int total_time) {
         if (Common.countDownTimer != null)
             Common.countDownTimer.cancel();
 
-        Common.countDownTimer = new CountDownTimer(Common.TOTAL_TIME_QUICK_TEST, 1000) {
+
+        Common.countDownTimer = new CountDownTimer(total_time, 1000) {
+
+
             @Override
             public void onTick(long millisUntilFinished) {
                 tv_timer.setText(String.format("%02d:%02d",
@@ -360,6 +428,9 @@ public class QuestionActivity extends AppCompatActivity {
                         TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) -
                                 TimeUnit.MINUTES.toSeconds((TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished)))));
                 time_play -= 1000;
+
+                if (time_play < 10000) hurryUp();
+
             }
 
             @Override
@@ -395,11 +466,6 @@ public class QuestionActivity extends AppCompatActivity {
             finishGame();
     }
 
-    //TODO Si se rota la pantalla en modo test no se guarda las respuestas obtenidas en cada momento
-    // currentAnswersheet y filtered habría que guardarlas al pause y recuperar al resume etc o bien
-    // no permitir rotar.
-
-    //TODO Si se rota en quicktest se muere la actividad.
 
     @Override
     protected void onDestroy() {

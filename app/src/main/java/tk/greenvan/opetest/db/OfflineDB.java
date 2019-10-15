@@ -1,12 +1,13 @@
 package tk.greenvan.opetest.db;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -21,6 +22,7 @@ import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 import tk.greenvan.opetest.db.DBContract.AnswerEntry;
@@ -80,6 +82,9 @@ public class OfflineDB {
         Gson gson = new Gson();
         Common.selectedTest = gson.fromJson(jsonTest, Test.class);
 
+        //Importante, porque en el json no hay filename
+        Common.selectedTest.setfileName(filename);
+
         JsonElement root = new JsonParser().parse(jsonTest);
         JsonObject questions = root.getAsJsonObject().get("question").getAsJsonObject();
 
@@ -108,51 +113,206 @@ public class OfflineDB {
 
 
     public static TreeMap<Integer, Answer> getUserAnswers(Context context, String username, String testId) {
+
+        TreeMap<Integer, Answer> answerList = new TreeMap<>();
+
         DBHelper mDbHelper = new DBHelper(context);
 
         // Create and/or open a database to read from it
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
-        // Perform this raw SQL query "SELECT * FROM user_answer"
-        // to get a Cursor that contains all rows from the table where testId = id.
-        String sql = "SELECT * FROM " + AnswerEntry.TABLE_NAME + " WHERE "
-                + AnswerEntry.COLUMN_TEST_ID + " = '" + testId + "' AND "
-                + AnswerEntry.COLUMN_USER_NAME + " = '" + username
-                + "' ORDER BY " + AnswerEntry.COLUMN_QUESTION_ID + "; ";
+        String[] projection = new String[]{
+                AnswerEntry.COLUMN_QUESTION_ID,
+                AnswerEntry.COLUMN_ANSWER_STATE,
+                AnswerEntry.COLUMN_LAST_ACCESS,
+                AnswerEntry.COLUMN_SELECTION
+        };
+        String selection = AnswerEntry.COLUMN_USER_NAME + " = ? AND "
+                + AnswerEntry.COLUMN_TEST_ID + " = ?";
 
-        Cursor cursor = db.rawQuery(sql, null);
+        String[] selectionArgs = {username, testId};
 
-        TreeMap<Integer, Answer> answerList = new TreeMap<>();
+        Cursor cursor = db.query(
+                AnswerEntry.TABLE_NAME,   // The table to query
+                projection,            // The columns to return
+                selection,                  // The columns for the WHERE clause
+                selectionArgs,                  // The values for the WHERE clause
+                null,                  // Don't group the rows
+                null,                  // Don't filter by row groups
+                AnswerEntry.COLUMN_QUESTION_ID);                   // The sort order
+
+
+
         try {
 
-            Log.i("######", "Number of rows in database table: " + cursor.getCount());
-            //TODO hacemos un for para cada entrada de la tabla
-            // Debemos actualizar la lista de test del usuario ??? o lo hacemos cada vez que selecciona un test???
+            Log.i("GVSoft-OPETest", "Number of rows matching criteria: " + cursor.getCount());
+
+            // Figure out the index of each column
+            int idColumnIndex = cursor.getColumnIndex(AnswerEntry.COLUMN_QUESTION_ID);
+            int answerStateColumnIndex = cursor.getColumnIndex(AnswerEntry.COLUMN_ANSWER_STATE);
+            int lastAcessColumnIndex = cursor.getColumnIndex(AnswerEntry.COLUMN_LAST_ACCESS);
+            int selectionColumnIndex = cursor.getColumnIndex(AnswerEntry.COLUMN_SELECTION);
+
+            // Iterate through all the returned rows in the cursor
+            while (cursor.moveToNext()) {
+                // Use that index to extract the String or Int value of the word
+                // at the current row the cursor is on.
+                Answer a = new Answer();
+                a.setQuestionId(cursor.getInt(idColumnIndex));
+                int currentAnswerState = cursor.getInt(answerStateColumnIndex);
+                a.setState(getAnswerStateFromInt(currentAnswerState));
+                a.setLastAcess(cursor.getLong(lastAcessColumnIndex));
+                a.setSelection(cursor.getString(selectionColumnIndex));
+
+                answerList.put(a.getQuestionId(), a);
+            }
+
         } finally {
             // Always close the cursor when you're done reading from it. This releases all its
             // resources and makes it invalid.
             cursor.close();
+            db.close();
+            mDbHelper.close();
         }
 
         return answerList;
 
     }
 
-    public static void saveEmptyAnswerList() {
-        //TODO implement
+    public static Common.ANSWER_STATE getAnswerStateFromInt(int answerState) {
+
+        switch (answerState) {
+            case AnswerEntry.RIGHT_ANSWER:
+                return Common.ANSWER_STATE.RIGHT_ANSWER;
+            case AnswerEntry.WRONG_ANSWER:
+                return Common.ANSWER_STATE.WRONG_ANSWER;
+            case AnswerEntry.NO_ANSWER:
+            default:
+                return Common.ANSWER_STATE.NO_ANSWER;
+        }
     }
 
-    public static void saveData() {
+    public static int getAnswerStateAsInt(Common.ANSWER_STATE answerState) {
 
-        //TODO implement
+        switch (answerState) {
+            case RIGHT_ANSWER:
+                return AnswerEntry.RIGHT_ANSWER;
+            case WRONG_ANSWER:
+                return AnswerEntry.WRONG_ANSWER;
+            case NO_ANSWER:
+            default:
+                return AnswerEntry.NO_ANSWER;
+        }
+    }
 
-        // Guardar los datos de filteredList en answerList y la base de datos
-     /*   Set<Integer> keys = Common.filteredAnswerList.keySet();
+    public static void saveData_old(Context context, String username, String testId, TreeMap<Integer, Answer> data) {
+
+        // Create database helper
+        DBHelper mDbHelper = new DBHelper(context);
+
+        // Gets the database in write mode
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+        Set<Integer> keys = data.keySet();
         for (Integer key : keys) {
-            Answer answer = Common.filteredAnswerList.get(key);
-            Common.mUserTestReference.child(Common.selectedTest.getId()).child(String.valueOf(answer.getQuestionId())).setValue(answer);
-        }*/
+            Answer answer = data.get(key);
+
+            // Create a ContentValues object where column names are the keys,
+            // and pet attributes from the editor are the values.
+            ContentValues values = new ContentValues();
+            values.put(AnswerEntry.COLUMN_USER_NAME, username);
+            values.put(AnswerEntry.COLUMN_TEST_ID, testId);
+            values.put(AnswerEntry.COLUMN_QUESTION_ID, answer.getQuestionId());
+            values.put(AnswerEntry.COLUMN_ANSWER_STATE, answer.getState().toString());
+            values.put(AnswerEntry.COLUMN_LAST_ACCESS, answer.getLastAcess());
+            values.put(AnswerEntry.COLUMN_SELECTION, answer.getSelection());
+
+            // Insert a new row in the database, returning the ID of that new row.
+            long newRowId = db.insert(AnswerEntry.TABLE_NAME, null, values);
+
+
+            // Show a toast message depending on whether or not the insertion was successful
+            if (newRowId == -1) {
+                // If the row ID is -1, then there was an error with insertion.
+                Log.e("GVSoft-OPETest", "Error saving data from question" + answer.getQuestionId());
+            }
+
+        }
+        db.close();
+        mDbHelper.close();
     }
+
+    public static void saveData(Context context, String username, String testId, TreeMap<Integer, Answer> data) {
+
+        // Create database helper
+        DBHelper mDbHelper = new DBHelper(context);
+
+        // Gets the database in write mode
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+        int rowsAdded = 0;
+        int rowsUpdated = 0;
+
+        // TRANSACTION: O añadimos todas las preguntas o no añadimos ninguna
+        db.beginTransaction();
+
+        try {
+
+            Set<Integer> keys = data.keySet();
+            for (Integer key : keys) {
+                Answer answer = data.get(key);
+
+                // Create a ContentValues object where column names are the keys,
+                // and pet attributes from the editor are the values.
+                ContentValues values = new ContentValues();
+                values.put(AnswerEntry.COLUMN_USER_NAME, username);
+                values.put(AnswerEntry.COLUMN_TEST_ID, testId);
+                values.put(AnswerEntry.COLUMN_QUESTION_ID, answer.getQuestionId());
+                values.put(AnswerEntry.COLUMN_ANSWER_STATE, getAnswerStateAsInt(answer.getState()));
+                values.put(AnswerEntry.COLUMN_LAST_ACCESS, System.currentTimeMillis()); //Fecha actual
+                values.put(AnswerEntry.COLUMN_SELECTION, answer.getSelection());
+
+                String selection = AnswerEntry.COLUMN_USER_NAME + " = ? AND "
+                        + AnswerEntry.COLUMN_TEST_ID + " = ? AND "
+                        + AnswerEntry.COLUMN_QUESTION_ID + " = ?";
+
+                String[] selectionArgs = new String[]{username, testId, String.valueOf(answer.getQuestionId())};
+
+                //Do an update if the constraints match
+                int affected = db.update(AnswerEntry.TABLE_NAME, values, selection, selectionArgs);
+                if (affected > 0) rowsUpdated++;
+
+                if (affected == 0) {
+                    //Insert a new row for pet in the database, returning the ID of that new row.
+                    long newRowId;
+                    newRowId = db.insert(AnswerEntry.TABLE_NAME, null, values);
+
+                    // Show a message depending on whether or not the insertion was successful
+                    if (newRowId > 0) rowsAdded++;
+                    else if (newRowId == -1) {
+                        // If the row ID is -1, then there was an error with insertion.
+                        Log.e("GVSoft-OPETest", "Error saving data from question" + answer.getQuestionId());
+                    }
+                }
+
+
+            }
+
+            //Commit the transaction
+            db.setTransactionSuccessful();
+        } catch (SQLException e) {
+            Log.e("GVSoft-OPETest", e.getMessage());
+        } finally {
+            db.endTransaction();
+
+            db.close();
+            mDbHelper.close();
+
+            Log.i("GVSoft-OPETest", "Updated rows: " + rowsUpdated);
+            Log.i("GVSoft-OPETest", "Added rows: " + rowsAdded);
+        }
+    }
+
 
 
     public static String loadJSONFromAsset(Context context, String filename) {
@@ -164,6 +324,7 @@ public class OfflineDB {
             is.read(buffer);
             is.close();
             json = new String(buffer, UTF_8);
+
         } catch (IOException ex) {
             ex.printStackTrace();
             return null;
@@ -172,21 +333,6 @@ public class OfflineDB {
         //Log.e("data", json);
         return json;
 
-    }
-
-    //TODO delete this method, just for debugging
-    public static void printjson() {
-        Gson gson = new Gson();
-        String jsonString = gson.toJson(Common.questionList);
-
-        //   Log.i("###########", Common.questionList.size() + " ");
-        Log.i("#########", "Imprimo json");
-        Log.i("#########", jsonString);
-
-        Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
-        String prettyJsonString = prettyGson.toJson(Common.questionList);
-        Log.i("#########", "Imprimo json bonito");
-        Log.i("#########", prettyJsonString);
     }
 
 

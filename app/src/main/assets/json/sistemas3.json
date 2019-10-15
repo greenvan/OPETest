@@ -2207,12 +2207,12 @@
         "C": {
           "id": "C",
           "text": "100 Mbit/s en movimiento y 1 Gbit/s en reposo.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",
           "text": "Siempre han de garantizar al menos 10 Mbit/s.",
-          "correct": true
+          "correct": false
         }
       }
     },
@@ -9698,7 +9698,7 @@
     "360": {
       "id": 360,
       "text": "¿Qué permisos se están asignando al grupo para el fichero archivo.txt con el siguiente comando Linux?” chmod -774 archivo.txt”? ",
-      "clue": "",
+      "clue": "Entiendase el '-' previo a 774 como una errata. el comando correcto es chmod 774 archivo.txt",
       "answer": {
         "A": {
           "id": "A",
@@ -11318,7 +11318,7 @@
     "421": {
       "id": 421,
       "text": "¿Es posible ejecutar varios sistemas operativos en una misma máquina al mismo tiempo? ",
-      "clue": "",
+      "clue": "Ninguna es completamente cierta, aunque entendemos que el tribunal optara por esta opcion",
       "answer": {
         "A": {
           "id": "A",

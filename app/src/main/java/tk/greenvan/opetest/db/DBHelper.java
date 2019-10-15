@@ -27,13 +27,14 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // Create a String that contains the SQL statement to create the user answers table
+        // TODO hacer la primary key conjunto de username, testid y questionid
         String SQL_CREATE_USER_ANSWER_TABLE = "CREATE TABLE " + AnswerEntry.TABLE_NAME + " ("
-                + AnswerEntry._ID + "	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "
+                //   + AnswerEntry._ID + "	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "
                 + AnswerEntry.COLUMN_USER_NAME + "	TEXT NOT NULL DEFAULT 'anonymous', "
                 + AnswerEntry.COLUMN_TEST_ID + "	TEXT NOT NULL, "
                 + AnswerEntry.COLUMN_QUESTION_ID + "	INTEGER NOT NULL, "
-                + AnswerEntry.COLUMN_ANSWER_STATE + "	TEXT NOT NULL DEFAULT 'NO_ANSWER', "
-                + AnswerEntry.COLUMN_LAST_ACCESS + "	TEXT DEFAULT NULL, "
+                + AnswerEntry.COLUMN_ANSWER_STATE + "	INTEGER NOT NULL DEFAULT 0, "
+                + AnswerEntry.COLUMN_LAST_ACCESS + "	INTEGER DEFAULT -1, "
                 + AnswerEntry.COLUMN_SELECTION + "	TEXT DEFAULT NULL);";
         // Execute the SQL statement
         db.execSQL(SQL_CREATE_USER_ANSWER_TABLE);

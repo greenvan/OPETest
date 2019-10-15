@@ -57,8 +57,9 @@ public class TestGridAdapter extends RecyclerView.Adapter<TestGridAdapter.MyView
             card_test.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    /*Toast.makeText(context,"Click at test "+testList.get(getAdapterPosition()).toString(), Toast.LENGTH_SHORT).show();*/
+
                     Common.selectedTest = testList.get(getAdapterPosition());  //Assign current test
+
                     Intent intent = new Intent(context, TestOverviewActivity.class);
                     context.startActivity(intent);
 
