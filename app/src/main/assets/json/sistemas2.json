@@ -2310,7 +2310,7 @@
         "B": {
           "id": "B",
           "text": "De tipos homogéneos e igual tamaño.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -2320,7 +2320,7 @@
         "D": {
           "id": "D",
           "text": "Ninguna de las anteriores.",
-          "correct": true
+          "correct": false
         }
       }
     },
@@ -8078,17 +8078,17 @@
     "301": {
       "id": 301,
       "text": "La conexión estándar al ldap con TLS es ",
-      "clue": "A. Puerto 389. \nhttps://es.wikipedia.org/wiki/Protocolo_Ligero_de_Acceso_a_Directorios\nBolsas UPV Grupo I Sistemas 2010 preg 15",
+      "clue": "B. Según la IANA el puerto es 636 para ldap con TLS/SSL y el 389 es sólo ldap https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=12A. \n \nhttps://es.wikipedia.org/wiki/Protocolo_Ligero_de_Acceso_a_Directorios \nAparece de forma incorrecta (respuesta A marcada correcta) en Bolsas UPV Grupo I Sistemas 2010 preg 15",
       "answer": {
         "A": {
           "id": "A",
           "text": "por el puerto 389",
-          "correct": true
+          "correct": false
         },
         "B": {
           "id": "B",
           "text": "por el puerto 636",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",

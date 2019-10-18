@@ -5442,7 +5442,7 @@
         "B": {
           "id": "B",
           "text": "De tipos homogéneos e igual tamaño.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -5452,7 +5452,7 @@
         "D": {
           "id": "D",
           "text": "Ninguna de las anteriores.",
-          "correct": true
+          "correct": false
         }
       }
     },

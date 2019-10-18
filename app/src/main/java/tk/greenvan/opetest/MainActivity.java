@@ -191,6 +191,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
         super.onResume();
         if (Common.Mode == Common.MODE.ONLINE) {
             //TODO Casca si no hay listener a pesar de poner el modo online
+            // por ejemplo, al pulsar cambiar de usuario desde modo local cuando no ha habido online antes
             //if (mAuthStateListener != null)
             mFirebaseAuth.addAuthStateListener(mAuthStateListener);
             //else this.onRestart();

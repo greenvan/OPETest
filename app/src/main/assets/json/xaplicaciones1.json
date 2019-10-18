@@ -5186,6 +5186,33 @@
         }
       }
     },
+    "694": {
+      "id": 694,
+      "text": "En normalización de bases de datos, si una base cumple la forma normal de Boyce-Codd, podemos afirmar que cumple: ",
+      "clue": "C. Las tres primeras formas normales. \n Aunque este libro pone como buena la B. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 57) \nPero la fuente es ésta y marca C. http://www.zonacondeduque.com/C1_ejer_sol_UNIA_2011.pdf \n En Wikipedia tamibén aparece 3FN",
+      "answer": {
+        "A": {
+          "id": "A",
+          "text": "como mínimo con la primera forma normal.",
+          "correct": false
+        },
+        "B": {
+          "id": "B",
+          "text": "como mínimo con las dos primeras formas normales.",
+          "correct": false
+        },
+        "C": {
+          "id": "C",
+          "text": "como mínimo con las tres primeras formas normales.",
+          "correct": true
+        },
+        "D": {
+          "id": "D",
+          "text": "como mínimo con las cuatro primeras formas normales.",
+          "correct": false
+        }
+      }
+    },
     "695": {
       "id": 695,
       "text": "¿Qué significa que una relación esté en Tercera Forma Normal? ",

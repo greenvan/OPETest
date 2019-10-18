@@ -7295,17 +7295,17 @@
     "271": {
       "id": 271,
       "text": "La conexión estándar al ldap con TLS es ",
-      "clue": "A. Puerto 389. \nhttps://es.wikipedia.org/wiki/Protocolo_Ligero_de_Acceso_a_Directorios\nBolsas UPV Grupo I Sistemas 2010 preg 15",
+      "clue": "B. Según la IANA el puerto es 636 para ldap con TLS/SSL y el 389 es sólo ldap https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=12A. \n \nhttps://es.wikipedia.org/wiki/Protocolo_Ligero_de_Acceso_a_Directorios \nAparece de forma incorrecta (respuesta A marcada correcta) en Bolsas UPV Grupo I Sistemas 2010 preg 15",
       "answer": {
         "A": {
           "id": "A",
           "text": "por el puerto 389",
-          "correct": true
+          "correct": false
         },
         "B": {
           "id": "B",
           "text": "por el puerto 636",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -13002,7 +13002,7 @@
         "B": {
           "id": "B",
           "text": "De tipos homogéneos e igual tamaño.",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -13012,7 +13012,7 @@
         "D": {
           "id": "D",
           "text": "Ninguna de las anteriores.",
-          "correct": true
+          "correct": false
         }
       }
     },
@@ -18716,7 +18716,7 @@
     "694": {
       "id": 694,
       "text": "En normalización de bases de datos, si una base cumple la forma normal de Boyce-Codd, podemos afirmar que cumple: ",
-      "clue": "B. como mínimo con las dos primeras formas normales.\n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 57)",
+      "clue": "C. Las tres primeras formas normales. \n Aunque este libro pone como buena la B. \n https://books.google.es/books?id=HXvfCwAAQBAJ (Tema 17 - 57) \nPero la fuente es ésta y marca C. http://www.zonacondeduque.com/C1_ejer_sol_UNIA_2011.pdf \n En Wikipedia tamibén aparece 3FN",
       "answer": {
         "A": {
           "id": "A",
@@ -18726,12 +18726,12 @@
         "B": {
           "id": "B",
           "text": "como mínimo con las dos primeras formas normales.",
-          "correct": true
+          "correct": false
         },
         "C": {
           "id": "C",
           "text": "como mínimo con las tres primeras formas normales.",
-          "correct": false
+          "correct": true
         },
         "D": {
           "id": "D",

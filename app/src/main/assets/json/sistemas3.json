@@ -8812,12 +8812,12 @@
         "A": {
           "id": "A",
           "text": "Lenguaje C.",
-          "correct": false
+          "correct": true
         },
         "B": {
           "id": "B",
           "text": "Lenguaje Ensamblador.",
-          "correct": true
+          "correct": false
         },
         "C": {
           "id": "C",

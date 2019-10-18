@@ -2440,12 +2440,12 @@
         "A": {
           "id": "A",
           "text": "Si aumentamos su resolución aumentaremos proporcionalmente su tamaño",
-          "correct": true
+          "correct": false
         },
         "B": {
           "id": "B",
           "text": "Si variamos la resolución deberemos variar su tamaño",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8169,7 +8169,7 @@
         "B": {
           "id": "B",
           "text": "La profundidad se comprime",
-          "correct": false
+          "correct": true
         },
         "C": {
           "id": "C",
@@ -8179,7 +8179,7 @@
         "D": {
           "id": "D",
           "text": "Es útil para la realización de retratos",
-          "correct": true
+          "correct": false
         }
       }
     },
